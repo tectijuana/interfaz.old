@@ -161,7 +161,7 @@ __Nos está pidiendo el nombre de usuario. Nosotros escribimos pi.__
 cbed A. Villena, R. Asenjo, F. Corbera. DAC-UMA.
          
 Capítulo 1. Introducción al ensamblador 9
-9. Escribimos sudo halt para salir limpiamente del sistema emulado.
+9. Escribimos **sudo halt** para __salir limpiamente del sistema emulado.__
 10. Cerramos la ventana de QEMU y creamos el siguiente archivo lanzador.bat.
 qemu-system-armw -kernel kernel-qemu -cpu arm1176
 -m 256 -M versatilepb -no-reboot -serial stdio -append "root=/dev/sda2 panic=1 rootfstype=ext4 rw"
