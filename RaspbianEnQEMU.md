@@ -25,7 +25,7 @@ Download Raspbian (buster) __versión básica de 450 mb__ checar el nombre para 
 
 > rm raspbian_lite_latest
  
-## Correr el emulator con soporte al puerto 5022 para el SSH otra terminal (termius, etc):
+## Correr el emulador con soporte al puerto 5022 para el SSH otra terminal (termius, etc):
 ```qemu-system-arm -cpu arm1176 -m 256 \
   -kernel kernel-qemu-4.19.50-buster \
   -M versatilepb \
@@ -71,7 +71,7 @@ Download Raspbian (buster) __versión básica de 450 mb__ checar el nombre para 
 
 > rm raspbian_lite_latest
  
-## Correr el emulator con soporte al puerto 5022 para el SSH otra terminal (termius, etc):
+## Correr el emulador con soporte al puerto 5022 para el SSH otra terminal (termius, etc):
 ```qemu-system-arm -cpu arm1176 -m 256 \
   -kernel kernel-qemu-4.19.50-buster \
   -M versatilepb \
