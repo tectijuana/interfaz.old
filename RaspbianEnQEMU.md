@@ -9,9 +9,44 @@ Es actualización del Libro de "Practicas de Ensamblador con RaspberryPI" del ht
 ![](https://images.cooltext.com/5382598.png)
 <a href="http://cooltext.com" target="_top"><img src="https://cooltext.com/images/ct_pixel.gif" width="80" height="15" alt="Cool Text: Logo and Graphics Generator" border="0" /></a>
 
-
 ![](https://images.cooltext.com/5382600.png) <a href="http://cooltext.com" target="_top"><img src="https://cooltext.com/images/ct_pixel.gif" width="80" height="15" alt="Cool Text: Logo and Graphics Generator" border="0" /></a>
+Descargar kernel **qemu-rpi-kernel**:
+> wget https://raw.githubusercontent.com/dhruvvyas90/qemu-rpi-kernel/master/kernel-qemu-4.19.50-buster
 
+Soporte adicional de quemu,  **versatile-pb.dtb**:
+> wget https://raw.githubusercontent.com/dhruvvyas90/qemu-rpi-kernel/master/versatile-pb.dtb
+
+Download Raspbian (buster) __versión básica de 450 mb__ checar el nombre para **corregirlo**:
+> wget https://downloads.raspberrypi.org/raspbian_lite_latest
+
+> unzip raspbian_lite_latest
+
+> ls
+
+> rm raspbian_lite_latest
+ 
+## Correr el emulator con soporte al puerto 5022 para el SSH otra terminal (termius, etc):
+```qemu-system-arm -cpu arm1176 -m 256 \
+  -kernel kernel-qemu-4.19.50-buster \
+  -M versatilepb \
+  -dtb versatile-pb.dtb \
+  -no-reboot \
+  -nographic \
+  -append "dwc_otg.lpm_enable=0 root=/dev/sda2 rootfstype=ext4 elevator=deadline fsck.repair=yes rootwait" \
+  -drive "file=2020-02-13-raspbian-buster-lite.img,index=0,media=disk,format=raw" \
+  -net user,hostfwd=tcp::5022-:22 -net nic
+```
+__Esperar la pantalla del login, donde el usuario y contraseña es:__  **pi** / **raspberry**
+
+Habilitar el servicio  de **SSH** en Raspbian **(usuario root no tiene password)**:
+> sudo su
+
+> systemctl enable --now ssh
+
+SSH para acceder a la emulación:
+> ssh -p 5022 pi@localhost
+
+---
 # Emular Raspbian (Buster) en QEMU on macOS
 
 Instalar **qemu** (primero debe tener instalado el complemento "brew"):
