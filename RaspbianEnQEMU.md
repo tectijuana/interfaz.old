@@ -26,7 +26,7 @@ Download versatile-pb.dtb:
 Download Raspbian (buster) __versión light 450 mb__ checar el nombre para **corregirlo**:
 > wget https://downloads.raspberrypi.org/raspbian_lite_latest
 
-> unzip 2020-02-13-raspbian-buster-lite.zip
+> unzip raspbian_lite_latest
  
 ## Correr el emulator:
 ```qemu-system-arm -cpu arm1176 -m 256 \
