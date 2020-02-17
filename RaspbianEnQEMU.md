@@ -23,7 +23,7 @@ Download qemu-rpi-kernel:
 Download versatile-pb.dtb:
 > wget https://raw.githubusercontent.com/dhruvvyas90/qemu-rpi-kernel/master/versatile-pb.dtb
 
-Download Raspbian (buster) __versión light 450 mb__:
+Download Raspbian (buster) __versión light 450 mb__ checar el nombre para **corregirlo**:
 > wget https://downloads.raspberrypi.org/raspbian_lite_latest
 
 > unzip 2020-02-13-raspbian-buster-lite.zip
@@ -50,6 +50,8 @@ _Referencias:_
 https://docs.j7k6.org/emulate-raspbian-qemu-macos/
 
 https://gist.github.com/tinjaw/5bc5527ff379e8dd299a0b67e2bc9b62
+
+https://github.com/dhruvvyas90/qemu-rpi-kernel
 
 
 
