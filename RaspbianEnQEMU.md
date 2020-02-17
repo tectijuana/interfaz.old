@@ -9,7 +9,7 @@ Es actualización del Libro de "Practicas de Ensamblador con RaspberryPI" del ht
 ![](https://images.cooltext.com/5382598.png)
 <a href="http://cooltext.com" target="_top"><img src="https://cooltext.com/images/ct_pixel.gif" width="80" height="15" alt="Cool Text: Logo and Graphics Generator" border="0" /></a>
 
-![](https://images.cooltext.com/5382600.png) <a href="http://cooltext.com" target="_top"><img src="https://cooltext.com/images/ct_pixel.gif" width="80" height="15" alt="Cool Text: Logo and Graphics Generator" border="0" /></a>
+
 Descargar kernel **qemu-rpi-kernel**:
 > wget https://raw.githubusercontent.com/dhruvvyas90/qemu-rpi-kernel/master/kernel-qemu-4.19.50-buster
 
@@ -45,6 +45,10 @@ Habilitar el servicio  de **SSH** en Raspbian **(usuario root no tiene password)
 
 SSH para acceder a la emulación:
 > ssh -p 5022 pi@localhost
+
+
+----
+![](https://images.cooltext.com/5382600.png) <a href="http://cooltext.com" target="_top"><img src="https://cooltext.com/images/ct_pixel.gif" width="80" height="15" alt="Cool Text: Logo and Graphics Generator" border="0" /></a>
 
 ---
 # Emular Raspbian (Buster) en QEMU on macOS
