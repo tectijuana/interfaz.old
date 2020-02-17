@@ -10,11 +10,11 @@ Es actualización del Libro de "Practicas de Ensamblador con RaspberryPI" del ht
 <a href="http://cooltext.com" target="_top"><img src="https://cooltext.com/images/ct_pixel.gif" width="80" height="15" alt="Cool Text: Logo and Graphics Generator" border="0" /></a>
 
 
-# MACOS
+![](https://images.cooltext.com/5382600.png) <a href="http://cooltext.com" target="_top"><img src="https://cooltext.com/images/ct_pixel.gif" width="80" height="15" alt="Cool Text: Logo and Graphics Generator" border="0" /></a>
 
-Emulate Raspbian (Buster) with QEMU on macOS
+# Emular Raspbian (Buster) en QEMU on macOS
 
-Install qemu:
+Install qemu (primero debe tener instalado el complemento "brew"):
 > brew install qemu
 
 Download qemu-rpi-kernel:
@@ -23,10 +23,10 @@ Download qemu-rpi-kernel:
 Download versatile-pb.dtb:
 > wget https://raw.githubusercontent.com/dhruvvyas90/qemu-rpi-kernel/master/versatile-pb.dtb
 
-Download Raspbian:
-> wget http://director.downloads.raspberrypi.org/raspbian_lite/images/raspbian_lite-2019-07-12/2019-07-10-raspbian-buster-lite.zip
+Download Raspbian (buster) __versión light 450 mb__:
+> wget https://downloads.raspberrypi.org/raspbian_lite_latest
 
-> unzip 2019-07-10-raspbian-buster-lite.zip
+> unzip 2020-02-13-raspbian-buster-lite.zip
  
 ## Correr el emulator:
 ```qemu-system-arm -cpu arm1176 -m 256 \
@@ -36,7 +36,7 @@ Download Raspbian:
   -no-reboot \
   -nographic \
   -append "dwc_otg.lpm_enable=0 root=/dev/sda2 rootfstype=ext4 elevator=deadline fsck.repair=yes rootwait" \
-  -drive "file=2019-07-10-raspbian-buster-lite.img,index=0,media=disk,format=raw" \
+  -drive "file=2020-02-13-raspbian-buster-lite.img,index=0,media=disk,format=raw" \
   -net user,hostfwd=tcp::22222-:22 -net nic
 ```
 _Esperar la pantalla del login, donde el usuario y contraseña es:  **pi** / **raspberry**
