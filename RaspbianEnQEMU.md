@@ -37,7 +37,7 @@ Download Raspbian (buster) __versión light 450 mb__ checar el nombre para **cor
   -nographic \
   -append "dwc_otg.lpm_enable=0 root=/dev/sda2 rootfstype=ext4 elevator=deadline fsck.repair=yes rootwait" \
   -drive "file=2020-02-13-raspbian-buster-lite.img,index=0,media=disk,format=raw" \
-  -net user,hostfwd=tcp::22222-:22 -net nic
+  -net user,hostfwd=tcp::5022-:22 -net nic
 ```
 _Esperar la pantalla del login, donde el usuario y contraseña es:  **pi** / **raspberry**
 
@@ -47,16 +47,15 @@ Habilitar el servicio  de SSH en Raspbian **(usuario root no tiene password)**:
 > systemctl enable --now ssh
 
 SSH into emulated Raspbian from macOS host:
-> ssh -p 22222 pi@localhost
+> ssh -p 5022 pi@localhost
 
 _Referencias:_
+```
 https://docs.j7k6.org/emulate-raspbian-qemu-macos/
-
 https://gist.github.com/tinjaw/5bc5527ff379e8dd299a0b67e2bc9b62
-
 https://github.com/dhruvvyas90/qemu-rpi-kernel
-
-
+https://gist.github.com/hfreire/5846b7aa4ac9209699ba
+```
 
 ####
 
