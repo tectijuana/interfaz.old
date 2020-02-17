@@ -25,8 +25,11 @@ Soporte adicional de quemu,  **versatile-pb.dtb**:
 
 Download Raspbian (buster) __versión básica de 450 mb__ checar el nombre para **corregirlo**:
 > wget https://downloads.raspberrypi.org/raspbian_lite_latest
+
 > unzip raspbian_lite_latest
+
 > ls
+
 > rm raspbian_lite_latest
  
 ## Correr el emulator con soporte al puerto 5022 para el SSH otra terminal (termius, etc):
@@ -44,6 +47,7 @@ _Esperar la pantalla del login, donde el usuario y contraseña es:  **pi** / **r
 
 Habilitar el servicio  de SSH en Raspbian **(usuario root no tiene password)**:
 > sudo su
+
 > systemctl enable --now ssh
 
 SSH into emulated Raspbian from macOS host:
