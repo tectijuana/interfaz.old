@@ -43,14 +43,14 @@ Download Raspbian (buster) __versión básica de 450 mb__ checar el nombre para 
   -drive "file=2020-02-13-raspbian-buster-lite.img,index=0,media=disk,format=raw" \
   -net user,hostfwd=tcp::5022-:22 -net nic
 ```
-_Esperar la pantalla del login, donde el usuario y contraseña es:  **pi** / **raspberry**
+__Esperar la pantalla del login, donde el usuario y contraseña es:__  **pi** / **raspberry**
 
-Habilitar el servicio  de SSH en Raspbian **(usuario root no tiene password)**:
+Habilitar el servicio  de **SSH** en Raspbian **(usuario root no tiene password)**:
 > sudo su
 
 > systemctl enable --now ssh
 
-SSH into emulated Raspbian from macOS host:
+SSH para acceder a la emulación:
 > ssh -p 5022 pi@localhost
 
 _Referencias:_
@@ -61,9 +61,9 @@ https://github.com/dhruvvyas90/qemu-rpi-kernel
 https://gist.github.com/hfreire/5846b7aa4ac9209699ba
 ```
 
-####
+----
 
-
+![](https://images.cooltext.com/5382612.png) <a href="http://cooltext.com" target="_top"><img src="https://cooltext.com/images/ct_pixel.gif" width="80" height="15" alt="Cool Text: Logo and Graphics Generator" border="0" /></a>
 
 Vamos a hacer un resumen de cómo se haría en Windows. Para otros sistemas operativos (Linux, Mac OS) seguir las instrucciones antes mencionadas.
 
@@ -79,7 +79,7 @@ http://sourceforge.net/projects/win32diskimager
 8. Pulsamos el botón Write y esperamos a que se complete la escritura.
 9. Salimos de la utilidad y extraemos la tarjeta SD.
 10. Ya estamos listos para introducir la tarjeta SD en nuestra Raspberry Pi.
-cbed A. Villena, R. Asenjo, F. Corbera. DAC-UMA.
+
  
 8 1.1. Lectura previa
  De forma alternativa podemos ejecutar la imagen anterior en un emulador de Raspberry Pi, y seguir gran parte de las prácticas con la comodidad de tu PC. Para ello partimos del archivo de imagen obtenido en el apartado 2 de la lista anterior, y seguimos los pasos según [5]. Los pasos son válidos para Windows y Linux, aunque nosotros mostraremos sólo los de Windows.
