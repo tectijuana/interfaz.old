@@ -24,6 +24,10 @@ Download Raspbian (buster) __versión básica de 450 mb__ checar el nombre para 
 > ls
 
 > rm raspbian_lite_latest
+
+> apt update
+
+> apt install git
  
 ## Correr el emulador con soporte al puerto 5022 para el SSH otra terminal (termius, etc):
 ```
@@ -43,6 +47,10 @@ Habilitar el servicio  de **SSH** en Raspbian **(usuario root no tiene password)
 > sudo su
 
 > systemctl enable --now ssh
+
+> apt update
+
+> apt install git
 
 SSH para acceder a la emulación:
 > ssh -p 5022 pi@localhost
@@ -91,6 +99,10 @@ Habilitar el servicio  de **SSH** en Raspbian **(usuario root no tiene password)
 > sudo su
 
 > systemctl enable --now ssh
+
+> apt update
+
+> apt install git
 
 SSH para acceder a la emulación:
 > ssh -p 5022 pi@localhost
