@@ -3,11 +3,59 @@
 
 Es actualización del Libro de "Practicas de Ensamblador con RaspberryPI" del https://riuma.uma.es/xmlui/bitstream/handle/10630/10214/LibroDePracticas.pdf?sequence=1&isAllowed=y
 
+## 1.1.4. Configuración del entorno para realizar las prácticas en casa
+### Las instrucciones sobre el recurso de la SBC "RaspberryPi" esta en: http://elinux.org/
+
 ![](https://images.cooltext.com/5382598.png)
 <a href="http://cooltext.com" target="_top"><img src="https://cooltext.com/images/ct_pixel.gif" width="80" height="15" alt="Cool Text: Logo and Graphics Generator" border="0" /></a>
 
-## 1.1.4. Configuración del entorno para realizar las prácticas en casa
-### Las instrucciones sobre el recurso de la SBC "RaspberryPi" esta en: http://elinux.org/
+
+# MACOS
+
+Emulate Raspbian (Buster) with QEMU on macOS
+
+Install qemu:
+> brew install qemu
+
+Download qemu-rpi-kernel:
+> wget https://raw.githubusercontent.com/dhruvvyas90/qemu-rpi-kernel/master/kernel-qemu-4.19.50-buster
+
+Download versatile-pb.dtb:
+> wget https://raw.githubusercontent.com/dhruvvyas90/qemu-rpi-kernel/master/versatile-pb.dtb
+
+Download Raspbian:
+> wget http://director.downloads.raspberrypi.org/raspbian_lite/images/raspbian_lite-2019-07-12/2019-07-10-raspbian-buster-lite.zip
+
+> unzip 2019-07-10-raspbian-buster-lite.zip
+ 
+## Correr el emulator:
+```qemu-system-arm -cpu arm1176 -m 256 \
+  -kernel kernel-qemu-4.19.50-buster \
+  -M versatilepb \
+  -dtb versatile-pb.dtb \
+  -no-reboot \
+  -nographic \
+  -append "dwc_otg.lpm_enable=0 root=/dev/sda2 rootfstype=ext4 elevator=deadline fsck.repair=yes rootwait" \
+  -drive "file=2019-07-10-raspbian-buster-lite.img,index=0,media=disk,format=raw" \
+  -net user,hostfwd=tcp::22222-:22 -net nic
+```
+_Esperar la pantalla del login, donde el usuario y contraseña es:  **pi** / **raspberry**
+
+Habilitar el servicio  de SSH en Raspbian:
+> systemctl enable --now ssh
+SSH into emulated Raspbian from macOS host:
+> ssh -p 22222 pi@localhost
+
+_Referencias:_
+https://docs.j7k6.org/emulate-raspbian-qemu-macos/
+
+https://gist.github.com/tinjaw/5bc5527ff379e8dd299a0b67e2bc9b62
+
+
+
+####
+
+
 
 Vamos a hacer un resumen de cómo se haría en Windows. Para otros sistemas operativos (Linux, Mac OS) seguir las instrucciones antes mencionadas.
 
