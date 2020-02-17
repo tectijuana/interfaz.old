@@ -14,21 +14,22 @@ Es actualización del Libro de "Practicas de Ensamblador con RaspberryPI" del ht
 
 # Emular Raspbian (Buster) en QEMU on macOS
 
-Install qemu (primero debe tener instalado el complemento "brew"):
+Instalar **qemu** (primero debe tener instalado el complemento "brew"):
 > brew install qemu
 
-Download qemu-rpi-kernel:
+Descargar kernel **qemu-rpi-kernel**:
 > wget https://raw.githubusercontent.com/dhruvvyas90/qemu-rpi-kernel/master/kernel-qemu-4.19.50-buster
 
-Download versatile-pb.dtb:
+Soporte adicional de quemu,  **versatile-pb.dtb**:
 > wget https://raw.githubusercontent.com/dhruvvyas90/qemu-rpi-kernel/master/versatile-pb.dtb
 
-Download Raspbian (buster) __versión light 450 mb__ checar el nombre para **corregirlo**:
+Download Raspbian (buster) __versión básica de 450 mb__ checar el nombre para **corregirlo**:
 > wget https://downloads.raspberrypi.org/raspbian_lite_latest
-
 > unzip raspbian_lite_latest
+> ls
+> rm raspbian_lite_latest
  
-## Correr el emulator:
+## Correr el emulator con soporte al puerto 5022 para el SSH otra terminal (termius, etc):
 ```qemu-system-arm -cpu arm1176 -m 256 \
   -kernel kernel-qemu-4.19.50-buster \
   -M versatilepb \
@@ -43,7 +44,6 @@ _Esperar la pantalla del login, donde el usuario y contraseña es:  **pi** / **r
 
 Habilitar el servicio  de SSH en Raspbian **(usuario root no tiene password)**:
 > sudo su
-
 > systemctl enable --now ssh
 
 SSH into emulated Raspbian from macOS host:
