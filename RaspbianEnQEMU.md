@@ -41,8 +41,11 @@ Download Raspbian (buster) __versión light 450 mb__ checar el nombre para **cor
 ```
 _Esperar la pantalla del login, donde el usuario y contraseña es:  **pi** / **raspberry**
 
-Habilitar el servicio  de SSH en Raspbian:
+Habilitar el servicio  de SSH en Raspbian **(usuario root no tiene password)**:
+> sudo su
+
 > systemctl enable --now ssh
+
 SSH into emulated Raspbian from macOS host:
 > ssh -p 22222 pi@localhost
 
