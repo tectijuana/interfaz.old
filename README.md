@@ -142,30 +142,33 @@ http://sourceforge.net/projects/win32diskimager
 1. Descargamos el emulador QEMU desde aquí:
 http://lassauge.free.fr/qemu/
 2. Descargamos el siguiente núcleo o kernel desde aquí:
-http://xecdesign.com/downloads/linux-qemu/kernel-qemu
-3. Lanzamos la línea de comandos o ventana de MS-DOS. Esto se hace desde Programas->Accesorios->Símbolo del sistemaobienpulsandoWindows+R y escribiendo “cmd”. Una vez lanzada escribimos lo siguiente:
-
-**qemu-system-armw -kernel kernel-qemu -cpu arm1176
--m 256 -M versatilepb -no-reboot -serial stdio -append "root=/dev/sda2 panic=1 rootfstype=ext4 rw init=/bin/bash" -hda 2020-02-13-raspbian-buster-lite.img **
-
-4. Aparece el emulador en una nueva ventana tipo terminal. Ya estaríamos den- tro de la Raspberry emulada. Una vez se muestren los mensajes de arranque aparece el siguiente texto:
+https://github.com/dhruvvyas90/qemu-rpi-kernel
+3. Lanzamos la línea de comandos o ventana de MS-DOS. Esto se hace desde Programas->Accesorios->Símbolo del sistemaobienpulsandoWindows+R y escribiendo **“cmd”**. Una vez lanzada escribimos lo siguiente:
+```
+qemu-system-armw -kernel kernel-qemu -cpu arm1176
+-m 256 -M versatilepb -no-reboot -serial stdio -append "root=/dev/sda2 panic=1 rootfstype=ext4 rw init=/bin/bash" -hda 2020-02-13-raspbian-buster-lite.img 
+```
+4. Aparece el emulador en una nueva ventana tipo terminal. Ya estaríamos dentro de la Raspberry emulada. Una vez se muestren los mensajes de arranque aparece el siguiente texto:
 raspberrypi login:
 __Nos está pidiendo el nombre de usuario. Nosotros escribimos pi.__
+
 5. Luego nos piden el password, que es **raspberry**. En este caso y por motivos de seguridad no se recibe respuesta visual mientras escribimos la contraseña, ni siquiera aparecen asteriscos.
 6. Una vez identificados,lo primero que hacemos es editar el archivo con el siguiente comando:
 > nano /etc/ld.so.preload
 
 7. Dentro del editor ponemos un **#** al comienzo de la siguiente línea: 
 **#/usr/lib/arm-linux-gnueabihf/libcofi_rpi.so**
+
 8. Presionamos Ctrl-X y luego y, Enter para guardar y salir.
-cbed A. Villena, R. Asenjo, F. Corbera. DAC-UMA.
          
-Capítulo 1. Introducción al ensamblador 9
 9. Escribimos **sudo halt** para __salir limpiamente del sistema emulado.__
-10. Cerramos la ventana de QEMU y creamos el siguiente archivo lanzador.bat.
+10. Cerramos la ventana de QEMU y creamos el siguiente archivo **lanzador.bat**.
+```
 qemu-system-armw -kernel kernel-qemu -cpu arm1176
 -m 256 -M versatilepb -no-reboot -serial stdio -append "root=/dev/sda2 panic=1 rootfstype=ext4 rw"
 -hda 2020-02-13-raspbian-buster-lite.img
+```
+
 11. Ejecutamos el archivo **lanzador.bat** que acabamos de crear. Ya hemos terminado. Todos los archivos que vayamos creando se almacenan en la imagen como si se tratase de una SD real corriendo sobre una Raspberry Pi real.
 
 
