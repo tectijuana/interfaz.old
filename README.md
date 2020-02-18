@@ -16,7 +16,7 @@ Descargar kernel **qemu-rpi-kernel**:
 Soporte adicional de quemu,  **versatile-pb.dtb**:
 > wget https://raw.githubusercontent.com/dhruvvyas90/qemu-rpi-kernel/master/versatile-pb.dtb
 
-Download Raspbian (buster) __versión básica de 450 mb__ checar el nombre para **corregirlo**:
+Download Raspbian (buster) LIGHT __versión básica de 450 mb__ checar el nombre para **corregirlo**, esto es por la falta de tiempo que tenemos en los Labs, en casa debe tener la versión completa, si Ud. recibió un USB a copiar en HDD, favor de saltar esta linea:
 > wget https://downloads.raspberrypi.org/raspbian_lite_latest
 
 > unzip raspbian_lite_latest
@@ -40,19 +40,18 @@ qemu-system-arm -cpu arm1176 -m 256 \
   -append "dwc_otg.lpm_enable=0 root=/dev/sda2 rootfstype=ext4 elevator=deadline fsck.repair=yes rootwait" \
   -drive "file=2020-02-13-raspbian-buster-lite.img,index=0,media=disk,format=raw" \
   -net user,hostfwd=tcp::5022-:22 -net nic
+  
 ```
 __Esperar la pantalla del login, donde el usuario y contraseña es:__  **pi** / **raspberry**
 
 Habilitar el servicio  de **SSH** en Raspbian **(usuario root no tiene password)**:
-> sudo su
-
-> systemctl enable --now ssh
-
-> apt update
-
-> apt install git
-
-SSH para acceder a la emulación:
+```
+sudo su
+systemctl enable --now ssh
+apt update
+apt install git
+```
+## SSH para acceder a la emulación, el puerto 5022 es porque es una maq. virtual y confunde el OS, si usamos el mismo puerto 22, portal la VM queda alto a 5022:
 > ssh -p 5022 pi@localhost
 
 
@@ -96,16 +95,15 @@ qemu-system-arm -cpu arm1176 -m 256 \
 __Esperar la pantalla del login, donde el usuario y contraseña es:__  **pi** / **raspberry**
 
 Habilitar el servicio  de **SSH** en Raspbian **(usuario root no tiene password)**:
-> sudo su
-
-> systemctl enable --now ssh
-
-> apt update
-
-> apt install git
-
-SSH para acceder a la emulación:
+```
+sudo su
+systemctl enable --now ssh
+apt update
+apt install git
+```
+## SSH para acceder a la emulación, el puerto 5022 es porque es una maq. virtual y confunde el OS, si usamos el mismo puerto 22, portal la VM queda alto a 5022:
 > ssh -p 5022 pi@localhost
+
 
 _Referencias:_
 ```
