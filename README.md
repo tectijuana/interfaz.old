@@ -17,18 +17,14 @@ Soporte adicional de quemu,  **versatile-pb.dtb**:
 > wget https://raw.githubusercontent.com/dhruvvyas90/qemu-rpi-kernel/master/versatile-pb.dtb
 
 Download Raspbian (buster) LIGHT __versión básica de 450 mb__ checar el nombre para **corregirlo**, esto es por la falta de tiempo que tenemos en los Labs, en casa debe tener la versión completa, si Ud. recibió un USB a copiar en HDD, favor de saltar esta linea:
-> wget https://downloads.raspberrypi.org/raspbian_lite_latest
-
-> unzip raspbian_lite_latest
-
-> ls
-
-> rm raspbian_lite_latest
-
-> apt update
-
-> apt install git
- 
+```
+ wget https://downloads.raspberrypi.org/raspbian_lite_latest
+ unzip raspbian_lite_latest
+ ls
+ rm raspbian_lite_latest
+ apt update
+ apt install git
+ ```
 ## Correr el emulador con soporte al puerto 5022 para el SSH otra terminal (termius, etc):
 ```
 qemu-system-arm -cpu arm1176 -m 256 \
@@ -72,13 +68,14 @@ Soporte adicional de quemu,  **versatile-pb.dtb**:
 > wget https://raw.githubusercontent.com/dhruvvyas90/qemu-rpi-kernel/master/versatile-pb.dtb
 
 Download Raspbian (buster) __versión básica de 450 mb__ checar el nombre para **corregirlo**:
-> wget https://downloads.raspberrypi.org/raspbian_lite_latest
-
-> unzip raspbian_lite_latest
-
-> ls
-
-> rm raspbian_lite_latest
+```
+ wget https://downloads.raspberrypi.org/raspbian_lite_latest
+ unzip raspbian_lite_latest
+ ls
+ rm raspbian_lite_latest
+ apt update
+ apt install git
+ ```
  
 ## Correr el emulador con soporte al puerto 5022 para el SSH otra terminal (termius, etc):
 ```
