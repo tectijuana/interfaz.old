@@ -11,11 +11,14 @@ Es actualización del Libro de "Practicas de Ensamblador con RaspberryPI" del ht
 
 
 Descargar kernel **qemu-rpi-kernel**:
-> wget https://raw.githubusercontent.com/dhruvvyas90/qemu-rpi-kernel/master/kernel-qemu-4.19.50-buster
+```
+wget https://raw.githubusercontent.com/dhruvvyas90/qemu-rpi-kernel/master/kernel-qemu-4.19.50-buster
+```
 
 Soporte adicional de quemu,  **versatile-pb.dtb**:
-> wget https://raw.githubusercontent.com/dhruvvyas90/qemu-rpi-kernel/master/versatile-pb.dtb
-
+```
+wget https://raw.githubusercontent.com/dhruvvyas90/qemu-rpi-kernel/master/versatile-pb.dtb
+```
 Download Raspbian (buster) LIGHT __versión básica de 450 mb__ checar el nombre para **corregirlo**, esto es por la falta de tiempo que tenemos en los Labs, en casa debe tener la versión completa, si Ud. recibió un USB a copiar en HDD, favor de saltar esta linea:
 ```
  wget https://downloads.raspberrypi.org/raspbian_lite_latest
@@ -23,9 +26,8 @@ Download Raspbian (buster) LIGHT __versión básica de 450 mb__ checar el nombre
  ls
  rm raspbian_lite_latest
  apt update
- apt install git
  ```
-## Correr el emulador con soporte al puerto 5022 para el SSH otra terminal (termius, etc):
+
 ```
 qemu-system-arm -cpu arm1176 -m 256 \
   -kernel kernel-qemu-4.19.50-buster \
@@ -36,17 +38,21 @@ qemu-system-arm -cpu arm1176 -m 256 \
   -append "dwc_otg.lpm_enable=0 root=/dev/sda2 rootfstype=ext4 elevator=deadline fsck.repair=yes rootwait" \
   -drive "file=2020-02-13-raspbian-buster-lite.img,index=0,media=disk,format=raw" \
   -net user,hostfwd=tcp::5022-:22 -net nic
-  
 ```
-__Esperar la pantalla del login, donde el usuario y contraseña es:__  **pi** / **raspberry**
+__Acceder con usuario y contraseña es:__  **pi** / **raspberry**
 
+## Correr el emulador con soporte al puerto 5022 para el SSH otra terminal (termius, etc):
 Habilitar el servicio  de **SSH** en Raspbian **(usuario root no tiene password)**:
+
 ```
 sudo su
 systemctl enable --now ssh
+
+echo %%%% Y si aprovechamos inge, para instalar el Git para sincronizar los trabajos ? %%%%
 apt update
 apt install git
 ```
+
 ## SSH para acceder a la emulación, el puerto 5022 es porque es una maq. virtual y confunde el OS, si usamos el mismo puerto 22, portal la VM queda alto a 5022:
 > ssh -p 5022 pi@localhost
 
