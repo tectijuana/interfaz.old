@@ -1,7 +1,7 @@
 ![](https://elinux.org/images/4/45/Rasp_turn_around.gif) 
 ![](https://images.cooltext.com/5382596.png) <a href="http://cooltext.com" target="_top"><img src="https://cooltext.com/images/ct_pixel.gif" width="80" height="15" alt="Cool Text: Logo and Graphics Generator" border="0" /></a>
 
-Es actualización del Libro de "Practicas de Ensamblador con RaspberryPI" del https://riuma.uma.es/xmlui/bitstream/handle/10630/10214/LibroDePracticas.pdf?sequence=1&isAllowed=y
+Es actualización del Libro de "Practicas de Ensamblador con RaspberryPI" para referirse al autor de la actualización del software OS y kernel ver: https://riuma.uma.es/xmlui/bitstream/handle/10630/10214/LibroDePracticas.pdf?sequence=1&isAllowed=y
 
 ## 1.1.4. Configuración del entorno para realizar las prácticas en casa
 ### Las instrucciones sobre el recurso de la SBC "RaspberryPi" esta en: http://elinux.org/
@@ -15,11 +15,11 @@ Descargar kernel **qemu-rpi-kernel**:
 wget https://raw.githubusercontent.com/dhruvvyas90/qemu-rpi-kernel/master/kernel-qemu-4.19.50-buster
 ```
 
-Soporte adicional de quemu,  **versatile-pb.dtb**:
+Soporte adicional de QEMU para la máquina virtual en arquitectura RISC,  **versatile-pb.dtb**:
 ```
 wget https://raw.githubusercontent.com/dhruvvyas90/qemu-rpi-kernel/master/versatile-pb.dtb
 ```
-Download Raspbian (buster) LIGHT __versión básica de 450 mb__ checar el nombre para **corregirlo**, esto es por la falta de tiempo que tenemos en los Labs, en casa debe tener la versión completa, si Ud. recibió un USB a copiar en HDD, favor de saltar esta linea:
+Descargar Raspbian (buster) Desktop __1.1 GB__ checar el nombre para **corregirlo** al dia 2020, estan colocando fecha al inicio del archivo:
 ```
  wget https://downloads.raspberrypi.org/raspbian_lite_latest
  unzip raspbian_lite_latest
@@ -33,10 +33,9 @@ qemu-system-arm -cpu arm1176 -m 256 \
   -kernel kernel-qemu-4.19.50-buster \
   -M versatilepb \
   -dtb versatile-pb.dtb \
-  -no-reboot \
-  -nographic \
+  -no-reboot  \
   -append "dwc_otg.lpm_enable=0 root=/dev/sda2 rootfstype=ext4 elevator=deadline fsck.repair=yes rootwait" \
-  -drive "file=2020-02-13-raspbian-buster-lite.img,index=0,media=disk,format=raw" \
+  -drive "file=2020-02-13-raspbian-buster.img,index=0,media=disk,format=raw" \
   -net user,hostfwd=tcp::5022-:22 -net nic
 ```
 __Acceder con usuario y contraseña es:__  **pi** / **raspberry**
