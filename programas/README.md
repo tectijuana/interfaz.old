@@ -2,6 +2,7 @@
 
 ![](holaMundoEnC.png)
 
+![](armAssembly.png)
 
 ```
 root@raspberrypi:/home/pi/revision# ls
