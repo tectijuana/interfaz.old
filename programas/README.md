@@ -3,7 +3,7 @@
 ![](holaMundoEnC.png)
 
 
-
+```
 root@raspberrypi:/home/pi/revision# ls
 holaMundoAssembler.s
 
@@ -15,3 +15,4 @@ root@raspberrypi:/home/pi/revision# ./holaMundoAssembler.s
 Hello, world!
 
 root@raspberrypi:/home/pi/revision# 
+```
