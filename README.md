@@ -37,7 +37,7 @@ Docente: MC. René Solis Reyes
 ![](https://images.cooltext.com/5375550.png)
 <a href="http://cooltext.com" target="_top"><img src="https://cooltext.com/images/ct_pixel.gif" width="80" height="15" alt="Cool Text: Logo and Graphics Generator" border="0" /></a>
 
-Activación de Student Pack de GitHub.com, principalmente http://jetbrains.com/student se hará la donación de $450 dlls software de licencia pero las condiciones son **CUENTA DE CORREO INSTUCIONAL**. 
+Activación de Student Pack de GitHub.com, principalmente http://jetbrains.com/student se hará la donación de $450 dlls software de licencia pero las condiciones son **CUENTA DE CORREO INSTITUCIONAL**. 
 
 Darse de alta en http://GitHub.com con un "nickname" (ApellidoNombre) con una foto de perfil de Ud. una contraseña sencilla, pues GH bloquea a los 3 intentos la IP de su computadora en abuso de reintentos; es una plataforma profesional seria.
 
