@@ -41,7 +41,10 @@ Activación de Student Pack de GitHub.com, principalmente http://jetbrains.com/s
 
 Darse de alta en http://GitHub.com con un "nickname" (ApellidoNombre) con una foto de perfil de Ud. una contraseña sencilla, pues GH bloquea a los 3 intentos la IP de su computadora en abuso de reintentos; es una plataforma profesional seria.
 
-Materiales:
+## Materiales:
 
-*Una tarjeta RaspberryPi (cualquier versión)
-*Laptop con minimo 8 Gb de RAM se instalará  QEMU, es recomendable tener Dual Boot con Linux (ubuntu académico) u otro favorito
+* Una tarjeta RaspberryPi (cualquier versión)
+
+* Laptop con minimo 8 Gb de RAM se instalará  QEMU, es recomendable tener Dual Boot con Linux (ubuntu académico) u otro favorito
+
+* GitHub Student Pack a nivel PRO
