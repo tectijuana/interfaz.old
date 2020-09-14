@@ -1,5 +1,5 @@
 
-![](https://tijuana.tecnm.mx/wp-content/uploads/2014/11/Heading-Ing-sistemas-2048x672.png)
+![](images/isc.png)
 
 
 | Periodo         | (2020B) SEPT-DIC 20                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
@@ -42,8 +42,6 @@ Activación de Student Pack de GitHub.com, principalmente http://jetbrains.com/s
 Darse de alta en http://GitHub.com con un "nickname" (ApellidoNombre) con una foto de perfil de Ud. una contraseña sencilla, pues GH bloquea a los 3 intentos la IP de su computadora en abuso de reintentos; es una plataforma profesional seria. Cabe hacer notar que si ya tiene su cuenta y nickname con productos profesionales de código no haga cambios, pero si es material académico sin ningun impacto a 3ras personas favor de renombrar el Nickname, agregando la foto de classroom.
 
 
-
-
 Condiciones académicas:
 
 - A su servicio en horario acordado 2-3pm lunes y miércoles, equipos de trabajo martes y jueves; se hace mención durante la sesión como será la semana de trabajo.
@@ -63,20 +61,20 @@ Condiciones Steamming Meet:
 - Solo el estudiante interesado  (o grupo de estudiantes) de la materia debe estar en esta clase, no familiares o invitados externos en el lente de la cámara.
 
 Evaluación:
-* Cada semana hay un trabajo a revisar máximo el dia viernes
-* Todo trabajo lleva una rúbrica de cada elemento cuanto vale para formar el 100.
-* Trabajos no entregado valen 0 y no se reciben al menos un justificante médico, trabajo, etc. y tendrán un descuento considerable.
-* Se procurará dejar retroalimentación con Audio usando la extensión de MOTE de Chrome.
-* El promedio del Bloque es la suma de todos los trabajos entre la cantidad de estos.
-* No hay examen, solo practicas un examen en lo personal es mas medible un buen conjunto de practicas de reto que garantice semana por semana su esfuerzo acumulable.
-* Último bloque en si es un proyecto final que será documental dividido en 2 avances de 50% cada uno
+- Cada semana hay un trabajo a revisar máximo el dia viernes
+- Todo trabajo lleva una rúbrica de cada elemento cuanto vale para formar el 100.
+- Trabajos no entregado valen 0 y no se reciben al menos un justificante médico, trabajo, etc. y tendrán un descuento considerable.
+- Se procurará dejar retroalimentación con Audio usando la extensión de MOTE de Chrome.
+- El promedio del Bloque es la suma de todos los trabajos entre la cantidad de estos.
+- No hay examen, solo practicas un examen en lo personal es mas medible un buen conjunto de practicas de reto que garantice semana por semana su esfuerzo acumulable.
+- Último bloque en si es un proyecto final que será documental dividido en 2 avances de 50% cada uno
 
 
 Requisitos de hardware:
-PC-Laptop con 8 Gb de RAM recomendable.
-Sistemas Operativo, recomendable DualBoot con Linux con 20Gb o mas (ubuntu, Debian, etc) o también puede ser un USB 3.0 Bootable con persistencia de unos 6 Gb ver http://pendrivelinux.com
-Opcionalmente RaspberryPi (cualquier versión) con un "board externsion" https://www.ebay.com/itm/KEYESTUDIO-T-type-GPIO-Expansion-Board-Cable-Breadboard-Kit-for-Raspberry-Pi-3-4/264350596270?hash=item3d8c85fcae:g:rdYAAOSw~G5c1VK6 debe coincidir con la versión de la RPi.
-
+- PC-Laptop con 8 Gb de RAM recomendable.
+- Sistemas Operativo, recomendable DualBoot con Linux con 20Gb o mas (ubuntu, Debian, etc) o también puede ser un USB 3.0 Bootable con persistencia de unos 6 Gb ver http://pendrivelinux.com con software de Termius instalado entre otros.
+- Opcionalmente RaspberryPi (cualquier versión) con un "board externsion" https://www.ebay.com/itm/KEYESTUDIO-T-type-GPIO-Expansion-Board-Cable-Breadboard-Kit-for-Raspberry-Pi-3-4/264350596270?hash=item3d8c85fcae:g:rdYAAOSw~G5c1VK6 debe coincidir con la versión de la RPi.
+- Smartphone con APP de SSH que se activará con TERMIUS (de su Github student pack) con un valor de $30 dlls gratis para UD.
 
 MC. René Solis R.
 
