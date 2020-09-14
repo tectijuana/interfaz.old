@@ -41,10 +41,46 @@ Activación de Student Pack de GitHub.com, principalmente http://jetbrains.com/s
 
 Darse de alta en http://GitHub.com con un "nickname" (ApellidoNombre) con una foto de perfil de Ud. una contraseña sencilla, pues GH bloquea a los 3 intentos la IP de su computadora en abuso de reintentos; es una plataforma profesional seria. Cabe hacer notar que si ya tiene su cuenta y nickname con productos profesionales de código no haga cambios, pero si es material académico sin ningun impacto a 3ras personas favor de renombrar el Nickname, agregando la foto de classroom.
 
-## Materiales:
 
-* Una tarjeta RaspberryPi (cualquier versión)  y puede ser en equipo de 4 la adquisición o reponsabilidad de la pieza; pero sinceramente de ser posible obtenerla para su uso de hackero personal es altamente recomendable.
 
-* Laptop con minimo 8 Gb de RAM se instalará  QEMU, es recomendable tener Dual Boot con Linux (ubuntu académico) u otro favorito
 
-* GitHub Student Pack a nivel PRO
+Condiciones académicas:
+
+- A su servicio en horario acordado 2-3pm lunes y miércoles, equipos de trabajo martes y jueves; se hace mención durante la sesión como será la semana de trabajo.
+- Entrega de trabajos de la semana el limite es el viernes, no habrá mas revisión o recepción al menos una justificación comprobable (trabajo, salud, etc)
+- No se aceptan validaciones de diplomas manipulados ejemplo CERTIFICADOS (alterados con photoshop, etc) será examen de 1ra oportunidad anulando el resto de las entregas del bloque.
+- No usamos Google Drive solo GitHub.com el cual se activará su cuenta PRO, para la presentación de trabajos de desarrollo de software
+- Claro será bienvenido Google Docs para entrega de trabajos colaborativos académicos de lectura excepto código de programación, este nuevamente debe estar en GitHub
+
+Condiciones Steamming Meet:
+- Puede se solicite acceso a la cámara para la asistencia del dia de la sesión.
+- Debe estar vestido casual en el lente de la cámara, evitando informalidades notorias en la ropa de vestir  (pijama, bichi, etc)
+- Durante la sesión las cámaras se apagarán pues debemos estar conscientes del ahorro de ancho de banda a el apoyo a otros que lo estan requiriendo.
+- Puede atender su teléfono, baño, etc. pero apagando cámara-microfono, pero en breve que nos sea mas de 8 minutos; no requiere  que comente esta salida.
+- Es importante que si esta hablando en el audio y hay ruidos externos puede comentarnos que suspende el micrófono por un breve tiempo mientras se aleja la intervención (tortillas, gas, tamales, etc)
+- En ocaciones se guardará el video para la clase, pero es su responsabilidad tomar la notas y estrategias como Google Calendar, Google Keep entre otros.
+- Trabajos de equipo de MEET asegurará el audio este incluido, es importante recordar el respeto a los colegas durante la sesión evitando lenguaje vulgar, elevar el  manejo de voz con semánticas de nivel universitario y atreverse a connotar ensayos profesionales, e inclusivo de ambos sexos y otras preferencias.
+- Solo el estudiante interesado  (o grupo de estudiantes) de la materia debe estar en esta clase, no familiares o invitados externos en el lente de la cámara.
+
+Evaluación:
+* Cada semana hay un trabajo a revisar máximo el dia viernes
+* Todo trabajo lleva una rúbrica de cada elemento cuanto vale para formar el 100.
+* Trabajos no entregado valen 0 y no se reciben al menos un justificante médico, trabajo, etc. y tendrán un descuento considerable.
+* Se procurará dejar retroalimentación con Audio usando la extensión de MOTE de Chrome.
+* El promedio del Bloque es la suma de todos los trabajos entre la cantidad de estos.
+* No hay examen, solo practicas un examen en lo personal es mas medible un buen conjunto de practicas de reto que garantice semana por semana su esfuerzo acumulable.
+* Último bloque en si es un proyecto final que será documental dividido en 2 avances de 50% cada uno
+
+
+Requisitos de hardware:
+PC-Laptop con 8 Gb de RAM recomendable.
+Sistemas Operativo, recomendable DualBoot con Linux con 20Gb o mas (ubuntu, Debian, etc) o también puede ser un USB 3.0 Bootable con persistencia de unos 6 Gb ver http://pendrivelinux.com
+Opcionalmente RaspberryPi (cualquier versión) con un "board externsion" https://www.ebay.com/itm/KEYESTUDIO-T-type-GPIO-Expansion-Board-Cable-Breadboard-Kit-for-Raspberry-Pi-3-4/264350596270?hash=item3d8c85fcae:g:rdYAAOSw~G5c1VK6 debe coincidir con la versión de la RPi.
+
+
+MC. René Solis R.
+
+Redes Sociales:
+Twitter: @IoTeacher noticias mas activo al dia.
+FB: facebook.com/profesorsolis (noticias) solo difusión
+Reddit: /u/IoTeacher
