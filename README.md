@@ -83,6 +83,6 @@ Sin otro particular estoy a sus ordenes por este medio.
 MC. René Solis R.
 
 Redes Sociales:
-Twitter: @IoTeacher noticias mas activo al dia.
-FB: facebook.com/profesorsolis (noticias) solo difusión
-Reddit: /u/IoTeacher
+- Twitter: @IoTeacher noticias mas activo al dia.
+- FB: facebook.com/profesorsolis (noticias) solo difusión
+- Reddit: /u/IoTeacher
