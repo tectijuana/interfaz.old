@@ -43,7 +43,7 @@ Darse de alta en http://GitHub.com con un "nickname" (ApellidoNombre) con una fo
 
 ## Materiales:
 
-* Una tarjeta RaspberryPi (cualquier versión)
+* Una tarjeta RaspberryPi (cualquier versión)  y puede ser en equipo de 4 la adquisición o reponsabilidad de la pieza; pero sinceramente de ser posible obtenerla para su uso de hackero personal es altamente recomendable.
 
 * Laptop con minimo 8 Gb de RAM se instalará  QEMU, es recomendable tener Dual Boot con Linux (ubuntu académico) u otro favorito
 
