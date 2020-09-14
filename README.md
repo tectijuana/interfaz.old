@@ -67,7 +67,9 @@ Evaluación:
 - Se procurará dejar retroalimentación con Audio usando la extensión de MOTE de Chrome.
 - El promedio del Bloque es la suma de todos los trabajos entre la cantidad de estos.
 - No hay examen, solo practicas un examen en lo personal es mas medible un buen conjunto de practicas de reto que garantice semana por semana su esfuerzo acumulable.
-- Último bloque en si es un proyecto final que será documental dividido en 2 avances de 50% cada uno
+- Hay trabajos sin evaluación, pero es parte de reforzamiento del tema a venir y deben ser contestados, se utiliza Checklist o lista de cotejo; el semestre pasado fue utilizada para dar puntos a estudiantes con riesgo de repetición, considerelos de garantía.
+- Último bloque en si es un proyecto final que será documental dividido en 2 avances de 50% cada etapa
+- Sobre la mensajeria dentro de Classroom, es muy fácil perderse con una pregunta "profe estoy bien? ...etc sea tan amable de elaborar bien la pregunta con las opciones que requiera atender pues nuestra comunicación es asincrona, no podemos perder tiempo en una respuesta de 12 horas, considere cuando y como usar la mensajería por eso el equipo de 4 para mantener el ritmo y evitar falta de comunicación.
 
 
 Requisitos de hardware:
@@ -75,6 +77,8 @@ Requisitos de hardware:
 - Sistemas Operativo, recomendable DualBoot con Linux con 20Gb o mas (ubuntu, Debian, etc) o también puede ser un USB 3.0 Bootable con persistencia de unos 6 Gb ver http://pendrivelinux.com con software de Termius instalado entre otros.
 - Opcionalmente RaspberryPi (cualquier versión) con un "board externsion" https://www.ebay.com/itm/KEYESTUDIO-T-type-GPIO-Expansion-Board-Cable-Breadboard-Kit-for-Raspberry-Pi-3-4/264350596270?hash=item3d8c85fcae:g:rdYAAOSw~G5c1VK6 debe coincidir con la versión de la RPi.
 - Smartphone con APP de SSH que se activará con TERMIUS (de su Github student pack) con un valor de $30 dlls gratis para UD.
+
+Sin otro particular estoy a sus ordenes por este medio.
 
 MC. René Solis R.
 
