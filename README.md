@@ -39,7 +39,7 @@ Docente: MC. René Solis Reyes
 
 Activación de Student Pack de GitHub.com, principalmente http://jetbrains.com/student se hará la donación de $450 dlls software de licencia pero las condiciones son **CUENTA DE CORREO INSTITUCIONAL**. 
 
-Darse de alta en http://GitHub.com con un "nickname" (ApellidoNombre) con una foto de perfil de Ud. una contraseña sencilla, pues GH bloquea a los 3 intentos la IP de su computadora en abuso de reintentos; es una plataforma profesional seria.
+Darse de alta en http://GitHub.com con un "nickname" (ApellidoNombre) con una foto de perfil de Ud. una contraseña sencilla, pues GH bloquea a los 3 intentos la IP de su computadora en abuso de reintentos; es una plataforma profesional seria. Cabe hacer notar que si ya tiene su cuenta y nickname con productos profesionales de código no haga cambios, pero si es material académico sin ningun impacto a 3ras personas favor de renombrar el Nickname, agregando la foto de classroom.
 
 ## Materiales:
 
