@@ -19,11 +19,12 @@
     @
     @ 
 
+ograma en ambiente (32-bit) mode ARM, no funciona en AWS aarm64
 .section .text
 .global _start
 .arm
 
-// Programa en ambiente (32-bit) mode ARM.
+// Pr
 _start:
     mov r0, #1               @ STDOUT
     adr r1, label            @ R1 = dirección de la cadena (string)
