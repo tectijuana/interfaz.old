@@ -1,5 +1,12 @@
 # De lenguaje c a ensamblador dentro de AWS en plataforma ARM 64 bits
 
+
+Aplicar soporte a su Sistema Operativo en GCC.
+
+```
+sudo apt install build-essential
+```
+
 La estructura de un mínimo "¡Hola mundo!" en Lenguaje C
 
 Nuestro objetivo es traducir la siguiente aplicación en CLang "¡Hola, mundo!" 
