@@ -76,7 +76,7 @@ Y lo ejecutamos asi:
 Hello, ARM64!
 ```
 
-Practica Modifica el programa agregando:
+## Practica 0: modifica el programa agregando:
 - Encabezados del titulo de programa, fecha, programador, etc
 - Edita el mensaje de salida personalizado
 - Subir el programa a su GitHub persona
