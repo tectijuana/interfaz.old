@@ -21,7 +21,7 @@ gcc -o holamundo holamundo.c
 
 Y lo ejecutamos asi:
 ```
-➜ ./hello
+➜ ./holamundo
 Hola Mundo
 ```
 ----
