@@ -1,1 +1,0 @@
-![](imagenes/vim-acordeon.png)
