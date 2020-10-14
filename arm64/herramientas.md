@@ -1,4 +1,5 @@
 # GDB Debugger
+```
 
 GDB commands by function - simple guide
 ---------------------------------------
@@ -157,6 +158,7 @@ Miscellaneous
 *(gdb) shell command args       execute shell command 
 *(gdb) source file        	load gdb commands from file
 *(gdb) quit        		quit gdb
+```
 
 # Editores
 ![](imagenes/vim-acordeon.png)
