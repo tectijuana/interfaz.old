@@ -3,7 +3,7 @@
 
 Aplicar soporte a su Sistema Operativo en el compilador GCC.
 
-``` bash
+``` shell
 $ sudo apt install build-essential
 ```
 
@@ -20,12 +20,12 @@ int main (void)
 
 Para compilarlo usar:
 
-``` bash
+``` shell
 gcc -o holamundo holamundo.c
 ```
 
 Y lo ejecutamos asi:
-``` bash
+``` shell
 ➜ ./holamundo
 Hola Mundo Cruel y Despiadado
 ```
@@ -63,13 +63,13 @@ _start:
 
 Para compilarlo usar:
 
-``` bash
+``` shell
 as -o holamundo.o holamundo.s
 ld -o holamundo holamundo.o
 ```
 
 Y lo ejecutamos asi:
-``` bash
+``` shell
 ➜ ./hello
 Hello, ARM64!
 ```
