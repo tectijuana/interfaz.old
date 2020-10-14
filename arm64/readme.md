@@ -1,4 +1,4 @@
-![](imagenes/arm64.png)
+![](imagenes/gif-assembly-to-machine-code.gif)
 # De lenguaje alto nivel como C standard, a ensamblador dentro de AWS en plataforma ARM 64 bits
 
 
