@@ -3,13 +3,13 @@
 
 Aplicar soporte a su Sistema Operativo en el compilador GCC.
 
-```
-sudo apt install build-essential
+``` bash
+$ sudo apt install build-essential
 ```
 
 La estructura básica de código "¡Hola mundo!" en Lenguaje C, así Ud. sabrá como compilar en CLang.
 
-```
+```c
 #include <stdio.h>
 int main (void)
 {
@@ -20,12 +20,12 @@ int main (void)
 
 Para compilarlo usar:
 
-```
+``` bash
 gcc -o holamundo holamundo.c
 ```
 
 Y lo ejecutamos asi:
-```
+``` bash
 ➜ ./holamundo
 Hola Mundo Cruel y Despiadado
 ```
@@ -35,7 +35,7 @@ Hola Mundo Cruel y Despiadado
 
 ## Usamos archivos con extensión ".s" de SOURCE (fuente) para este ejemplo usaremos holamundo.s
 
-```
+``` assembly
 .data
 
 /* Segmento de Datos: define el mensaje y calcula el tramaño de la cadena. */
@@ -63,13 +63,13 @@ _start:
 
 Para compilarlo usar:
 
-```
+``` bash
 as -o holamundo.o holamundo.s
 ld -o holamundo holamundo.o
 ```
 
 Y lo ejecutamos asi:
-```
+``` bash
 ➜ ./hello
 Hello, ARM64!
 ```
