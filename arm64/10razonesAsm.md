@@ -14,4 +14,8 @@
 | 10 	| Buscar huevos de Pascua (Easter Eggs) en programas 🥚. Estos son mensajes ocultos, imágenes o bromas internas que los programadores se esconden en sus programas. Son generalmente habilitado al encontrar un teclado secreto combinación para que aparezcan. Encontrarlos requiere ingeniería inversa del programa y la lectura Lenguaje ensamblador.                                                                            	|
 
 ----
+
+Observa el espacio del ejecutable de un CLang y un ASM
+![](imagenes/optimizaejecutable.png)
+
 #### Raspberry Pi Assembly Language Programming: ARM Processor Coding (2019), by Stephen Smith
