@@ -1,4 +1,5 @@
-# De lenguaje C, a ensamblador dentro de AWS en plataforma ARM 64 bits
+!()[imagenes/arm64.png]
+# De lenguaje alto nivel como C standard, a ensamblador dentro de AWS en plataforma ARM 64 bits
 
 
 Aplicar soporte a su Sistema Operativo en el compilador GCC.
