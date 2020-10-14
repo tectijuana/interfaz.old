@@ -1,1 +1,1 @@
-![](imagenes/vim-)
+![](imagenes/vim-acordeon.png)
