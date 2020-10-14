@@ -1,21 +1,19 @@
-# De lenguaje c a ensamblador dentro de AWS en plataforma ARM 64 bits
+# De lenguaje C, a ensamblador dentro de AWS en plataforma ARM 64 bits
 
 
-Aplicar soporte a su Sistema Operativo en GCC.
+Aplicar soporte a su Sistema Operativo en el compilador GCC.
 
 ```
 sudo apt install build-essential
 ```
 
-La estructura de un mínimo "¡Hola mundo!" en Lenguaje C
-
-Nuestro objetivo es traducir la siguiente aplicación en CLang "¡Hola, mundo!" 
+La estructura básica de código "¡Hola mundo!" en Lenguaje C, así Ud. sabrá como compilar en CLang.
 
 ```
 #include <stdio.h>
 int main (void)
 {
-	printf("Hola Mundo \n");
+	printf("Hola Mundo Cruel y Despiadado\n");
 	return 0;
 }
 ```
@@ -29,7 +27,7 @@ gcc -o holamundo holamundo.c
 Y lo ejecutamos asi:
 ```
 ➜ ./holamundo
-Hola Mundo
+Hola Mundo Cruel y Despiadado
 ```
 ----
 
@@ -40,7 +38,7 @@ Hola Mundo
 ```
 .data
 
-/* Segmento de Datos: define el mensaje y calula el tramaño de la cadena. */
+/* Segmento de Datos: define el mensaje y calcula el tramaño de la cadena. */
 msg:
     .ascii        "Hello, ARM64!\n"
 len = . - msg
@@ -77,9 +75,11 @@ Hello, ARM64!
 ```
 
 ## Practica 0: modifica el programa agregando:
-- Encabezados del titulo de programa, fecha, programador, etc
-- Edita el mensaje de salida personalizado
-- Subir el programa a su GitHub persona
-- Clonar repositorio en AWS y compilar-ejecutar
+- Encabezados del titulo de programa, fecha, programador, etc.
+- Edita el mensaje de salida personalizado.
+- Subir el programa a su GitHub personal.
+- Clonar repositorio en AWS y compilar-ejecutar estos dos programas sin usar el editor de OS.
+
+Gracias.
 
 
