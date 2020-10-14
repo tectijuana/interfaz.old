@@ -79,7 +79,7 @@ Hello, ARM64!
 - Encabezados del titulo de programa, fecha, programador, etc.
 - Edita el mensaje de salida personalizado.
 - Subir el programa a su GitHub personal.
-- Clonar repositorio en AWS y compilar-ejecutar estos dos programas sin usar el editor de OS.
+- Clonar repositorio en AWS y compilar-ejecutar estos dos programas sin usar el editor de OS (ejm. $ nano, $ vim, etc)
 
 Gracias.
 
