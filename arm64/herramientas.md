@@ -163,3 +163,4 @@ Miscellaneous
 # Editores
 ![](imagenes/vim-acordeon.png)
 
+![](nano-editor-acordeon.png)
