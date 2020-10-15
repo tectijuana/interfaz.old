@@ -60,7 +60,61 @@ esencia.
 
 ---------
 ![](imagenes/mswindows.png)
-# Windows 7-10
+# Windows  10, 64 bits
+
+Instale QEMU para Windows 10 de 64 bits
+Vaya al siguiente sitio web https://www.qemu.org/download/ y descargue el último instalador de QEMU para Windows de 64 bits.
+```
+Ejecute el instalador.
+
+Los archivos ejecutables QEMU están instalados, p. Ej. C: \ Archivos de programa \ qemu \
+```
+
+#  Descarga un kernel de Linux
+```
+Vaya al siguiente sitio web https://github.com/dhruvvyas90/qemu-rpi-kernel y descargue un kernel adecuado, p. Ej. kernel-qemu-4.4.34-jessie
+
+Coloque el archivo del kernel en una carpeta,  Ej. D: /Temp/raspbian/kernel-qemu-4.4.34-jessie
+```
+
+#  Descargar una imagen del sistema operativo Raspbian
+1. Vaya al siguiente sitio web http://downloads.raspberrypi.org/raspbian/images/ y descargue la última imagen, _p.Ej.2019-06-20-raspbian-buster.zip_
+2. Descomprima el archivo de imagen en una carpeta, _p.Ej./Temp/raspbian/2019-06-20-raspbian-buster.img_
+
+# Crear un archivo bat de Windows
+- Ejecute un editor de texto.
+- Escriba las siguientes líneas.
+**NOTA** cambie el nombre del kernel y de los archivos de imagen **(kernel-qemu-4.4.34-jessie)** para que coincidan con los nombres de los archivos descargados.
+```
+"c:\Program Files\qemu\qemu-system-arm.exe" ^
+-kernel kernel-qemu-4.4.34-jessie ^
+-cpu arm1176 ^
+-m 256 ^
+-M versatilepb ^
+-serial stdio ^
+-append "root=/dev/sda2 rootfstype=ext4 rw" ^
+-hda 2019-06-20-raspbian-buster.img ^
+-net nic ^
+-net user,hostfwd=tcp::5022-:22 ^
+-no-reboot
+
+```
+
+- Guardar como un archivo bat, p. Ej. run_raspbian.bat y cierre el editor.
+
+# Ejecutar QEMU
+Abre un símbolo del sistema.
+ 
+Cambie el directorio a la carpeta que contiene el núcleo y los archivos de imagen, cambie la ruta segun sea pertinente
+Escriba el comando:
+```
+C:\> run_raspbian.bat
+```
+
+Aparece la ventana QEMU ejecutando Raspbian OS
+
+
+
 
 
 -------
