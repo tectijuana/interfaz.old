@@ -71,9 +71,9 @@ Los archivos ejecutables QEMU están instalados, p. Ej. C:\Archivos de programa\
 ```
 
 #  Descarga un kernel de Linux
-```
-Vaya al siguiente sitio web https://github.com/dhruvvyas90/qemu-rpi-kernel y descargue un kernel adecuado, p. Ej. kernel-qemu-4.4.34-jessie
 
+Vaya al siguiente sitio web https://github.com/dhruvvyas90/qemu-rpi-kernel y descargue un kernel adecuado, p. Ej. kernel-qemu-4.4.34-jessie
+```
 Coloque el archivo del kernel en una carpeta,  Ej. D: /Temp/raspbian/kernel-qemu-4.4.34-jessie
 ```
 
