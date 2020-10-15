@@ -1,7 +1,7 @@
 # Emulador para ARM32 de RaspberryPi 3
 
 
-# macOS
+# macOS (Catalina)
 
 ## macos-qemu-rpi
 Bash scripts para ejecutar Raspbian (arquitectura ARM) en macOS Catalina usando QEMU
@@ -45,10 +45,10 @@ sudo bash
 ## Apagado de RaspbianOS
 Inicie sesión en Raspbian y luego ejecute `sudo halt` en el shell de Raspbian.
 
-## Tutorial
+## Tutorial de GDB
 
 Las instrucciones de configuración avanzada en Raspbian se proporcionan en
-https://azeria-labs.com/emulate-raspberry-pi-with-qemu/
+https://azeria-labs.com/debugging-with-gdb-introduction/
 
 ## Créditos
 
@@ -61,6 +61,71 @@ esencia.
 ---------
 
 # Windows 7-10
+
+
+-------
+
+# Linux OS 
+
+## 1. Pasos para cargar en Linux
+
+
+## 2. Prepara el OS de usuario actualizando
+```bash
+sudo apt update
+sudo apt upgrade
+```
+
+## 3. Instalar qemu y unzip
+sudo apt install qemu-system unzip
+
+## 4. Imagen de Debian Linux y  el  kernel
+El archivo kernel esta mantenido al dia en : https://github.com/dhruvvyas90/qemu-rpi-kernel
+
+```bash
+mkdir rpi
+wget http://director.downloads.raspberrypi.org/raspbian_lite/images/raspbian_lite-2019-07-12/2019-07-10-raspbian-buster-lite.zip
+unzip -d rpi 2019-07-10-raspbian-buster-lite.zip
+wget -P rpi https://github.com/dhruvvyas90/qemu-rpi-kernel/raw/master/versatile-pb.dtb
+wget -P rpi https://github.com/dhruvvyas90/qemu-rpi-kernel/raw/master/kernel-qemu-4.14.79-stretch
+
+```
+
+## 5. Descargar  dependencias
+```bash
+wget -P app/common -i requirements.txt
+
+wget -P app/lib https://github.com/AndrewFromMelbourne/raspidmx/raw/master/lib/Makefile
+```
+
+## 6. Ejecutar la RaspbianOS
+```bash
+qemu-system-arm \
+   -kernel rpi/kernel-qemu-4.14.79-stretch \
+   -dtb rpi/versatile-pb.dtb \
+   -m 256 -M versatilepb -cpu arm1176 \
+   -serial stdio \
+   -append "rw console=ttyAMA0 root=/dev/sda2 rootfstype=ext4  loglevel=8 rootwait fsck.repair=yes memtest=1" \
+   -drive file=rpi/2019-07-10-raspbian-buster-lite.img,format=raw \
+   -net user,hostfwd=tcp::5022-:22,vlan=0 \
+   -net nic,vlan=0 \
+   -no-reboot
+```
+
+## 7. Habilitar SSH Raspberry Pi terminal - enable ssh
+```bash
+raspberrypi login: pi
+Password: raspberry 
+sudo systemctl enable ssh
+sudo systemctl start ssh
+```
+
+## 8. Para copiar via SCP seria este formato:
+```bash
+scp -r -P 5022 ./ArchivosACopiar/* pi@localhost:/home/pi
+```
+
+-------
 
 
 
