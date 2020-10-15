@@ -67,7 +67,7 @@ Vaya al siguiente sitio web https://www.qemu.org/download/ y descargue el últim
 ```
 Ejecute el instalador.
 
-Los archivos ejecutables QEMU están instalados, p. Ej. C: \ Archivos de programa \ qemu \
+Los archivos ejecutables QEMU están instalados, p. Ej. C:\Archivos de programa\qemu\
 ```
 
 #  Descarga un kernel de Linux
@@ -80,6 +80,7 @@ Coloque el archivo del kernel en una carpeta,  Ej. D: /Temp/raspbian/kernel-qemu
 #  Descargar una imagen del sistema operativo Raspbian
 1. Vaya al siguiente sitio web http://downloads.raspberrypi.org/raspbian/images/ y descargue la última imagen, _p.Ej.2019-06-20-raspbian-buster.zip_
 2. Descomprima el archivo de imagen en una carpeta, _p.Ej./Temp/raspbian/2019-06-20-raspbian-buster.img_
+![](imagenes/wq0.png)
 
 # Crear un archivo bat de Windows
 - Ejecute un editor de texto.
@@ -101,6 +102,8 @@ Coloque el archivo del kernel en una carpeta,  Ej. D: /Temp/raspbian/kernel-qemu
 ```
 
 - Guardar como un archivo bat, p. Ej. run_raspbian.bat y cierre el editor.
+![](imagenes/wq1.png)
+
 
 # Ejecutar QEMU
 Abre un símbolo del sistema.
@@ -110,10 +113,11 @@ Escriba el comando:
 ```
 C:\> run_raspbian.bat
 ```
+![](imagenes/wq2.png)
 
 Aparece la ventana QEMU ejecutando Raspbian OS
 
-
+![](imagenes/wq3.png)
 
 
 
