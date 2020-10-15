@@ -12,13 +12,15 @@ Instale [homebrew] (https://brew.sh/), si aún no lo ha hecho.
 A continuación, ejecute el siguiente script:
 
 ```bash
-./install.sh
+chmod +x install.sh
+sudo ./install.sh
 ```
 
 ## Correr Raspbian en QEMU
 
 ```bash
-./run.sh
+chmod +x run.sh
+sudo ./run.sh
 ```
 
 Este script no requiere macOS, pero la imagen / kernel de Raspbian y QEMU son necesario.
