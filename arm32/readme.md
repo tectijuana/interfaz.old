@@ -77,7 +77,9 @@ sudo apt upgrade
 ```
 
 ## 3. Instalar qemu y unzip
+```bash
 sudo apt install qemu-system unzip
+```
 
 ## 4. Imagen de Debian Linux y  el  kernel
 El archivo kernel esta mantenido al dia en : https://github.com/dhruvvyas90/qemu-rpi-kernel
