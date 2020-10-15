@@ -1,6 +1,6 @@
 # Emulador para ARM32 de RaspberryPi 3
 
-
+![](imagenes/macos.png)
 # macOS (Catalina)
 
 ## macos-qemu-rpi
@@ -59,12 +59,12 @@ esencia.
 
 
 ---------
-
+![](imagenes/mswindows.png)
 # Windows 7-10
 
 
 -------
-
+![](imagenes/linux.png)
 # Linux OS 
 
 ## 1. Pasos para cargar en Linux
