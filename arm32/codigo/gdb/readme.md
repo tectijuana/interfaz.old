@@ -81,3 +81,7 @@ Si avanzamos una vez más, llegamos a esta posición.
 
 ![](imagenes/gdb5.png)
 
+Ahora estamos casi al final del programa, r1 ya no es igual a 4 y, por lo tanto, la última instrucción "cmp" ha provocado que la bandera de cero no esté establecida.
+
+Ese es el final de este breve vistazo a **gdb**.
+
