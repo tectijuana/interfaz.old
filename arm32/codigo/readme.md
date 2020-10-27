@@ -1,8 +1,22 @@
+# Introducción
+
+La mayoría de los programas universitarios de informática ahora imparten la mayor parte de su instrucción en lenguajes de nivel bastante alto, como Java, que no requieren que se tenga que saber mucho sobre la arquitectura informática subyacente. Creo que esto tiende a crear brechas bastante grandes en la comprensión, lo que puede conducir a errores bastante graves en el diseño del programa. Aprender a programar C lo acerca más al metal, ya que necesita saber más sobre la memoria y el almacenamiento de bajo nivel, pero nada realmente le enseña cómo funciona la computadora subyacente que hacer algo de programación en lenguaje ensamblador. El sistema operativo Raspbian viene con el ensamblador GNU pre-instalado, por lo que tiene todo lo que necesita para probar la programación de Assembler desde el primer momento. Aprender un poco de ensamblador le enseñará cómo funciona el procesador ARM de Raspberry Pi, cómo una arquitectura RISC moderna procesa las instrucciones y cómo el trabajo se divide entre la CPU ARM y los diversos coprocesadores que se incluyen en el mismo chip.
+
+# Un poco de historia
+El procesador ARM se desarrolló originalmente para ser un procesador de bajo costo para la computadora educativa británica Acorn. Los desarrolladores de ARM sintieron que tenían algo y negociaron una división en una compañía separada que vendía diseños de CPU a los fabricantes de hardware. Su primera gran venta fue a Apple para proporcionar una CPU para el primer PDA de Apple, el Newton. Su primer gran éxito fue la inclusión del diseño de su chip en los iPod de Apple. En el camino, muchos fabricantes de chips como TI, que habían renunciado a competir en CPU, construyeron computadoras de un solo chip alrededor del ARM. Estos terminaron siendo incluidos en casi todos los teléfonos celulares, incluidos los de Nokia y Apple. Hoy en día, todos los teléfonos Android también se basan en diseños ARM
+
+# Instrucciones para ensamblador ARM
+Ha habido muchos diseños ARM desde los primeros procesadores simples de 16 bits hasta procesadores de 32 bits hasta los diseños actuales de 64 bits. En este artículo solo se va a considerar el procesador ARM en la Raspberry Pi, que es un procesador de 64 bits, pero Raspbian sigue siendo un sistema operativo de 32 bits, así que solo hablaré sobre el procesamiento de 32 bits para el ejemplo. 
 
 
+ARM es un procesador RISC, lo que significa que la idea es que ejecute instrucciones muy simples muy rápidamente. La idea es mantener el procesador principal simple para reducir la complejidad y el uso de energía. Cada instrucción tiene una longitud de 32 bits, por lo que el procesador no necesita pensar en cuánto incrementar el contador del programa para cada instrucción. Curiosamente, casi todas las instrucciones están en el mismo formato, donde puede controlar si establece los bits de estado, puede probar los bits de estado sobre si debe hacer algo y puede tener cuatro parámetros de registro (o 2 registros y una constante inmediata). También se puede aplicar una operación de cambio a uno de los registros. Entonces, ¿cómo se incluye todo esto en una instrucción de 32 bits? Hay 16 registros en la CPU ARM (estos incluyen el contador de programa, el registro de retorno de enlace y el puntero de pila). También existe el registro de estado que no se puede usar como un registro de propósito general, por lo que especificar 4 registros quita 16 bits de la instrucción.
+
+![](posterARM.png)
 
 
-Programa prueba.s
+Se presenta un breve ejemplo:
+
+Programa **prueba.s**
 ```asm
 .global _start              @ Proporcionar la dirección de inicio del programa al enlazador (linker)
 _start: mov     R0, #17     @ Utilice 17 (decimal) como ejemplo de prueba
