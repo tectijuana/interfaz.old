@@ -13,6 +13,7 @@ ARM es un procesador RISC, lo que significa que la idea es que ejecute instrucci
 
 ![](posterARM.png)
 
+La extensión de archivo '.s' se usa comúnmente para todas las formas de código ensamblador, depende de nosotros recordar que esto es ARMv6.
 
 Se presenta un breve ejemplo:
 
@@ -40,3 +41,6 @@ clean:
      rm prueba prueba.o
 ```
 
+---
+Bibliografía: 
+https://www.cl.cam.ac.uk/projects/raspberrypi/tutorials/os/ok01.html
