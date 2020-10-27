@@ -43,7 +43,7 @@ svc $0		@ wake kernel
 .end
 ```
 
-![](gdb1.png)
+![](imagenes/gdb1.png)
 
 Cuando gdb se inicia, necesitamos establecer un punto de interrupción. La ejecución del programa se detendrá allí y podremos avanzar una instrucción a la vez desde ese punto. Aquí, estoy estableciendo el punto de interrupción en la etiqueta _start.
 
@@ -54,5 +54,5 @@ Cuando gdb se inicia, necesitamos establecer un punto de interrupción. La ejecu
 
 Después de haber dado el comando de ejecución, gdb ejecutará las operaciones hasta el punto de interrupción y esperará instrucciones. En este ejemplo, escribí "siguiente" dos veces para que se ejecuten las siguientes dos instrucciones. Luego escribí "registros de información" para ver el contenido de mis registros.
 
-![](gdb2.png)
+![](imagenes/gdb2.png)
 ---
