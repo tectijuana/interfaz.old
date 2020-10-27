@@ -1,5 +1,8 @@
 @ primos.s 
 @ find and print first 500 primes
+@ This program finds and prints the first 500 prime numbers. It is based on the program presented in Knuth’s classic The Art of Computer Programming.
+@ The code itself is pretty heavily commented, so I don’t think much further explanation is needed.
+@ I have used the number printing routine described in my earlier blog post to handle the output in this example.
 @ based on Knuth TAOCP vol. 1 147ff
 @ I've used the labels and variables Knuth uses, up to a point.
 
