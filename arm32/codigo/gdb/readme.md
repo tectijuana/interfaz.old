@@ -1,4 +1,5 @@
-El depurador GNU (gdb) es una herramienta muy útil. Aquí les voy a mostrar una o dos de sus características.
+# El depurador GNU (gdb),
+## es una herramienta muy útil. Aquí les voy a mostrar una o dos de sus características.
 
 Es posible que necesite instalar gdb (en mi RPi, ejecutando Arch, el comando era: "pacman -S gdb"). Cuando lo haya hecho, puede usarlo para ver lo que está sucediendo mientras se ejecuta su programa. Esto puede ayudarlo a corregir algo que no funciona. Por ahora, sin embargo, veremos un programa de muestra que está funcionando correctamente.
 
