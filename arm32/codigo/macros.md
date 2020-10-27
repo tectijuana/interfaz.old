@@ -133,4 +133,4 @@ _start:
 .end 
 ```
 
-Como puede ver, esta es otra macro "segura", como el ejemplo de gcd. Calcula el módulo de dos números utilizando solo los registros que se le pasaron. Voy a usar esto en mi algoritmo "Pascua" para hacer el código un poco más limpio.
+Como puede ver, esta es otra macro "segura", como el ejemplo de gcd. Calcula el módulo de dos números utilizando solo los registros que se le pasaron. 
