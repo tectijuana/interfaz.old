@@ -56,3 +56,23 @@ Después de haber dado el comando de ejecución, gdb ejecutará las operaciones 
 
 ![](imagenes/gdb2.png)
 ---
+
+
+_Como puede ver, r1 tiene el valor 5. El puntero de la pila tiene una dirección en la memoria y el contador del programa muestra dónde estamos en el programa._
+
+El otro registro que me interesa es **"cpsr"**, este es el registro de estado del programa que muestra qué banderas se han establecido. En este punto, su contenido no es muy interesante ya que no hemos hecho ninguna comparación.
+
+Después de una instrucción más, los registros se ven así:
+
+![](imagenes/gdb3.png)
+
+
+
+
+
+![](imagenes/gdb4.png)
+
+
+
+![](imagenes/gdb5.png)
+
