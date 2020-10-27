@@ -66,11 +66,14 @@ Después de una instrucción más, los registros se ven así:
 
 ![](imagenes/gdb3.png)
 
+Puede ver que el contador del programa muestra que hemos avanzado 4 bytes (cada instrucción tiene 4 bytes). Además, el registro de estado del programa muestra el resultado de comparar r1 con 4.
 
-
+Si seguimos un par de instrucciones, llegamos a esta posición.
 
 
 ![](imagenes/gdb4.png)
+
+
 
 
 
