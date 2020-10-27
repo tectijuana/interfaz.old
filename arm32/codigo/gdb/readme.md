@@ -74,7 +74,9 @@ Si seguimos un par de instrucciones, llegamos a esta posición.
 ![](imagenes/gdb4.png)
 
 
+Ahora r1 tiene 4 y se ha establecido el indicador "cero" en el **cpsr**. Esto se debe a que **"cmp"** en realidad hace una resta y luego establece las banderas en consecuencia. Dado que 4 - 4 = 0, se establece la bandera __cero.__
 
+Si avanzamos una vez más, llegamos a esta posición.
 
 
 ![](imagenes/gdb5.png)
