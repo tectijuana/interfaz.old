@@ -56,7 +56,7 @@ Esto toma el archivo de objeto first.o y genera el archivo ejecutable primero.
     2 
 ```
  
-
+NOTA: **echo $?** nos muestra el salida final del kernel (stack) al terminar el programa pues no imprime en pantalla
 
 
 ### Bibliografia: http://www.science.smith.edu/dftwiki/index.php/Tutorial:_Assembly_Language_with_the_Raspberry_Pi
