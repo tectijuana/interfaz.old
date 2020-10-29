@@ -36,11 +36,9 @@ y debería ver el contenido del archivo.
 # ¡Ensamble, compile y ejecute!
 
 . Ensamble el código para crear un archivo de objeto:
- ```bash
- 
-  as -o first.o first.s
-  
- ```
+```bash
+as -o first.o first.s
+```
 
 - Esto creará el archivo de objeto primero, Compílelo. 
 - El archivo de objeto no es ejecutable. 
