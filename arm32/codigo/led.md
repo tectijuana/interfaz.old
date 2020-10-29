@@ -186,3 +186,4 @@ gcc -o blink2 blink.o -lwiringPi
 sudo ./blink2
 ```
 
+## You should observe the LED blinking 10 times at a rate of 2 Hz (ON OFF ON OFF lasts 1 second).
