@@ -57,6 +57,7 @@ Esto toma el archivo de objeto first.o y genera el archivo ejecutable primero.
 ```
  
 NOTA: **echo $?** nos muestra el salida final del kernel (stack) al terminar el programa pues no imprime en pantalla
+y *| * se llama PIPA, es para unir 2 o mas comandos seguidos de esta |  |  |  | 
 
 
 ### Bibliografia: http://www.science.smith.edu/dftwiki/index.php/Tutorial:_Assembly_Language_with_the_Raspberry_Pi
