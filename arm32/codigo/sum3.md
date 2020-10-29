@@ -67,7 +67,7 @@ main:   push 	{ip, lr}	@ push return address + dummy register
 @ return to OS	
         pop 	{ip, pc}	@ pop return address into pc
 ```
-
+## Resultados
 ```
 pi@raspberrypi ~/temp $ as -o sum3.o sum3.s
 pi@raspberrypi ~/temp $ gcc -o sum3 sum3.o
