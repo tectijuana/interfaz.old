@@ -1,6 +1,8 @@
 # Torres recursivas de Hanoi
 
 
+![](hanoi.gif)
+
 __Este es el típico programa recursivo de Towers of Hanoi. Puede leer más sobre este típico problema informático en Wikipedia.__
 
 La versión Python de este programa se da a continuación
