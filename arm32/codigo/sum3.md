@@ -1,6 +1,6 @@
 # Pasar parámetros por valor
 
-``asm
+```asm
 @  sum3.s
 @  D. Thiebaut
 @  Illustrates how to pass 2 ints by value
