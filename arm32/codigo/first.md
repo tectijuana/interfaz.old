@@ -25,12 +25,39 @@ main:   mov r0, #2       @ load immediate value 2 into Register r0
 ```
 
 Para verificar que se crea el archivo, escriba esto:
+
 ```bash
    cat primero.s
+```
 
 y debería ver el contenido del archivo.
 
 
+# ¡Ensamble, compile y ejecute!
+
+. Ensamble el código para crear un archivo de objeto:
+ ```bash
+ 
+  as -o first.o first.s
+  
+ ```
+
+- Esto creará el archivo de objeto primero, Compílelo. 
+- El archivo de objeto no es ejecutable. 
+- Sin embargo, un compilador de C puede leerlo y transformarlo en un ejecutable.
+
+```bash
+  gcc -o first first.o
+```
+
+Esto toma el archivo de objeto first.o y genera el archivo ejecutable primero.
+¡Ejecutarlo!
+
+```bash
+  ./first | echo $?
+    2 
+```
+ 
 
 
 
