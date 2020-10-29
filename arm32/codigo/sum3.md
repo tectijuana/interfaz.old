@@ -67,3 +67,5 @@ main:   push 	{ip, lr}	@ push return address + dummy register
 @ return to OS	
         pop 	{ip, pc}	@ pop return address into pc
 ```
+
+![](sum3.png)
