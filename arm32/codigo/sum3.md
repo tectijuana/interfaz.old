@@ -68,4 +68,11 @@ main:   push 	{ip, lr}	@ push return address + dummy register
         pop 	{ip, pc}	@ pop return address into pc
 ```
 
-![](sum3.png)
+```
+pi@raspberrypi ~/temp $ as -o sum3.o sum3.s
+pi@raspberrypi ~/temp $ gcc -o sum3 sum3.o
+pi@raspberrypi ~/temp $ ./sum3
+
+33 + 44 = 77
+pi@raspberrypi ~/temp $ 
+```
