@@ -1,4 +1,4 @@
-@ first.s
+@ primero.s
 @   from thinkingeek.com
 @   http://thinkingeek.com/2013/01/09/arm-assembler-raspberry-pi-chapter-1/
 @   Defines a main function that returns 2 as an exit code.
