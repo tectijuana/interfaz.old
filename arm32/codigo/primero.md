@@ -10,7 +10,7 @@ y pega el código de siguiente. Luego presione **ENTER, Control-D, ENTER,** y es
 
 
 ```asm
-@ first.s
+@ primero.s
 @   from thinkingeek.com
 @   http://thinkingeek.com/2013/01/09/arm-assembler-raspberry-pi-chapter-1/
 @   Defines a main function that returns 2 as an exit code.
@@ -37,7 +37,7 @@ y debería ver el contenido del archivo.
 
 . Ensamble el código para crear un archivo de objeto:
 ```bash
-as -o first.o first.s
+as -o primero.o primero.s
 ```
 
 - Esto creará el archivo de objeto primero, Compílelo. 
@@ -45,14 +45,14 @@ as -o first.o first.s
 - Sin embargo, un compilador de C puede leerlo y transformarlo en un ejecutable.
 
 ```bash
-  gcc -o first first.o
+  gcc -o primero primero.o
 ```
 
 Esto toma el archivo de objeto first.o y genera el archivo ejecutable primero.
 ¡Ejecutarlo!
 
 ```bash
-  ./first | echo $?
+  ./primero | echo $?
     2 
 ```
  
