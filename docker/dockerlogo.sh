@@ -1,0 +1,22 @@
+#!/bin/sh
+colorred="\033[31m"
+colorpowder_blue="\033[1;36m" #with bold
+colorblue="\033[34m"
+colornormal="\033[0m"
+colorwhite="\033[97m"
+colorlightgrey="\033[90m"
+
+printf "                   ${colorred} ##       ${colorlightgrey} .         \n"
+printf "             ${colorred} ## ## ##      ${colorlightgrey} ==         \n"
+printf "           ${colorred}## ## ## ##      ${colorlightgrey}===         \n"
+printf "       /\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\\\___/ ===       \n"
+printf "  ${colorblue}~~~ ${colorlightgrey}{${colorblue}~~ ~~~~ ~~~ ~~~~ ~~ ~ ${colorlightgrey}/  ===- ${colorblue}~~~${colorlightgrey}\n"
+printf "       \\\______${colorwhite} o ${colorlightgrey}         __/           \n"
+printf "         \\\    \\\        __/            \n"
+printf "          \\\____\\\______/               \n"
+printf "${colorpowder_blue}                                          \n"
+printf "          |          |                    \n"
+printf "       __ |  __   __ | _  __   _          \n"
+printf "      /  \\\| /  \\\ /   |/  / _\\\ |     \n"
+printf "      \\\__/| \\\__/ \\\__ |\\\_ \\\__  | \n"
+printf " ${colornormal}                                         \n"
