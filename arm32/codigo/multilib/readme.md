@@ -133,3 +133,6 @@ pi@raspberrypi:~/arm32 $ ./evodd
 8 es par
 9 es impar
 ```
+
+
+POR: OSCAR IVAN DOMINGUEZ ORTIZ
