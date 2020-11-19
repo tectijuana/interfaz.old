@@ -2,6 +2,13 @@
 
 # DOCKER en ARM32
 
+_El miércoles 24 de abril, Docker anunció una asociación con Arm para ayudar a acelerar la adopción de contenedores en el enorme ecosistema de Arm, en DockerCon San Francisco 2019, Docker está lanzanó una vista previa técnica de compilaciones mejoradas de múltiples arquitecturas dentro de Docker Desktop.
+
+_Docker Desktop es el estándar de facto cuando se trata de desarrollar aplicaciones en contenedores. Esta vista previa tecnológica abrirá el rico ecosistema de Arm a los millones de desarrolladores que ya utilizan y desarrollan en Docker Desktop. Esto no solo simplificará el desarrollo de imágenes de contenedores para su implementación en instancias de Amazon EC2 A1 basadas en Arm en la nube, sino que también ayudará a allanar el camino hacia el billón de dispositivos Edge e IoT basados ​​en Arm en todo el mundo. Analicemos por qué estamos haciendo esto, cómo funciona todo y cómo puede comenzar.
+
+![](https://i1.wp.com/www.docker.com/blog/wp-content/uploads/engineering/2019/04/Screen-Shot-2019-04-26-at-7.25.34-PM.png)
+
+
 
 
 
