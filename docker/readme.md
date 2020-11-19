@@ -14,7 +14,16 @@ _En noviembre de 2018, Amazon anunció instancias EC2 A1 impulsadas por procesad
 # ¿Como funciona?
 _Docker Desktop está disponible para macOS y Windows. Agrupa y configura muchas cosas para los usuarios que facilitan enormemente el desarrollo de contenedores. Docker Desktop se envía con hipervisores para el sistema operativo host. El hipervisor es responsable de ejecutar un kernel de Linux ligero (LinuxKit), que se incluye como parte de Docker Desktop. Este sistema operativo contenedor rápido y liviano viene empaquetado con el emulador QEMU y viene preconfigurado con binfmt_misc para ejecutar binarios de cualquier arquitectura compatible. ARM se compromete a respaldar la bifurcación QEMU de Docker y ayudará a mantener este proyecto. Todos los parches se transmitirán, pero Docker Desktop contendrá el soporte de emulación más reciente. En el diagrama de arriba puede ver la emulación QEMU para las imágenes de Docker arm / v6, arm / v7 y arm64._
 
-
+|                    TIPO DE USO                   |
+|:--------------------------------------------------:|
+| linux/amd64 (64 bit Linux nativo)                  |
+| linux/arm64 (para for Amazon EC2 A1 instancias) |
+| linux/arm/v8 (para for Raspberry Pi)           |
+| linux/arm/v71 (para for Raspberry Pi 32 bits)           |
+| linux/s390x (para mainframe clasicos)                 |
+| linux/ppc64le (para IBM POWER8 Little Endian)       |
+| windows/amd64 (64 bit Windows nativo)              |
+| .... Y mucho mas ....             |
 
 
 
