@@ -24,7 +24,11 @@ RUN apt update && apt install -y build-essential cmake git nano vim gdb wget cur
 CMD ["sh -c", "$(wget -O- https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"]
 CMD ["chsh -s $(which zsh)"]
 
-# ------------- Por Mejorar ----------
+#
+# La bienvenida a docker ARM
+CMD ["sh -c", "$(wget -O- https://raw.githubusercontent.com/tectijuana/interfaz/master/docker/dockerlogo.sh)"]
+
+# ------------- es una mejora opcional para VIM (de usarlo Ud.) ----------
 # Soporte para VIM
 # mkdir ~/.vim
 # cd .vim
