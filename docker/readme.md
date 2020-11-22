@@ -71,3 +71,7 @@ _Se utiliza una sintaxis de verbo-modificador-objeto._ Empezaremos en el modo no
 | :only                       | mantenga SOLO esta ventana abierta                          |
 | :ls                         | muestra los búferes actuales (LISTA NUMEROS)                |
 | :b NUMERO_LS                | presenta el numero de :ls a pantalla (ejemplo 1,2,4 de :ls) |
+
+Cuando hayamos acabado de editar el archivo,  **guardar** nuestros cambios desde el modo normal **pulsaremos Esc** **:w**, los dos puntos nos llevan al modo de introducir comandos y la w es del ingles «write», escribir. Si queremos salir escribiremos **:q** (quit), para guardar y salir **:wq** y para salir sin guardar los cambios **:q!**.
+
+-----
