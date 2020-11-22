@@ -11,9 +11,11 @@
 #                                           888P"                                                    
 #
 
+# Generar la imagen
+# docker build --tag arm32:ensamblador .   (si un PUNTO al final, se corre dentro del directorio del Do$
 #
-# docker build --tag arm32:1.0 .
-#
+
+
 
 
 # Cada instrucción en este archivo genera una nueva capa que se envía a su caché de imágenes local
@@ -39,9 +41,14 @@ LABEL maintainer="rene.solis@tectijuana.edu.mx"
 # build-essential - Compiladores soporte para sus trabajos con Ensamblador
 # git nano vim gdb - debuger y editores junto con github.com
 # wget curl htop mc tree ssh scp - diversas herramientas para el desarrollador
-# 
-RUN apt update && apt install -y 
-RUN apt install build-essential cmake git nano vim gdb wget curl htop mc tree ssh scp -y
+#
+RUN apt-get update && \
+    apt-get upgrade -y && \
+    apt-get install -y build-essential git nano vim gdb wget curl mc tree
+
+RUN apt-get -y install cmake protobuf-compiler
+
+RUN apt-get -y  install openssh-client
 
 #
 # Para mensajeria
