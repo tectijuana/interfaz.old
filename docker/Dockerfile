@@ -1,3 +1,16 @@
+#                                                                                                   
+# 888888888888                888888888888  88  88                                                    
+#     88                          88       ""  ""                                                    
+#     88                          88                                                                 
+#     88   ,adPPYba,   ,adPPYba,  88       88  88  88       88  ,adPPYYba,  8b,dPPYba,   ,adPPYYba,  
+#     88  a8P_____88  a8"     ""  88       88  88  88       88  ""     `Y8  88P'   `"8a  ""     `Y8  
+#     88  8PP"""""""  8b          88       88  88  88       88  ,adPPPPP88  88       88  ,adPPPPP88  
+#     88  "8b,   ,aa  "8a,   ,aa  88       88  88  "8a,   ,a88  88,    ,88  88       88  88,    ,88  
+#     88   `"Ybbd8"'   `"Ybbd8"'  88       88  88   `"YbbdP'Y8  `"8bbdP"Y8  88       88  `"8bbdP"Y8  
+#                                             ,88                                                    
+#                                           888P"                                                    
+#
+
 # Cada instrucción en este archivo genera una nueva capa que se envía a su caché de imágenes local
 #
 # Las líneas precedidas por # se consideran comentarios y se ignoran
@@ -13,17 +26,20 @@
 FROM navikey/raspbian-buster
 
 #
+
+
 # Identificar al mantenedor de una imagen
 LABEL maintainer="rene.solis@tectijuana.edu.mx"
 
 #
-# Actualizar la imagen con las herramientas para usar el ensamblador ARM32
+# Actualizar la imagen con las herramientas para usar el ensamblador ARM32:
+#
 # build-essential - Compiladores soporte para sus trabajos con Ensamblador
 # git nano vim gdb - debuger y editores junto con github.com
 # wget curl htop mc tree ssh scp - diversas herramientas para el desarrollador
-# cowsay - para divertirse con mensajeria dela 'vaca' de linux
+# 
 RUN apt update && apt install -y build-essential 
-RUN apt install cmake git nano vim gdb wget curl htop mc tree ssh scp cowsayc -y
+RUN apt install cmake git nano vim gdb wget curl htop mc tree ssh scp -y
 
 #
 # Para mensajeria
