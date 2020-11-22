@@ -32,11 +32,12 @@ dockerfile
 ````
 
 
-# 3 Formas de Editar
+# LOS 3 EDITORES A TRABAJAR
+
 # vim
 
-|           COMANDO           |                      ACCION DESCRIPTIVA                     |
-|:---------------------------:|:-----------------------------------------------------------:|
+|           COMANDO         |                      ACCION DESCRIPTIVA                   |
+|---------------------------|-----------------------------------------------------------|
 | :e nombreDelarchivo         | editar otro archivo                                         |
 | :split nombreDelarchivo     | ventana dividida y CARGA OTRO archivo                       |
 | ctrl-w  flecha hacia arriba | el cursor hacia arriba en una ventana                       |
