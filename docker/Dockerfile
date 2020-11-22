@@ -30,9 +30,6 @@
 # Deposito original (puede cambiar por otras versiones, por ejemplo ARM64) para ensamblador 64 bits
 FROM navikey/raspbian-buster
 
-#
-
-
 # Identificar al mantenedor de una imagen
 LABEL maintainer="rene.solis@tectijuana.edu.mx"
 
@@ -43,8 +40,8 @@ LABEL maintainer="rene.solis@tectijuana.edu.mx"
 # git nano vim gdb - debuger y editores junto con github.com
 # wget curl htop mc tree ssh scp - diversas herramientas para el desarrollador
 # 
-RUN apt update && apt install -y build-essential 
-RUN apt install cmake git nano vim gdb wget curl htop mc tree ssh scp -y
+RUN apt update && apt install -y 
+RUN apt install build-essential cmake git nano vim gdb wget curl htop mc tree ssh scp -y
 
 #
 # Para mensajeria
