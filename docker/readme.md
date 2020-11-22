@@ -29,12 +29,12 @@ _Docker Desktop está disponible para macOS, Linux y Windows. Agrupa y configura
 
 # ¿Qué es un Dockerfile?
 
-Un Dockerfile es un archivo de configuración de  [texto escrito con una sintaxis especial](https://docs.docker.com/engine/reference/builder/)
-1. Describe instrucciones paso a paso de todos los comandos que necesita ejecutar para ensamblar una imagen de Docker.
-2. El comando docker build procesa este archivo generando una imagen de Docker en su caché de imágenes local, 
-3. Luego puede iniciar con el comando docker run, o enviarlo a un repositorio de imágenes permanente.
+1. Un Dockerfile es un archivo de configuración de  [texto escrito con una sintaxis especial](https://docs.docker.com/engine/reference/builder/)
+2. Describe instrucciones paso a paso de todos los comandos que necesita ejecutar para ensamblar una imagen de Docker.
+3. El comando docker build procesa este archivo generando una imagen de Docker en su caché de imágenes local, 
+4. Luego puede iniciar con el comando docker run, o enviarlo a un repositorio de imágenes permanente.
 
-_Docker file revisado para estas practicas estan algunas lineas opcionales con el "#" despues puede hacerlo directamente
+_Docker file revisado para estas practicas estan algunas lineas opcionales con el "#" despues puede hacerlo directamente_
 
 ```dockerfile
 dockerfile
@@ -43,9 +43,18 @@ dockerfile
 ![](https://images.cooltext.com/5483267.png)
 <a href="http://cooltext.com" target="_top"><img src="https://cooltext.com/images/ct_pixel.gif" width="80" height="15" alt="Cool Text: Logo and Graphics Generator" border="0" /></a>
 
-# LOS 3 EDITORES A TRABAJAR
+----
+![](https://upload.wikimedia.org/wikipedia/commons/4/4f/Icon-Vim.svg)
 
-# vim
+Usar **Vim** es una experiencia completamente distinta a usar cualquier otro editor de código. La madurez de este editor de código es indiscutible, pues lleva desarrollándose más de 25 años. La característica más destacable de este editor es su modo de edición modal, en los que seremos capaces de realizar distintos tipos de operaciones.La gracia de usar Vim está en que no tendremos que usar más el ratón ni las teclas de dirección para editar archivos.
+
+_Se utiliza una sintaxis de verbo-modificador-objeto._ Empezaremos en el modo normal, pulsaremos **i** (entrar al modo insertar) para introducir unos cuantos párrafos de texto, **pulsaremos Esc** para volver al modo normal y aquí empieza la magia.
+
+**Aprender algunos verbos:** **v** (visual), **c** (change/cambiar), **d** (delete/borrar), **y** (yank/copiar).
+
+**Aprender modificadores:** **i** (inside/dentro de), **a** (around/alrededor), **t** (till../hasta que encuentra el carácter), **f** (find../hasta que encuentra el carácter incluyéndolo), **/** (buscar).
+
+**Aprender objetos:** **w** (word/palabra), **s** (sentence/frase) **p** (paragraph/párrafo) **b** (block/parentesis), **t** (tag/ para html/xml).
 
 |           COMANDO         |                      ACCION DESCRIPTIVA                   |
 |---------------------------|-----------------------------------------------------------|
