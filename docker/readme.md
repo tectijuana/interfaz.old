@@ -12,7 +12,7 @@ _Docker Desktop es el estándar de facto cuando se trata de desarrollar aplicaci
 _En noviembre de 2018, Amazon anunció instancias EC2 A1 impulsadas por procesadores AWS Graviton que cuentan con núcleos ARM Neoverse de 64 bits y silicio personalizado diseñado por AWS. Las instancias A1 EC2 tienen un costo y un rendimiento optimizados para cargas de trabajo de escalamiento horizontal y ofrecen hasta un 45% de ahorro de costos en comparación con otras instancias EC2. Con esta versión preliminar de la tecnología de Docker Desktop, Docker hace que sea más fácil que nunca desarrollar contenedores en y para los servidores y dispositivos ARM. Con las herramientas y los procesos estándar de Docker con los que ya está familiarizado, puede comenzar a compilar, enviar, extraer y ejecutar imágenes sin problemas en diferentes arquitecturas de sistemas. No se necesitan cambios en Dockerfiles o en el código fuente para comenzar a compilar para ARM. Simplemente reconstruya su imagen utilizando las nuevas funciones que se lanzan hoy. Finalmente, Docker se está expandiendo rápidamente a Edge e IoT, y vemos esto como un paso importante en ese proceso. Docker siempre se ha dedicado a los desarrolladores y ha facilitado las cosas._
 
 # ¿Como funciona?
-_Docker Desktop está disponible para macOS, Linux y Windows. Agrupa y configura muchas cosas para los usuarios que facilitan enormemente el desarrollo de contenedores. Docker Desktop se envía con hipervisores para el sistema operativo host. El hipervisor es responsable de ejecutar un kernel de Linux ligero (LinuxKit), que se incluye como parte de Docker Desktop. Este sistema operativo contenedor rápido y liviano viene empaquetado con el emulador QEMU y viene preconfigurado con binfmt_misc para ejecutar binarios de cualquier arquitectura compatible. ARM se compromete a respaldar la bifurcación QEMU de Docker y ayudará a mantener este proyecto. Todos los parches se transmitirán, pero Docker Desktop contendrá el soporte de emulación más reciente. En el diagrama de arriba puede ver la emulación QEMU para las imágenes de Docker arm/v6, arm/v7 y arm64._
+_Docker Desktop está disponible para macOS, Linux y Windows. Agrupa y configura muchas cosas para los usuarios que facilitan enormemente el desarrollo de contenedores. Docker Desktop se envía con hipervisores para el sistema operativo host. El hipervisor es responsable de ejecutar un kernel de Linux ligero (LinuxKit), que se incluye como parte de Docker Desktop. Este sistema operativo contenedor rápido y liviano viene empaquetado con el emulador QEMU y viene preconfigurado con binfmt_misc para ejecutar binarios de cualquier arquitectura compatible. ARM se compromete a respaldar la bifurcación QEMU de Docker y ayudará a mantener este proyecto. Todos los parches se transmitirán, pero Docker Desktop contendrá el soporte de emulación más reciente. En el diagrama de arriba puede ver la emulación QEMU para las imágenes de Docker arm/v6, arm/v7 y arm64 requeridas para este curso_
 
 |                    TIPO DE USO                   |
 |:--------------------------------------------------:|
@@ -29,7 +29,7 @@ _Docker Desktop está disponible para macOS, Linux y Windows. Agrupa y configura
 
 # ¿Qué es un Dockerfile?
 
-1. Un Dockerfile es un archivo de configuración de  [texto escrito con una sintaxis especial](https://docs.docker.com/engine/reference/builder/)
+1. Un Dockerfile es un archivo de configuración de un [texto escrito con una sintaxis especial](https://docs.docker.com/engine/reference/builder/)
 2. Describe instrucciones paso a paso de todos los comandos que necesita ejecutar para ensamblar una imagen de Docker.
 3. El comando docker build procesa este archivo generando una imagen de Docker en su caché de imágenes local, 
 4. Luego puede iniciar con el comando docker run, o enviarlo a un repositorio de imágenes permanente.
@@ -74,6 +74,8 @@ _Se utiliza una sintaxis de verbo-modificador-objeto._ Empezaremos en el modo no
 
 Cuando hayamos acabado de editar el archivo,  **guardar** nuestros cambios desde el modo normal **pulsaremos Esc** **:w**, los dos puntos nos llevan al modo de introducir comandos y la w es del ingles «write», escribir. Si queremos salir escribiremos **:q** (quit), para guardar y salir **:wq** y para salir sin guardar los cambios **:q!**.
 
+[![Vim in 8 minutes](http://img.youtube.com/vi/ggSyF1SVFr4/0.jpg)](http://www.youtube.com/watch?v=ggSyF1SVFr4 "vim in 8 minutes (ingles con subtitulos)")
+
 -----
 
 # MIDNIGHT COMMANDER
@@ -90,3 +92,12 @@ Cuando hayamos acabado de editar el archivo,  **guardar** nuestros cambios desde
  ```
  
  ----
+ 
+ ![](https://upload.wikimedia.org/wikipedia/commons/1/1e/Oh_My_Zsh_logo.png)
+ 
+ # ZSH
+ 
+Z shell (o simplemente zsh) es un potente intérprete de comandos para sistemas operativos de tipo Unix, como por ejemplo los BSD o GNU/Linux.1​ La primera versión de zsh _fue escrita por Paul Falstad en 1990, cuando era estudiante en la Universidad de Princeton._
+
+Zsh se diseñó para poder usarse interactivamente. Se le han incorporado muchas de las características principales de otras shells de Unix como bash, ksh, o tcsh y además posee características propias originales.
+
