@@ -34,7 +34,11 @@ CMD ["sh -c", "$(wget -O- https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/mast
 CMD ["chsh -s $(which zsh)"]
 
 #
-# La bienvenida a docker ARM
+# Puerto expuesto 80 (no hay servidores en nuestras practicas, por eso se deja por TEMPLETE) 
+# EXPOSE 80
+
+#
+# La bienvenida a docker ARM mensaje
 CMD ["sh -c", "$(wget -O- https://raw.githubusercontent.com/tectijuana/interfaz/master/docker/dockerlogo.sh)"]
 
 # ------------- es una mejora opcional para VIM (de usarlo Ud.) ----------
