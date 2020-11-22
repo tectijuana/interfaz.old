@@ -76,9 +76,17 @@ Cuando hayamos acabado de editar el archivo,  **guardar** nuestros cambios desde
 
 -----
 
-# MIDNIGHT COMMANDO
+# MIDNIGHT COMMANDER
 ![](https://upload.wikimedia.org/wikipedia/commons/9/9b/Midnight_Commander_4.7.0.9_on_Ubuntu_11.04.png)
 
 **Midnight Commander (mc)** es un gestor de ficheros ortodoxo para sistemas tipo Unix y también existe para la plataforma Windows y es un clon del _Norton Commander._
 
  La pantalla principal consiste en dos paneles en los cuales se muestra el sistema de ficheros. Se usa de un modo similar a otras aplicaciones que corren en el shell o interfaz de comandos de Unix. Las teclas de cursor permiten desplazarse a través de los ficheros, la tecla insertar se usa para seleccionar ficheros y las Teclas de función realizan tareas tales como borrar, renombrar, editar, copiar ficheros, etc. Las versiones más recientes de Midnight Commander incluyen soporte para el ratón para facilitar el manejo de la aplicación.
+ 
+ La corrida en la terminal es via:
+ 
+ ```bash
+ $ mc
+ ```
+ 
+ ----
