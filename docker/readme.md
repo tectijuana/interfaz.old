@@ -101,3 +101,4 @@ Z shell (o simplemente zsh) es un potente intérprete de comandos para sistemas 
 
 Zsh se diseñó para poder usarse interactivamente. Se le han incorporado muchas de las características principales de otras shells de Unix como bash, ksh, o tcsh y además posee características propias originales.
 
+[![zsh en acción (ingles)](http://img.youtube.com/vi/4KBuPCeF9Gc/0.jpg)](http://www.youtube.com/watch?v=4KBuPCeF9Gc "zsh en acción (ingles)")
