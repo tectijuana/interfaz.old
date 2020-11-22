@@ -11,6 +11,11 @@
 #                                           888P"                                                    
 #
 
+#
+# docker build --tag arm32:1.0 .
+#
+
+
 # Cada instrucción en este archivo genera una nueva capa que se envía a su caché de imágenes local
 #
 # Las líneas precedidas por # se consideran comentarios y se ignoran
