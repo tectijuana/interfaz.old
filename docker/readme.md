@@ -97,8 +97,9 @@ Cuando hayamos acabado de editar el archivo,  **guardar** nuestros cambios desde
  
  # ZSH
  
-Z shell (o simplemente zsh) es un potente intérprete de comandos para sistemas operativos de tipo Unix, como por ejemplo los BSD o GNU/Linux.1​ La primera versión de zsh _fue escrita por Paul Falstad en 1990, cuando era estudiante en la Universidad de Princeton._
+Z shell (o simplemente zsh) es un potente intérprete de comandos para sistemas operativos de tipo Unix, como por ejemplo los BSD o GNU/Linux. La primera versión de zsh _fue escrita por Paul Falstad en 1990, cuando era estudiante en la Universidad de Princeton._
 
-Zsh se diseñó para poder usarse interactivamente. Se le han incorporado muchas de las características principales de otras shells de Unix como bash, ksh, o tcsh y además posee características propias originales.
+1. Zsh se diseñó para poder usarse interactivamente. 
+2. Se le han incorporado muchas de las características principales de otras shells de Unix como bash, ksh, o tcsh y además posee características propias originales.
 
 [![zsh en acción (ingles)](http://img.youtube.com/vi/4KBuPCeF9Gc/0.jpg)](http://www.youtube.com/watch?v=4KBuPCeF9Gc "zsh en acción (ingles)")
