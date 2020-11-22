@@ -22,7 +22,8 @@ LABEL maintainer="rene.solis@tectijuana.edu.mx"
 # git nano vim gdb - debuger y editores junto con github.com
 # wget curl htop mc tree ssh scp - diversas herramientas para el desarrollador
 # cowsay - para divertirse con mensajeria dela 'vaca' de linux
-RUN apt update && apt install -y build-essential cmake git nano vim gdb wget curl htop mc tree ssh scp cowsay
+RUN apt update && apt install -y build-essential 
+RUN apt install cmake git nano vim gdb wget curl htop mc tree ssh scp cowsayc -y
 
 #
 # Para mensajeria
