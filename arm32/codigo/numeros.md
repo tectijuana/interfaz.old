@@ -1,4 +1,5 @@
 👩‍💻
+# PRACTICA CON DOCKER EN ARM32 Y GITHUB REPORTANDO LOS AVANCES O TERMINACIÓN DE LA PRACTICA.
 # Objetivo: Numeros.s
 
 Cuando buscamos imprimir números en un programa reciente, tuvimos que hacer una conversión entre un número binario almacenado en la computadora y una serie de caracteres ascii que podrían representar un número denario.
