@@ -12,22 +12,30 @@
 #
 
 # Generar la imagen
-# docker build --tag arm32:lenginterfaz .   (si un PUNTO al final, se corre dentro del directorio del Do$
-# Correr la imagen
+# $ docker build --tag arm32/lenginterfaz:compilador .   (si un PUNTO al final)
+# $ docker images
 #
-# docker container run -it --name  compilador arm32:lenginterfaz zsh
-# para sair usar "exit" en terminal.
+# DOS FORMAS DE CORRER: 
+# 
+# a) Correr y RESIDENTE
+#     $  docker run -ti --name assembler arm32/lenginterfaz:compilador zsh
+#                         para sair usar "exit" en terminal.
+#     $  docker ps -a
+#                       Muestra la lista de procesos en memoria
+# b) Correr y borrar al SALIR
+#     $  docker run --rm -ti --name assembler  arm32/lenginterfaz:compilador zsh
+#                         para sair usar "exit" en terminal, se libera de memoria.
 
 
 # TIPS PARA LAS IMAGENES
 # https://towardsdatascience.com/15-docker-commands-you-should-know-970ea5203421
 #
-# docker container rm my_container — Borrar una o varios contenedores.
-# docker container rm $(docker ps -a -q) — Borra TODO los contenedores que no estan corriendo en procesos.
-# docker container kill $(docker ps -q) — Parar todos los contenedores corriendo en memoria.
+# $ docker container rm my_container — Borrar una o varios contenedores.
+# $ docker container rm $(docker ps -a -q) — Borra TODO los contenedores que no estan corriendo en procesos.
+# $ docker container kill $(docker ps -q) — Parar todos los contenedores corriendo en memoria.
 
 # PURGAR EL SISTEMAS OPERATIVO DE LA PC
-# docker system prune — Borra todos los contenedores, redes sin usar y imagenes trabadas.
+# $ docker system prune — Borra todos los contenedores, redes sin usar y imagenes trabadas.
 
 
 
@@ -86,7 +94,7 @@ RUN sh -c "$(wget -O- https://github.com/deluan/zsh-in-docker/releases/download/
 
 #
 # La bienvenida a docker ARM mensaje
-CMD ["sh -c", "$(wget -O- https://raw.githubusercontent.com/tectijuana/interfaz/master/docker/dockerlogo.sh)"]
+RUN sh -c "$(wget -O- https://raw.githubusercontent.com/tectijuana/interfaz/master/docker/dockerlogo.sh)"
 
 # ------------- es una mejora opcional para VIM (de usarlo Ud.) ----------
 # Soporte para VIM
