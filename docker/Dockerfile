@@ -31,7 +31,7 @@
 #                         para sair usar "exit" en terminal, se libera de memoria, "--rm es REMOVER".
 #
 #     (recordar que se destruye todo lo que esta dentro de esta, por ello debe de subir a GitHub.com con --
-# las herramientas de $ git clome, git add, git commit y git push)
+# las herramientas de $ git clone, git add, git commit y git push)
 
 
 # TIPS PARA LAS IMAGENES
@@ -39,7 +39,7 @@
 #
 # $ docker container rm my_container — Borrar una o varios contenedores.
 # $ docker container rm $(docker ps -a -q) — Borra TODO los contenedores que no estan corriendo en procesos.
-# $ docker container kill $(docker ps -q) — Parar todos los contenedores corriendo en memoria.
+# $ docker container kill $(docker ps -q)  — Parar todos los contenedores corriendo en memoria.
 
 # PURGAR EL SISTEMAS OPERATIVO DE LA PC
 # $ docker system prune — Borra todos los contenedores, redes sin usar y imagenes trabadas.
