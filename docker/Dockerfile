@@ -17,14 +17,21 @@
 #
 # DOS FORMAS DE CORRER: 
 # 
-# a) Correr y RESIDENTE
-#     $  docker run -ti --name assembler arm32/lenginterfaz:compilador zsh
+# a) Correr y RESIDENTE (ideal para SERVIDORES para nosotros en compilación no aplica, se documenta)
+#     $  docker run -d -ti --name assembler arm32/lenginterfaz:compilador zsh
 #                         para sair usar "exit" en terminal.
+#     $   docker attach assembler zsh
 #     $  docker ps -a
 #                       Muestra la lista de procesos en memoria
+#     $  docker rm assembler
+#                       Para apagar y liberarlo "rm es REMOVER".
+#
 # b) Correr y borrar al SALIR
 #     $  docker run --rm -ti --name assembler  arm32/lenginterfaz:compilador zsh
-#                         para sair usar "exit" en terminal, se libera de memoria.
+#                         para sair usar "exit" en terminal, se libera de memoria, "--rm es REMOVER".
+#
+#     (recordar que se destruye todo lo que esta dentro de esta, por ello debe de subir a GitHub.com con --
+# las herramientas de $ git clome, git add, git commit y git push)
 
 
 # TIPS PARA LAS IMAGENES
