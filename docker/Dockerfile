@@ -13,7 +13,11 @@
 
 # Generar la imagen
 # docker build --tag arm32:lenginterfaz .   (si un PUNTO al final, se corre dentro del directorio del Do$
+# Correr la imagen
 #
+# docker container run -it --name  compilador arm32:lenginterfaz zsh
+# para sair usar "exit" en terminal.
+
 
 
 
@@ -58,10 +62,14 @@ RUN apt-get -y  install openssh-client
 # Instala ZSh interactiva a colores, ¡aguustoo! queda predeterminado al final.
 # Uses "git", "ssh-agent" and "history-substring-search" bundled plugins
 # https://github.com/deluan/zsh-in-docker
-RUN sh -c "$(wget -O- https://github.com/deluan/zsh-in-docker/releases/download/v1.1.1/zsh-in-docker.sh)" -- \
-    -p git -p ssh-agent -p 'history-substring-search' \
-    -a 'bindkey "\$terminfo[kcuu1]" history-substring-search-up' \
-    -a 'bindkey "\$terminfo[kcud1]" history-substring-search-down'
+# RUN sh -c "$(wget -O- https://github.com/deluan/zsh-in-docker/releases/download/v1.1.1/zsh-in-docker.sh)" -- \
+#    -p git -p ssh-agent -p 'history-substring-search' \
+#    -a 'bindkey "\$terminfo[kcuu1]" history-substring-search-up' \
+#    -a 'bindkey "\$terminfo[kcud1]" history-substring-search-down'
+# Default powerline10k theme, no plugins installed
+RUN sh -c "$(wget -O- https://github.com/deluan/zsh-in-docker/releases/download/v1.1.1/zsh-in-docker.sh)"
+
+
 
 #
 # Puerto expuesto 80 (no hay servidores en nuestras practicas, por eso se deja por TEMPLETE) 
