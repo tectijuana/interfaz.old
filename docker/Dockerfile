@@ -12,7 +12,7 @@
 #
 
 # Generar la imagen
-# docker build --tag arm32:ensamblador .   (si un PUNTO al final, se corre dentro del directorio del Do$
+# docker build --tag arm32:lenginterfaz .   (si un PUNTO al final, se corre dentro del directorio del Do$
 #
 
 
@@ -56,8 +56,12 @@ RUN apt-get -y  install openssh-client
 
 #
 # Instala ZSh interactiva a colores, ¡aguustoo! queda predeterminado al final.
-CMD ["sh -c", "$(wget -O- https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"]
-CMD ["chsh -s $(which zsh)"]
+# Uses "git", "ssh-agent" and "history-substring-search" bundled plugins
+# https://github.com/deluan/zsh-in-docker
+RUN sh -c "$(wget -O- https://github.com/deluan/zsh-in-docker/releases/download/v1.1.1/zsh-in-docker.sh)" -- \
+    -p git -p ssh-agent -p 'history-substring-search' \
+    -a 'bindkey "\$terminfo[kcuu1]" history-substring-search-up' \
+    -a 'bindkey "\$terminfo[kcud1]" history-substring-search-down'
 
 #
 # Puerto expuesto 80 (no hay servidores en nuestras practicas, por eso se deja por TEMPLETE) 
