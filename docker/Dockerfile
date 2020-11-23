@@ -19,6 +19,15 @@
 # para sair usar "exit" en terminal.
 
 
+# TIPS PARA LAS IMAGENES
+# https://towardsdatascience.com/15-docker-commands-you-should-know-970ea5203421
+#
+# docker container rm my_container — Borrar una o varios contenedores.
+# docker container rm $(docker ps -a -q) — Borra TODO los contenedores que no estan corriendo en procesos.
+# docker container kill $(docker ps -q) — Parar todos los contenedores corriendo en memoria.
+
+# PURGAR EL SISTEMAS OPERATIVO DE LA PC
+# docker system prune — Borra todos los contenedores, redes sin usar y imagenes trabadas.
 
 
 
