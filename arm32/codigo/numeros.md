@@ -1,8 +1,11 @@
+👩‍💻
+# Objetivo: Numeros.s
+
 Cuando buscamos imprimir números en un programa reciente, tuvimos que hacer una conversión entre un número binario almacenado en la computadora y una serie de caracteres ascii que podrían representar un número denario.
 
 Se enfrenta el mismo problema cuando queremos obtener un número del usuario y hacer algo con él en un programa ASM. Lo que sigue es una solución simple a este problema. Se toma una cadena de caracteres del teclado y se convierten en un número que se almacena en r0.
 
-Como puede ver, estoy trabajando para tener algunas funciones básicas que pueda usar para crear programas que puedan realizar operaciones matemáticas, así como manejar E / S.
+Se tienen algunas funciones básicas que pueda usar para crear programas que puedan realizar operaciones matemáticas, así como manejar Entradas/Salidas.
 
 
 # ⌨️ GIT REPO INICIO ⌨️
@@ -30,8 +33,9 @@ numeros.o: numeros.s
 clean:
   rm -vf numeros *.o
 ```
+----
 
-#⌨️  FLUJO DE LA PRACTICA: Editar, compilar com MAKE, usar GDB, etc. ⌨️
+# ⌨️ FLUJO DE LA PRACTICA: Editar, compilar com MAKE, usar GDB, etc. ⌨️
 ## Aqui es el trabajo de dia a dia.
 ```bash
 make
@@ -40,7 +44,7 @@ echo $?
 echo   (hora de purgar para subir el codigo a su GitHub)
 make clean
 ```
-
+----
 # ⌨️ GIT REPO SUBIR TRABAJO AVANCES o TERMINADO ⌨️
 ## NOTA: Se asume que no hay edición en navegador de internet, de lo contrario usar $ git pull (para sincronizar)
 
