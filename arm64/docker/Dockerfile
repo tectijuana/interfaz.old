@@ -45,8 +45,8 @@ FROM arm64v8/alpine
 # git nano vim gdb - debuger y editores junto con github.com
 # wget curl htop mc tree ssh scp - diversas herramientas para el desarrollador
 #
-apk update && apk upgrade
-apk add build-base git nano vim gdb wget curl mc tree openssh-client
+RUN apk update && apk upgrade
+RUN apk add build-base git nano vim gdb wget curl mc tree openssh-client
 
 #
 # Puerto expuesto 80 (no hay servidores en nuestras practicas, por eso se deja por TEMPLETE) 
