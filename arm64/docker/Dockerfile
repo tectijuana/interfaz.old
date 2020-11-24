@@ -22,7 +22,7 @@
 #      $ docker images
 
 # Correr y borrar al SALIR
-#      $  docker run  -it --rm --name compilador arm64v8/alpine:latest sh
+#      $  docker run  -it --rm --name compilador arm64v8/alpine:latest fish
 
 #
 # PURGAR EL SISTEMAS OPERATIVO DE LA PC
@@ -42,11 +42,12 @@ FROM arm64v8/alpine
 # Actualizar la imagen con las herramientas para usar el ensamblador ARM64:
 #
 # build-base - Compiladores GCC soporte para sus trabajos con ensamblador
+# fish - el Bash MEJORADO a colores
 # git nano vim gdb - debuger y editores junto con github.com
 # wget curl htop mc tree ssh scp - diversas herramientas para el desarrollador
 #
 RUN apk update && apk upgrade
-RUN apk add build-base git nano vim gdb wget curl mc tree openssh-client
+RUN apk add build-base fish git nano vim gdb wget curl mc tree openssh-client
 
 #
 # Puerto expuesto 80 (no hay servidores en nuestras practicas, por eso se deja por TEMPLETE) 
@@ -54,18 +55,8 @@ RUN apk add build-base git nano vim gdb wget curl mc tree openssh-client
 
 #
 # La bienvenida a docker ARM mensaje
-RUN sh -c "$(wget -O- https://raw.githubusercontent.com/tectijuana/interfaz/master/docker/dockerlogo.sh)"
+# RUN sh -c "$(wget -O- https://raw.githubusercontent.com/tectijuana/interfaz/master/docker/dockerlogo.sh)"
 
-#
-# Instala ZSh interactiva a colores, ¡aguustoo! queda predeterminado al final.
-# Uses "git", "ssh-agent" and "history-substring-search" bundled plugins
-# https://github.com/deluan/zsh-in-docker
-# RUN sh -c "$(wget -O- https://github.com/deluan/zsh-in-docker/releases/download/v1.1.1/zsh-in-docker.sh)" -- \
-#    -p git -p ssh-agent -p 'history-substring-search' \
-#    -a 'bindkey "\$terminfo[kcuu1]" history-substring-search-up' \
-#    -a 'bindkey "\$terminfo[kcud1]" history-substring-search-down'
-# Default powerline10k theme, no plugins installed
-RUN sh -c "$(wget -O- https://github.com/deluan/zsh-in-docker/releases/download/v1.1.1/zsh-in-docker.sh)"
 
 #
 # TIPS PARA LAS IMAGENES
