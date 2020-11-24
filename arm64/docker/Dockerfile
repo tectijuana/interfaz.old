@@ -47,7 +47,7 @@ FROM arm64v8/alpine
 # wget curl htop mc tree ssh scp - diversas herramientas para el desarrollador
 #
 RUN apk update && apk upgrade
-RUN apk add build-base fish git nano vim gdb wget curl mc tree openssh-client
+RUN apk add build-base git nano vim gdb wget curl mc tree openssh-client fish
 
 #
 # Puerto expuesto 80 (no hay servidores en nuestras practicas, por eso se deja por TEMPLETE) 
@@ -55,7 +55,7 @@ RUN apk add build-base fish git nano vim gdb wget curl mc tree openssh-client
 
 #
 # La bienvenida a docker ARM mensaje
-# RUN sh -c "$(wget -O- https://raw.githubusercontent.com/tectijuana/interfaz/master/docker/dockerlogo.sh)"
+RUN sh -c "$(wget -O- https://raw.githubusercontent.com/tectijuana/interfaz/master/docker/dockerlogo.sh)"
 
 
 #
