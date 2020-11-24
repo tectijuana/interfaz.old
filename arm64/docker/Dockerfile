@@ -52,30 +52,14 @@ MAINTAINER René Solis <rene.solis@tectijuana.edu.mx>
 #
 RUN apk update && apk upgrade
 RUN apk add build-base git nano vim gdb wget curl mc tree openssh-client fish
-
-#---------------------------------------------------------------------
-# Mensajeria al Shell
-#---------------------------------------------------------------------
-#
-# Source working/installation directory
-ENV INSTALL /usr/local/src
-RUN echo '[ ! -z "$TERM" -a -r /etc/motd ] && cat /etc/issue && cat /etc/motd' \
-    >> /etc/bash.bashrc \
-    ; echo "\
-===================================================================\n\
-= SomeApp Docker container                                        =\n\
-===================================================================\n\
-\n\
-Ensamblador: Su materia favorita.\n\
-(c) Rene 2020\n\
-\n\
-Source directory is $INSTALL\n"\
-    > /etc/motd
     
+WORKDIR /home
+RUN cd /home/ \
+    git clone https://github.com/tectijuana/templete.git
 CMD ["fish"] 
 #
 # La bienvenida a docker ARM mensaje
-# RUN sh -c "$(wget -O- https://raw.githubusercontent.com/tectijuana/interfaz/master/docker/dockerlogo.sh)"
+ RUN sh -c "$(wget -O- https://raw.githubusercontent.com/tectijuana/interfaz/master/docker/dockerlogo.sh)"
 
 #
 # Puerto expuesto 80 (no hay servidores en nuestras practicas, por eso se deja por TEMPLETE) 
