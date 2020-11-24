@@ -18,19 +18,19 @@
 
 #
 # Generar la imagen y visualizar los recursos de su PC
-#      $ docker build --tag arm32/lenginterfaz:compilador .   (si un PUNTO al final)
-#      $ docker images
+#      docker build --tag arm32/lenginterfaz:compilador .   (si un PUNTO al final)
+#      docker images
 
 # Correr y borrar al SALIR
-#      $  docker run  -it --rm --name compilador arm64v8/alpine:latest fish
+#      docker run  -it --rm --name compilador arm64v8/alpine:latest fish
 
 #
-# PURGAR EL SISTEMAS OPERATIVO DE LA PC
-#
-# $ docker container rm my_container — Borrar una o varios contenedores.
-# $ docker container rm $(docker ps -a -q) — Borra TODO los contenedores que no estan corriendo en procesos.
-# $ docker container kill $(docker ps -q)  — Parar todos los contenedores corriendo en memoria.
-# $ docker system prune — Borra todos los contenedores, redes sin usar y imagenes trabadas.
+# Borrado de imagenes
+#      docker  rm Mi_Contenedor        — Borrar una o varios contenedores.
+#      docker  rm $(docker ps -a -q)   — Borra TODO los contenedores que no estan corriendo en procesos.
+#      docker  kill $(docker ps -q)    — Parar todos los contenedores corriendo en memoria.
+#      docker system prune             — Borra todos los contenedores, redes sin usar y imagenes trabadas.
+#      docker system prune -a          - ELIMINACION A RESET TOTAL DESDE CER Y RECLAMO DE SU ESPACIO EN DISCO DURO.
 
 # @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 
@@ -50,13 +50,12 @@ RUN apk update && apk upgrade
 RUN apk add build-base git nano vim gdb wget curl mc tree openssh-client fish
 
 #
-# Puerto expuesto 80 (no hay servidores en nuestras practicas, por eso se deja por TEMPLETE) 
-# EXPOSE 80
-
-#
 # La bienvenida a docker ARM mensaje
 RUN sh -c "$(wget -O- https://raw.githubusercontent.com/tectijuana/interfaz/master/docker/dockerlogo.sh)"
 
+#
+# Puerto expuesto 80 (no hay servidores en nuestras practicas, por eso se deja por TEMPLETE) 
+# EXPOSE 80 
 
 #
 # TIPS PARA LAS IMAGENES
