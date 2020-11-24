@@ -127,7 +127,54 @@ _start:
 ```
 ----
 
+# CORRIDA
+```
+irene@iRenes-MacBook-Pro interfaz % wget https://github.com/tectijuana/interfaz/raw/master/arm64/docker/Dockerfile
+--2020-11-23 21:07:13--  https://github.com/tectijuana/interfaz/raw/master/arm64/docker/Dockerfile
+Resolving github.com (github.com)... 140.82.113.3
+Connecting to github.com (github.com)|140.82.113.3|:443... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: https://raw.githubusercontent.com/tectijuana/interfaz/master/arm64/docker/Dockerfile [following]
+--2020-11-23 21:07:14--  https://raw.githubusercontent.com/tectijuana/interfaz/master/arm64/docker/Dockerfile
+Resolving raw.githubusercontent.com (raw.githubusercontent.com)... 151.101.64.133, 151.101.128.133, 151.101.192.133, ...
+Connecting to raw.githubusercontent.com (raw.githubusercontent.com)|151.101.64.133|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 3707 (3.6K) [text/plain]
+Saving to: ‘Dockerfile’
+Dockerfile     100%   3.62K  --.-KB/s    in 0s           
+2020-11-23 21:07:14 (23.1 MB/s) - ‘Dockerfile’ saved [3707/3707]
 
+
+irene@iRenes-MacBook-Pro interfaz % docker build --tag arm64/lenginterfaz:compilador .
+[+] Building 0.0s (2/2) FINISHED                          
+ => [internal] load .dockerignore                    0.0s
+ => => transferring context: 2B                      0.0s
+ => [internal] load build definition from Dockerfil  0.0s
+ => => transferring dockerfile: 3.75kB               0.0s
+failed to solve with frontend dockerfile.v0: failed to create LLB definition: Dockerfile parse error line 48: unknown instruction: APK
+irene@iRenes-MacBook-Pro interfaz % ls
+Dockerfile
+irene@iRenes-MacBook-Pro interfaz % nano Dockerfile 
+irene@iRenes-MacBook-Pro interfaz % docker build --tag arm64/lenginterfaz:compilador .
+[+] Building 412.6s (9/9) FINISHED                        
+ => [internal] load .dockerignore                    0.0s
+ => => transferring context: 2B                      0.0s
+ => [internal] load build definition from Dockerfil  0.0s
+ => => transferring dockerfile: 3.76kB               0.0s
+ => [internal] load metadata for docker.io/arm64v8/  0.0s
+ => [1/5] FROM docker.io/arm64v8/alpine              0.0s
+ => => resolve docker.io/arm64v8/alpine:latest       0.0s
+ => [2/5] RUN apk update && apk upgrade              3.5s
+ => [3/5] RUN apk add build-base git nano vim gdb  375.8s
+ => [4/5] RUN sh -c "$(wget -O- https://raw.githubu  1.0s 
+ => [5/5] RUN sh -c "$(wget -O- https://github.com  29.2s 
+ => exporting to image                               3.2s 
+ => => exporting layers                              3.2s 
+ => => writing image sha256:b83a4fb6cf04e21ca947849  0.0s 
+ => => naming to docker.io/arm64/lenginterfaz:compi  0.0s 
+irene@iRenes-MacBook-Pro interfaz % 
+
+```
 
 
 
