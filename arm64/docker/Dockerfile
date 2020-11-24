@@ -17,13 +17,7 @@
 # Twitter:  @IoTeacher
 
 #
-# $ docker container rm my_container — Borrar una o varios contenedores.
-# $ docker container rm $(docker ps -a -q) — Borra TODO los contenedores que no estan corriendo en procesos.
-# $ docker container kill $(docker ps -q)  — Parar todos los contenedores corriendo en memoria.
-
-# PURGAR EL SISTEMAS OPERATIVO DE LA PC
-# $ docker system prune — Borra todos los contenedores, redes sin usar y imagenes trabadas.
-# Generar la imagen
+# Generar la imagen y visualizar los recursos de su PC
 #      $ docker build --tag arm32/lenginterfaz:compilador .   (si un PUNTO al final)
 #      $ docker images
 
@@ -31,18 +25,28 @@
 #      $  docker run  -it --rm --name compilador arm64v8/alpine:latest sh
 
 #
-# Deposito original (puede cambiar por otras versiones, por ejemplo ARM64) para ensamblador 64 bits
+# PURGAR EL SISTEMAS OPERATIVO DE LA PC
+#
+# $ docker container rm my_container — Borrar una o varios contenedores.
+# $ docker container rm $(docker ps -a -q) — Borra TODO los contenedores que no estan corriendo en procesos.
+# $ docker container kill $(docker ps -q)  — Parar todos los contenedores corriendo en memoria.
+# $ docker system prune — Borra todos los contenedores, redes sin usar y imagenes trabadas.
+
+# @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+#
+# Deposito original para ensamblador 64 bits OFICIAL, basada en ALPINE Linux (ligero)
 FROM arm64v8/alpine
 
 #
-# Actualizar la imagen con las herramientas para usar el ensamblador ARM32:
+# Actualizar la imagen con las herramientas para usar el ensamblador ARM64:
 #
 # build-base - Compiladores GCC soporte para sus trabajos con ensamblador
 # git nano vim gdb - debuger y editores junto con github.com
 # wget curl htop mc tree ssh scp - diversas herramientas para el desarrollador
 #
+apk update && apk upgrade
 apk add build-base git nano vim gdb wget curl mc tree openssh-client
-
 
 #
 # Puerto expuesto 80 (no hay servidores en nuestras practicas, por eso se deja por TEMPLETE) 
