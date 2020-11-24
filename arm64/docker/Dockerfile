@@ -54,10 +54,10 @@ RUN apk update && apk upgrade
 RUN apk add build-base git nano vim gdb wget curl mc tree openssh-client fish
     
 WORKDIR /home
-CMD ["wget https://raw.githubusercontent.com/tectijuana/interfaz/master/docker/dockerlogo.sh"]
-CMD ["chmod +x dockerlogo.sh"]
-CMD ["git clone https://github.com/tectijuana/templete.git"]
-CMD ["dockerlogo"]
+# CMD ["wget https://raw.githubusercontent.com/tectijuana/interfaz/master/docker/dockerlogo.sh"]
+# CMD ["chmod +x dockerlogo.sh"]
+# CMD ["git clone https://github.com/tectijuana/templete.git"]
+# CMD ["dockerlogo"]
 CMD ["fish"] 
 #
 # La bienvenida a docker ARM mensaje
