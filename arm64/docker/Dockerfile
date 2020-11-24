@@ -54,9 +54,9 @@ RUN apk update && apk upgrade
 RUN apk add build-base git nano vim gdb wget curl mc tree openssh-client fish
     
 WORKDIR /home
-RUN wget https://raw.githubusercontent.com/tectijuana/interfaz/master/docker/dockerlogo.sh
-RUN chmod +x dockerlogo.sh 
-RUN git clone https://github.com/tectijuana/templete.git
+CMD ["wget https://raw.githubusercontent.com/tectijuana/interfaz/master/docker/dockerlogo.sh"]
+CMD ["chmod +x dockerlogo.sh"]
+CMD ["git clone https://github.com/tectijuana/templete.git"]
 CMD ["dockerlogo"]
 CMD ["fish"] 
 #
