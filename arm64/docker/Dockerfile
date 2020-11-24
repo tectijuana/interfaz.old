@@ -20,7 +20,7 @@
 #      docker images
 
 # Correr y borrar al SALIR
-#      docker run  -it --rm --name ensamblador arm64/lenginterfaz:compilador fish
+#      docker run  -it --rm --name ensamblador arm64/lenginterfaz:compilador
 
 #
 # Borrado de imagenes
