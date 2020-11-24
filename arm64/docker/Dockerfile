@@ -13,16 +13,14 @@
 # Las líneas precedidas por # se consideran comentarios y se ignoran
 # Localice una propuesta en HUB.DOCKER.COM para usar ARM64v8, adaptandolo ensamblador y el debugger.
 #
-# Por MC. René Solis R.  
-# Twitter:  @IoTeacher
 
 #
 # Generar la imagen y visualizar los recursos de su PC
-#      docker build --tag arm32/lenginterfaz:compilador .   (si un PUNTO al final)
+#      docker build --tag arm64/lenginterfaz:compilador .   (si un PUNTO al final)
 #      docker images
 
 # Correr y borrar al SALIR
-#      docker run  -it --rm --name compilador arm64v8/alpine:latest fish
+#      docker run  -it --rm --name ensamblador arm32/lenginterfaz:compilador fish
 
 #
 # Borrado de imagenes
@@ -32,12 +30,18 @@
 #      docker system prune             — Borra todos los contenedores, redes sin usar y imagenes trabadas.
 #      docker system prune -a          - ELIMINACION A RESET TOTAL DESDE CER Y RECLAMO DE SU ESPACIO EN DISCO DURO.
 
-# @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
-
+#---------------------------------------------------------------------
+# Imagen Oficial
+#---------------------------------------------------------------------
 #
 # Deposito original para ensamblador 64 bits OFICIAL, basada en ALPINE Linux (ligero)
 FROM arm64v8/alpine
+#
+MAINTAINER René Solis <rene.solis@tectijuana.edu.mx>
 
+#---------------------------------------------------------------------
+# Actualizaciones e instalaciones
+#---------------------------------------------------------------------
 #
 # Actualizar la imagen con las herramientas para usar el ensamblador ARM64:
 #
@@ -49,9 +53,29 @@ FROM arm64v8/alpine
 RUN apk update && apk upgrade
 RUN apk add build-base git nano vim gdb wget curl mc tree openssh-client fish
 
+#---------------------------------------------------------------------
+# Mensajeria al Shell
+#---------------------------------------------------------------------
+#
+# Source working/installation directory
+ENV INSTALL /usr/local/src
+RUN echo '[ ! -z "$TERM" -a -r /etc/motd ] && cat /etc/issue && cat /etc/motd' \
+    >> /etc/bash.bashrc \
+    ; echo "\
+===================================================================\n\
+= SomeApp Docker container                                        =\n\
+===================================================================\n\
+\n\
+Ensamblador: Su materia favorita.\n\
+(c) Rene 2020\n\
+\n\
+Source directory is $INSTALL\n"\
+    > /etc/motd
+    
+CMD ["fish"] 
 #
 # La bienvenida a docker ARM mensaje
-RUN sh -c "$(wget -O- https://raw.githubusercontent.com/tectijuana/interfaz/master/docker/dockerlogo.sh)"
+# RUN sh -c "$(wget -O- https://raw.githubusercontent.com/tectijuana/interfaz/master/docker/dockerlogo.sh)"
 
 #
 # Puerto expuesto 80 (no hay servidores en nuestras practicas, por eso se deja por TEMPLETE) 
