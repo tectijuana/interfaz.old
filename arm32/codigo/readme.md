@@ -67,5 +67,15 @@ Para comprobar que fue desensamblado correctamente vamos a abrir el archivo Prob
 nano Problema1.s
 ```
 ---
+
+# OTRA TÉCNICA PARA DESENSAMBLAR
+Corremos object dump con la opcion **-d** que significa dissasemblee en el ejecutable deseado, y usamos una redireccion de salida de linux '>' para escribir el código ensamblador resultante en el archivo comparar.s
+_NOTA: Previamente compilado con AS,GCC_
+
+```bash
+$ objdump -d comparar > comparar.s
+```
+Se muestra que ahora existe el archivo comparar.s luego de ejecutar el comando.
+
 Bibliografía: 
 https://www.cl.cam.ac.uk/projects/raspberrypi/tutorials/os/ok01.html
