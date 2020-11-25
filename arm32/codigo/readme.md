@@ -41,6 +41,31 @@ clean:
      rm prueba prueba.o
 ```
 
+# DESENSAMBLAR DESDE C++ a ASM
+El código a desensamblar será el siguiente:
+```c
+#include <iostream>
+
+using namespace std;
+
+int main() {
+  for (int x = 9; x <= 43; x++) {
+    cout << x << endl;
+  }
+}
+```
+_Una vez que tenemos el código vamos a compilarlo y desensamblarlo con el siguiente comando:_
+
+```bash
+g++ -S -o Problema1.s Problema.cpp -fno-asynchronous-unwind-tables
+```
+
+El parámetro **-S**** nos convierte el código **cpp** a ensamblador y los parámetros **-fno-asynchronous-unwind-tables** nos quita directivas que se crean para los lenguajes que utilizan excepciones.
+
+Para comprobar que fue desensamblado correctamente vamos a abrir el archivo Problema1.s con nano, aquí el comando:
+```bash
+nano Problema1.s
+```
 ---
 Bibliografía: 
 https://www.cl.cam.ac.uk/projects/raspberrypi/tutorials/os/ok01.html
