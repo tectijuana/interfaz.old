@@ -83,10 +83,6 @@ RUN apt-get -y  install openssh-client
 # Instala ZSh interactiva a colores, ¡aguustoo! queda predeterminado al final.
 # Uses "git", "ssh-agent" and "history-substring-search" bundled plugins
 # https://github.com/deluan/zsh-in-docker
-# RUN sh -c "$(wget -O- https://github.com/deluan/zsh-in-docker/releases/download/v1.1.1/zsh-in-docker.sh)" -- \
-#    -p git -p ssh-agent -p 'history-substring-search' \
-#    -a 'bindkey "\$terminfo[kcuu1]" history-substring-search-up' \
-#    -a 'bindkey "\$terminfo[kcud1]" history-substring-search-down'
 # Default powerline10k theme, no plugins installed
 RUN sh -c "$(wget -O- https://github.com/deluan/zsh-in-docker/releases/download/v1.1.1/zsh-in-docker.sh)"
 
@@ -97,6 +93,13 @@ RUN sh -c "$(wget -O- https://github.com/deluan/zsh-in-docker/releases/download/
 #
 # La bienvenida a docker ARM mensaje
 RUN sh -c "$(wget -O- https://raw.githubusercontent.com/tectijuana/interfaz/master/docker/dockerlogo.sh)"
+
+
+#
+# 📢  Para no teclear el Git Global 📢
+RUN git config --global user.name "PONER SU NOMBRE"
+RUN git config --global user.email PONERSUCORREO@tectijuana.edu.mx
+RUN git config --global core.editor nano
 
 #
 # REFERENCIAS
