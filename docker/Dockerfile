@@ -25,9 +25,15 @@
 # $ docker build --tag arm32/lenginterfaz:compilador .   (si un PUNTO al final)
 # $ docker images
 #
-# DOS FORMAS DE CORRER (la 2dqa es la recomendable mas compacta): 
+# DOS FORMAS DE CORRER, la 1ra es la recomendable. 
 # 
-# a) Correr y RESIDENTE (ideal para SERVIDORES para nosotros en compilación no aplica, se documenta)
+# a) Correr y se libera al salir de la sesión.
+#     $  docker run --rm -ti --name assembler  arm32/lenginterfaz:compilador zsh
+#                         para sair usar "exit" en terminal, se libera de memoria, "--rm es REMOVER".
+#                         (recordar que se destruye todo lo que esta dentro de esta, por ello debe de subir a GitHub.com con --
+#                         las herramientas de $ git clone, git add, git commit y git push)
+#
+# b) Correr y RESIDENTE (ideal para SERVIDORES para nosotros en compilación no aplica, se documenta para su conocimiento)
 #     $  docker run -d -ti --name assembler arm32/lenginterfaz:compilador zsh
 #                         para sair usar "exit" en terminal.
 #     $  docker attach assembler zsh
@@ -35,13 +41,6 @@
 #                       Muestra la lista de procesos en memoria
 #     $  docker rm assembler
 #                       Para apagar y liberarlo "rm es REMOVER".
-#
-# b) Correr y borrar al SALIR
-#     $  docker run --rm -ti --name assembler  arm32/lenginterfaz:compilador zsh
-#                         para sair usar "exit" en terminal, se libera de memoria, "--rm es REMOVER".
-#
-#     (recordar que se destruye todo lo que esta dentro de esta, por ello debe de subir a GitHub.com con --
-# las herramientas de $ git clone, git add, git commit y git push)
 
 #
 # TIPS PARA LAS IMAGENES
@@ -50,9 +49,9 @@
 # $ docker container rm $(docker ps -a -q) — Borra TODO los contenedores que no estan corriendo en procesos.
 # $ docker container kill $(docker ps -q)  — Parar todos los contenedores corriendo en memoria.
 
-# PURGAR EL SISTEMAS OPERATIVO DE LA PC
-# $ docker system prune — Borra todos los contenedores, redes sin usar y imagenes trabadas.
-
+# PURGAR DOCKER EL SISTEMAS OPERATIVO DE LA PC
+# $ docker system prune  (Borra todos los contenedores, redes sin usar y imagenes trabadas)
+# $ docker system prune -a (un RESETEO desde CERO todo borra y deja como 1ra vez que se instalo)
 
 # Deposito original (puede cambiar por otras versiones, por ejemplo ARM64) para ensamblador 64 bits
 FROM navikey/raspbian-buster
