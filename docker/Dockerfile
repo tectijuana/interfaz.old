@@ -67,17 +67,15 @@ LABEL maintainer="rene.solis@tectijuana.edu.mx"
 # git nano vim gdb - debuger y editores junto con github.com
 # wget curl htop mc tree ssh scp - diversas herramientas para el desarrollador
 #
+RUN echo 'Actualizando cargando Tool Chain de asssembly, mas otros comandos  de soporte ...💨'
 RUN apt-get update && \
     apt-get upgrade -y && \
     apt-get install -y build-essential git nano vim gdb wget curl mc tree
-
+RUN echo 'Soporte de CMAKE ...💨'
 RUN apt-get -y install cmake protobuf-compiler
-
+RUN echo 'SSH para conectarnos Pi4.duckdns.org ... para el GDB ..💨'
 RUN apt-get -y  install openssh-client
-
-#
-# Para mensajeria
-# CMD ["/usr/games/cowsay", "Dockerfiles are cool!"]
+WORKDIR /home
 
 #
 # Instala ZSh interactiva a colores, ¡aguustoo! queda predeterminado al final.
@@ -97,6 +95,7 @@ RUN sh -c "$(wget -O- https://raw.githubusercontent.com/tectijuana/interfaz/mast
 
 #
 # 📢  Para no teclear el Git Global 📢
+RUN echo 'Personalizando el Git Account..💨'
 RUN git config --global user.name "PONER SU NOMBRE"
 RUN git config --global user.email PONERSUCORREO@tectijuana.edu.mx
 RUN git config --global core.editor nano
