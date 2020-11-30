@@ -101,5 +101,12 @@ RUN git config --global user.email PONERSUCORREO@tectijuana.edu.mx
 RUN git config --global core.editor nano
 
 #
+# 👀 Observaciones del Git 👀
+# git add --all
+# git commit -am "<commit message>"
+# git status (para ver en COLOR VERDE que es lo que va a subir) 
+# git push --force origin master
+
+#
 # REFERENCIAS
 # https://towardsdatascience.com/15-docker-commands-you-should-know-970ea5203421
