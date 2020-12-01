@@ -52,8 +52,16 @@ MAINTAINER René Solis <rene.solis@tectijuana.edu.mx>
 #
 RUN apk update && apk upgrade
 RUN apk add build-base git nano vim gdb wget curl mc tree openssh-client fish
-    
+
 WORKDIR /home
+
+RUN echo 'Personalizando el Git Account..💨'
+RUN git config --global user.name "PONER SU NOMBRE"
+RUN git config --global user.email PONERSUCORREO@tectijuana.edu.mx
+RUN git config --global core.editor nano
+
+
+
 # CMD ["wget https://raw.githubusercontent.com/tectijuana/interfaz/master/docker/dockerlogo.sh"]
 # CMD ["chmod +x dockerlogo.sh"]
 # CMD ["git clone https://github.com/tectijuana/templete.git"]
