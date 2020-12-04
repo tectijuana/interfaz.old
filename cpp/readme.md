@@ -51,7 +51,7 @@ gpio readallCopy
 
 Una vez instalada la biblioteca, puede escribir un programa utilizando las mismas palabras clave que Arduino, además de la función main () y las funciones básicas incluidas.
 
-```c
+```cpp
 //
 // blinky.cpp
 //
@@ -101,7 +101,7 @@ PARA SALIR CANCELAR CON TECLA "CONTROL y C"
 
 ## SALIDA ESPERADA
 
-``bash
+```bash
 root@raspberrypi:~#
 root@raspberrypi:~# ls
 led  led.c
