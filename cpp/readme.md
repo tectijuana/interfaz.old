@@ -11,24 +11,25 @@ En una terminal, verifique que la biblioteca esté instalada escribiendo:
 
 ```bash
 $ gpio -v
-$ gpio readallCopy
+$ gpio readall
 ```
-Luego copie el repositorio GIT:
+OPCIONALMENTE de no contar con el soporte de debemos copiar repositorio GIT:
 
 ```bash
 cd
 git clone https://github.com/WiringPi/WiringPi.git
 ```
 
-Y compila la biblioteca:
+OPCIONALMENTE compila la biblioteca:
 ```bash
 cd ~/wiringPi
 ./build
 ```
 
+------
 
 ## WiringPi.h Wiring
-La biblioteca WiringPi usa la numeración GPIO:
+La biblioteca WiringPi usa la numeración GPIO (son las siglas de GPIO (General-purpose input/output):
 
 ![](https://www.aranacorp.com/wp-content/uploads/raspberrypi-gpio-wiringpi-pinout.png)
 Puede encontrar el pinout escribiendo:
@@ -116,3 +117,10 @@ Blink the LED
 Blink the LED
 ```
 PARA SALIR CANCELAR CON TECLA "CONTROL y C", es una **maquina de estado infinito**
+
+
+# BIBLIOGRAFIA:
+https://es.wikipedia.org/wiki/Wiring
+https://es.wikipedia.org/wiki/GPIO
+https://github.com/WiringPi/WiringPi
+https://www.aranacorp.com/es/programe-su-raspberry-pi-con-c-c/
