@@ -13,6 +13,7 @@ En una terminal, verifique que la biblioteca esté instalada escribiendo:
 $ gpio -v
 $ gpio readall
 ```
+
 OPCIONALMENTE de no contar con el soporte de debemos copiar repositorio GIT:
 
 ```bash
@@ -21,6 +22,7 @@ git clone https://github.com/WiringPi/WiringPi.git
 ```
 
 OPCIONALMENTE compila la biblioteca:
+
 ```bash
 cd ~/wiringPi
 ./build
@@ -32,6 +34,7 @@ cd ~/wiringPi
 La biblioteca WiringPi usa la numeración GPIO (son las siglas de GPIO (General-purpose input/output):
 
 ![](https://www.aranacorp.com/wp-content/uploads/raspberrypi-gpio-wiringpi-pinout.png)
+
 Puede encontrar el pinout escribiendo:
 
 ```bash
@@ -88,7 +91,8 @@ int main(void)//(int argc, char **argv)
 	return 0;
 }
 ```
-# COMPILACION
+
+## COMPILACION
 ```bash
 g++ -Wall -o blinky blinky.cpp -lwiringPi
 ./blinky
@@ -96,6 +100,7 @@ PARA SALIR CANCELAR CON TECLA "CONTROL y C"
 ```
 
 ## SALIDA ESPERADA
+
 ``bash
 root@raspberrypi:~#
 root@raspberrypi:~# ls
