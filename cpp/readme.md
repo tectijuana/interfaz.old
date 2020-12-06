@@ -123,10 +123,11 @@ Blink the LED
 ```
 
 ![](https://media1.tenor.com/images/621f6fd4aed7c89736712740cb65d3cb/tenor.gif?itemid=9599407)
-PARA SALIR CANCELAR CON TECLA "CONTROL y C", es una **maquina de estado infinito**
+
+## NOTA: PARA SALIR CANCELAR CON TECLA "CONTROL y C", es una **maquina de estado infinito**
 
 
-# BIBLIOGRAFIA:
+## BIBLIOGRAFIA:
 https://es.wikipedia.org/wiki/Wiring
 https://es.wikipedia.org/wiki/GPIO
 https://github.com/WiringPi/WiringPi
