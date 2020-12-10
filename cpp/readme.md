@@ -64,33 +64,54 @@ int ledPin = 29;  //Corresponde a pin 40
 
 void setup(){
 
-	pinMode(ledPin,OUTPUT);
-	cout<<"Hello World: este fue el demo del Blinky en C++" << endl;
+        pinMode(ledPin,OUTPUT);
+        cout << "                         " << endl ;    
+        cout << "            .──Λ──.     " << endl ; 
+        cout <<"          ,'  ╱◯╲  `.   " << endl ; 
+        cout <<"         ;   ╱◯◯◯╲   :  " << endl ; 
+        cout <<"         ;  ╱◯◯◯◯◯╲  :  " << endl ; 
+        cout <<"        ;  ╱◯◯◯Λ◯◯◯╲  : " << endl ; 
+        cout <<"        │ ╱◯◯◯╱ ╲◯◯◯╲ │ " << endl ; 
+        cout <<"        │▕◯◯◯▕   ◙◯◯◯▏│ " << endl ; 
+        cout <<"        : ╲◯◯◯╲ ╱◯◯◯╱ ; " << endl ; 
+        cout <<"         : ╲◯◯◯V◯◯◯╱ ;  " << endl ; 
+        cout <<"         :  ╲◯◯◯◯◯╱  ;  " << endl ; 
+        cout <<"          ╲  ╲◯◯◯╱  ╱   " << endl ; 
+        cout <<"           `. ╲◯╱ ,'    " << endl ; 
+        cout <<"             `─V─'      " << endl ; 
+        cout <<"       ┌───────────────┐" << endl ; 
+        cout <<"       │ Blink el LED  │" << endl ; 
+        cout <<"       └───────────────┘" << endl ; 
+         cout <<"                         " << endl ;
+        cout<<"Hello World: este fue el demo del Blinky en C++" << endl;
+
 }
 
 void loop(){
-	digitalWrite(ledPin,HIGH);
-	delay(100);
-	digitalWrite(ledPin,LOW);
-	delay(100);
+        digitalWrite(ledPin,HIGH);
+        delay(100);
+        digitalWrite(ledPin,LOW);
+        delay(100);
 
-	cout<<"Blink el LED: Tarda 9 segundos en parpadear en el http://twitch.com/profesolis" << endl;
-	exit(0);
+        cout<<"Blink el LED: Tarda 9 segundos en parpadear en el http://twitch.com/profesolis" << endl;
+        exit(0);
 }
 
 int main(void)//(int argc, char **argv)
 {
-	if(wiringPiSetup()<0){
-		cout<<"configuracion de la libreria WIRING fallo, o le falto correrlo en $sudo"<<endl;
-		return 1;
-	}
-	setup();
-	while(1){
-		loop();
-	}
-	
-	return 0;
+        if(wiringPiSetup()<0){
+                cout<<"configuracion de la libreria WIRING fallo, o le falto correrlo en $sudo"<<endl;
+                return 1;
+        }
+        setup();
+        while(1){
+                loop();
+        }
+        
+        return 0;
 }
+
+
 ```
 
 ## COMPILACION
@@ -112,13 +133,33 @@ Blink the LED
 
 Blink the LED
 ```
-
-![](https://media1.tenor.com/images/621f6fd4aed7c89736712740cb65d3cb/tenor.gif?itemid=9599407)
-
-## NOTA: PARA SALIR CANCELAR CON TECLA "CONTROL y C", es una **maquina de estado infinito**
-
 ----
-
+# RESULTADO DEL DEMO A CONVERTIR A ENSAMBLADOR (solo verificar todo conectado)
+```bash
+led@raspberrypi:~/t $ g++ -Wall -o blinky blinky.cpp -lwiringPi
+led@raspberrypi:~/t $ sudo ./blinky 
+[sudo] password for led: 
+                         
+            .──Λ──.     
+          ,'  ╱◯╲  `.   
+         ;   ╱◯◯◯╲   :  
+         ;  ╱◯◯◯◯◯╲  :  
+        ;  ╱◯◯◯Λ◯◯◯╲  : 
+        │ ╱◯◯◯╱ ╲◯◯◯╲ │ 
+        │▕◯◯◯▕   ◙◯◯◯▏│ 
+        : ╲◯◯◯╲ ╱◯◯◯╱ ; 
+         : ╲◯◯◯V◯◯◯╱ ;  
+         :  ╲◯◯◯◯◯╱  ;  
+          ╲  ╲◯◯◯╱  ╱   
+           `. ╲◯╱ ,'    
+             `─V─'      
+       ┌───────────────┐
+       │ Blink el LED  │
+       └───────────────┘
+                         
+Hello World: este fue el demo del Blinky en C++
+Blink el LED: Tarda 9 segundos en parpadear en el http://twitch.com/profesolis
+```
 
 
 Gracias a los jovenes que participaron en el trabajo, lamentablemten el usuario LED tiene privilegios de Sudo "que es la unica forma" de hacer activar un servicio de hardware. Pero hemos tenido un problema con el trolling de ese usuario "apagando o resetenado" la practica que inicialmente 9 diciembre se entregaba y se recorrio para el viernes en apoyo a el grupo.
