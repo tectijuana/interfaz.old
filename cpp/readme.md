@@ -136,7 +136,7 @@ Pero se demuestra que el apoyo no ha sido reciproco, de abir el usuario y de cui
 
 Gracias por si tiempo y fue una buena practica.
 
-__Este miercoles platique en el MEET en horas de clase y lo restaure, estaba uno de soporte en el site y la prendio nuevamente. Pero a las 3:40pm otra vez la apagaron. Bueno no puedo contra la corriente la confianza de un SUDO la pense muchas veces de no darla por la estabilidad de la practica y la fragilidad si uno de Uds fuera apagarla._
+_Este miercoles platique en el MEET en horas de clase y lo restaure, estaba uno de soporte en el site y la prendio nuevamente. Pero a las 3:40pm otra vez la apagaron. Bueno no puedo contra la corriente la confianza de un SUDO la pense muchas veces de no darla por la estabilidad de la practica y la fragilidad si uno de Uds fuera apagarla._
 
 
 ----
