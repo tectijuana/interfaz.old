@@ -134,3 +134,6 @@ _start:
 ```
 
 Como puede ver, esta es otra macro "segura", como el ejemplo de gcd. Calcula el módulo de dos números utilizando solo los registros que se le pasaron. 
+
+
+# NOTA: Debe de compilarse con "ld"
