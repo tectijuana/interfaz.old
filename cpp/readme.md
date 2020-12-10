@@ -75,6 +75,7 @@ void loop(){
 	delay(100);
 
 	cout<<"Blink the LED" << endl;
+	exit(0);
 }
 
 int main(void)//(int argc, char **argv)
@@ -108,17 +109,7 @@ led  led.c
 root@raspberrypi:~# ./led
 Hello World
 Blink the LED
-Blink the LED
-Blink the LED
-Blink the LED
-Blink the LED
-Blink the LED
-Blink the LED
-Blink the LED
-Blink the LED
-Blink the LED
-Blink the LED
-Blink the LED
+
 Blink the LED
 ```
 
