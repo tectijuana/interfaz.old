@@ -118,7 +118,8 @@ led@raspberrypi:~/t $ sudo ./blinky
 Hello World: este fue el demo del Blinky en C++
 Blink el LED: Tarda 9 segundos en parpadear en el http://twitch.com/profesolis
 ```
-
+----
+![](images/RPI_LED.gif)
 
 ----
 ## BIBLIOGRAFIA Y ANEXOS:
