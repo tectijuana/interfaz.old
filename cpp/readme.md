@@ -120,15 +120,6 @@ Blink el LED: Tarda 9 segundos en parpadear en el http://twitch.com/profesolis
 ```
 
 
-Gracias a los jovenes que participaron en el trabajo, lamentablemten el usuario LED tiene privilegios de Sudo "que es la unica forma" de hacer activar un servicio de hardware. Pero hemos tenido un problema con el trolling de ese usuario "apagando o resetenado" la practica que inicialmente 9 diciembre se entregaba y se recorrio para el viernes en apoyo a el grupo.
-
-Pero se demuestra que el apoyo no ha sido reciproco, de abir el usuario y de cuidar de Uds dar el mantenimiento necesario para que la actividad esta estable, fucional para todos.
-
-Gracias por si tiempo y fue una buena practica.
-
-_Este miercoles platique en el MEET en horas de clase y lo restaure, estaba uno de soporte en el site y la prendio nuevamente. Pero a las 3:40pm otra vez la apagaron. Bueno no puedo contra la corriente la confianza de un SUDO la pense muchas veces de no darla por la estabilidad de la practica y la fragilidad si uno de Uds fuera apagarla._
-
-
 ----
 ## BIBLIOGRAFIA Y ANEXOS:
 https://es.wikipedia.org/wiki/Wiring
