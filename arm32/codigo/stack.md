@@ -59,7 +59,7 @@ int main() {
 }
 ```
 -----
-# VERSION ASM
+# VERSION ASM usando el STACK (pila)
 
 ```asm
 //@@ Instituto Tecnologico de Tijuana
