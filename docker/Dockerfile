@@ -12,10 +12,8 @@
 
 # Cada instrucción en este archivo genera una nueva capa que se envía a su caché de imágenes local
 #
-# Las líneas precedidas por # se consideran comentarios y se ignoran
-#
-# Localice una propuesta en HUB.DOCKER.COM para usar ARM32, adaptandolo Ensamblador y el debugger.
-#
+# Las líneas precedidas por # se consideran comentarios y se ignoran. Localice una propuesta en HUB.DOCKER.COM para usar ARM32, 
+# adaptandolo Ensamblador y el debugger. Para esta practica seleccionamos uno no-oficial. En futuras practicas usar "Alpine Linux"
 #
 # Por MC. René Solis R.  
 # Twitter:  @IoTeacher
@@ -32,6 +30,7 @@
 #                         para sair usar "exit" en terminal, se libera de memoria, "--rm es REMOVER".
 #                         (recordar que se destruye todo lo que esta dentro de esta, por ello debe de subir a GitHub.com con --
 #                         las herramientas de $ git clone, git add, git commit y git push)
+#  
 #
 # b) Correr y RESIDENTE (ideal para SERVIDORES para nosotros en compilación no aplica, se documenta para su conocimiento)
 #     $  docker run -d -ti --name assembler arm32/lenginterfaz:compilador zsh
@@ -84,13 +83,8 @@ WORKDIR /home
 RUN sh -c "$(wget -O- https://github.com/deluan/zsh-in-docker/releases/download/v1.1.1/zsh-in-docker.sh)"
 
 #
-# Puerto expuesto 80 (no hay servidores en nuestras practicas, por eso se deja por TEMPLETE) 
-# EXPOSE 80
-
-#
 # La bienvenida a docker ARM mensaje
 RUN sh -c "$(wget -O- https://raw.githubusercontent.com/tectijuana/interfaz/master/docker/dockerlogo.sh)"
-
 
 #
 # 📢  Para no teclear el Git Global 📢
@@ -98,6 +92,17 @@ RUN echo 'Personalizando el Git Account..💨'
 RUN git config --global user.name "PONER SU NOMBRE"
 RUN git config --global user.email PONERSUCORREO@tectijuana.edu.mx
 RUN git config --global core.editor nano
+
+#
+# Puerto expuesto 80 (no hay servidores en nuestras practicas, por eso se deja por TEMPLETE) 
+# EXPOSE 80
+
+#
+# -- Cuando accede el usuario aqui preparar su entrada 
+# ADD copia contenido descargado en local hacia el DOCKER (debe estar el archivo fisico)
+#ADD setup.sh /root/setup.sh 
+#ENTRYPOINT ["/home/setup.sh"]
+#CMD []
 
 #
 # 👀 Observaciones del Git 👀
