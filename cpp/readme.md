@@ -113,26 +113,6 @@ int main(void)//(int argc, char **argv)
 
 
 ```
-
-## COMPILACION
-```bash
-g++ -Wall -o blinky blinky.cpp -lwiringPi
-./blinky
-PARA SALIR CANCELAR CON TECLA "CONTROL y C"
-```
-
-## SALIDA ESPERADA
-
-```bash
-root@raspberrypi:~#
-root@raspberrypi:~# ls
-led  led.c
-root@raspberrypi:~# ./led
-Hello World
-Blink the LED
-
-Blink the LED
-```
 ----
 # RESULTADO DEL DEMO A CONVERTIR A ENSAMBLADOR (solo verificar todo conectado)
 ```bash
