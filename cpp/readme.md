@@ -3,30 +3,8 @@
 **Wiring** es una plataforma de prototipado electrónico de fuente abierta compuesta de un lenguaje de programación, un entorno de desarrollo integrado (IDE), y un microcontrolador. Ha sido desarrollado desde 2003 por Hernando Barragán. https://es.wikipedia.org/wiki/Wiring
 
 
-# Programe su Raspberry Pi como un Arduino
-## Instalar WiringPi
-Para controlar la E / S de la Raspberry Pi como las del microcontrolador Arduino, puede usar el cableado de la biblioteca wiringPi.h.
+# PRACTICA PI-LED 
 
-En una terminal, verifique que la biblioteca esté instalada escribiendo:
-
-```bash
-$ gpio -v
-$ gpio readall
-```
-
-OPCIONALMENTE de no contar con el soporte de debemos copiar repositorio GIT:
-
-```bash
-cd
-git clone https://github.com/WiringPi/WiringPi.git
-```
-
-OPCIONALMENTE compila la biblioteca:
-
-```bash
-cd ~/wiringPi
-./build
-```
 
 ------
 
@@ -152,8 +130,29 @@ _Este miercoles platique en el MEET en horas de clase y lo restaure, estaba uno 
 
 
 ----
-## BIBLIOGRAFIA:
+## BIBLIOGRAFIA Y ANEXOS:
 https://es.wikipedia.org/wiki/Wiring
 https://es.wikipedia.org/wiki/GPIO
 https://github.com/WiringPi/WiringPi
 https://www.aranacorp.com/es/programe-su-raspberry-pi-con-c-c/
+
+# Instalar WiringPi 
+Para controlar la E / S de la Raspberry Pi como las del microcontrolador Arduino, puede usar el cableado de la biblioteca wiringPi.h.
+En una terminal, verifique que la biblioteca esté instalada escribiendo:
+
+```bash
+$ gpio -v
+$ gpio readall
+```
+de no contar con el soporte de debemos copiar repositorio GIT:
+
+```bash
+cd
+git clone https://github.com/WiringPi/WiringPi.git
+```
+compila la biblioteca:
+
+```bash
+cd ~/wiringPi
+./build
+```
