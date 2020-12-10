@@ -65,7 +65,7 @@ int ledPin = 29;  //Corresponde a pin 40
 void setup(){
 
 	pinMode(ledPin,OUTPUT);
-	cout<<"Hello World" << endl;
+	cout<<"Hello World: este fue el demo del Blinky en C++" << endl;
 }
 
 void loop(){
@@ -74,14 +74,14 @@ void loop(){
 	digitalWrite(ledPin,LOW);
 	delay(100);
 
-	cout<<"Blink the LED" << endl;
+	cout<<"Blink el LED: Tarda 9 segundos en parpadear en el http://twitch.com/profesolis" << endl;
 	exit(0);
 }
 
 int main(void)//(int argc, char **argv)
 {
 	if(wiringPiSetup()<0){
-		cout<<"setup wiring pi failed"<<endl;
+		cout<<"configuracion de la libreria WIRING fallo, o le falto correrlo en $sudo"<<endl;
 		return 1;
 	}
 	setup();
