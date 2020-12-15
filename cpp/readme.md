@@ -190,3 +190,67 @@ compila la biblioteca:
 cd ~/wiringPi
 ./build
 ```
+
+# ANEXOS
+```asm
+@ blinky.s
+@ Por Raul Alvarez, ISC/2020B
+
+	 .data
+	 .balign 4	
+Intro: 	 .asciz	"Prueba de Blinky en Raspberry Pi con wiringPi\n"
+ErrMsg:	 .asciz	"Hubo un error... Abortando...\n"
+Parpadeo:  .asciz	"Parpadeo de LED - Ctrl + C para terminar programa\n"
+pin:	 .int	2_	@ Corresponde al pin 40
+delayMs: .int	100	@ Milisegundos de espera
+OUTPUT	 =	1
+
+	.text
+	.global main
+	.extern printf
+	.extern wiringPiSetup
+	.extern delay
+	.extern digitalWrite
+	.extern pinMode
+	
+main:   push 	{ip, lr}
+
+	ldr	r0, =Intro	@ Da mensaje inicial
+    bl 	printf
+
+	bl	wiringPiSetup	@ Comprueba si no hay error
+	mov	r1,#-1
+	cmp	r0, r1
+	bne	init
+	ldr	r0, =ErrMsg
+	bl	printf
+
+init:
+	ldr	r0, =pin	@ Prepara el puerto de salida
+	ldr	r0, [r0]
+	mov	r1, #OUTPUT
+	bl	pinMode
+	
+LoopInf:
+	ldr	r0, =pin	@ Enciende el led
+	ldr	r0, [r0]
+	mov	r1, #1
+	bl 	digitalWrite
+	
+	ldr	r0, =Parpadeo	@ Depliega el mesnaje de parpadeo y como detenerlo
+    bl 	printf
+    
+	ldr	r0, =delayMs	@ Pausa de 100 ms
+	ldr	r0, [r0]
+	bl	delay
+
+	ldr	r0, =pin	@ Apaga el led
+	ldr	r0, [r0]
+	mov	r1, #0
+	bl 	digitalWrite
+
+	ldr	r0, =delayMs	@ Pausa de 100 ms
+	ldr	r0, [r0]
+	bl	delay
+
+```
