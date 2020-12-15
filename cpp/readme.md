@@ -254,3 +254,45 @@ LoopInf:
 	bl	delay
 
 ```
+
+# Makefile
+```
+# Materia: Lenguajez de interfaz.
+# Programador: Alvarez Espinoza Raúl
+# Archivo Makefile: Código que compila los programa de ensamblador incluye limpieza para subir a GitHub.
+# Fecha: 7/12/2020
+
+# Makefile
+all: blinky
+
+# Compilación del programa en CPP
+blinkyCPP: # enlazarlo para correrlo
+	@echo "  ____ ____  ____  "
+	@echo " / ___|  _ \|  _ \ "
+	@echo "| |   | |_) | |_) |"
+	@echo "| |___|  __/|  __/ "
+	@echo " \____|_|   |_|    "
+	@echo "Linking file & executable..."
+	g++ -Wall -o  $@$+ $@$+.cpp -lwiringPi
+
+# Compilación del programa en ensamblador
+blinky: blinky.o  # enlazarlo para correrlo
+	@echo "                                       _      _        "
+	@echo "     /\                               | |    | |       " 
+	@echo "    /  \    ___  ___   ___  _ __ ___  | |__  | | _   _ "
+	@echo "   / /\ \  / __|/ __| / _ \| '_ ` _ \ | '_ \ | || | | |"
+	@echo "  / ____ \ \__ \\__ \|  __/| | | | | || |_) || || |_| |"
+	@echo " /_/    \_\|___/|___/ \___||_| |_| |_||_.__/ |_| \__, |"
+	@echo "                                                  __/ |"
+	@echo "                                                 |___/ "
+	@echo "Linking file & executable..."
+	gcc -o blinky blinky.o -lwiringPi
+
+blinky.o: blinky.s # compilarlo nos genera el .o
+	@echo "Compiling file ..."
+	as -o $@ $<
+
+clean:   # limpiar todo que no se ocupa como lo .o basura
+	@echo "Removing trash to upload to GitHub Classroom, teacher evaluate my progress ..."
+	rm -vf first *.o
+```
