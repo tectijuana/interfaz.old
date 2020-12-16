@@ -21,7 +21,7 @@
 - Escogemos la opción de “Create a new key pair
 - La nombramos y descargamos
 - Hacemos click en “Launch Instances”
-
+```
 Una vez creada la Instancia ubicamos la IP Pública 3.83.235.164 (ver lado derecho tabulador se puede expandir), con esa ip podemos entrar desde Termius, ubicando los datos en el formulario
 en la pantalla principal de termuis.com (ver beca GitHub Pro con el docente)
 a) buscamos la opción “New Host”
@@ -29,3 +29,4 @@ b) en el formulario que se despliega ubicamos donde dice “Label” y ponemos l
 c) más abajo en el espacio destinado al “Username” ponemos el nombre de nuestra instancia, en este caso “Ubuntu”
 d) En el apartado de Password hacemos click al costado donde dice “keys” y buscamos la llave creada en el paso 7
 e) una vez hecho aparecerá la máquina virtual en la pantalla principal y podremos ingresar a ella con los datos antes brindados
+```
