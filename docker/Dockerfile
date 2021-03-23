@@ -27,12 +27,12 @@
 # 
 # a) Correr y se libera al salir de la sesión.
 #     $  docker run --rm -ti --name assembler  arm32/lenginterfaz:compilador zsh
-#                         para sair usar "exit" en terminal, se libera de memoria, "--rm es REMOVER".
+#                         para salir usar "exit" en terminal, se libera de memoria, "--rm es REMOVER".
 #                         (recordar que se destruye todo lo que esta dentro de esta, por ello debe de subir a GitHub.com con --
 #                         las herramientas de $ git clone, git add, git commit y git push)
 #  
 #
-# b) Correr y RESIDENTE (ideal para SERVIDORES para nosotros en compilación no aplica, se documenta para su conocimiento)
+# b) Correr y residente (ideal para SERVIDORES para nosotros NO aplica)
 #     $  docker run -d -ti --name assembler arm32/lenginterfaz:compilador zsh
 #                         para sair usar "exit" en terminal.
 #     $  docker attach assembler zsh
