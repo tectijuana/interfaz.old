@@ -15,8 +15,8 @@ Remote debugging using 54.201.130.6:2000
 ````
 
 # Screenshoot Host
-![](gdb1.png)
-![](gdb2.png)
+![](image/gdb1.png)
+![](image/gdb2.png)
 
 
 
@@ -68,7 +68,7 @@ NOTA: tambien puede ser "localhost:2000" de correrlo en localmente sus practicas
 Ahora puede "continuar" o "desconectar" el programa de la depuración. Aún así, gdbserver no se cerrará en la máquina de destino, por lo que puede cambiar el "archivo exec remoto" en cualquier momento y depurar un conjunto de programas diferente.
 
 # Screenshoot Remoto
-![](gdb3.png)
+![](image/gdb3.png)
 
 # Advertencia: 
 __gdbserver no tiene ninguna seguridad incorporada. No ejecute gdbserver conectado a ninguna red pública; una conexión GDB a gdbserver proporciona acceso al sistema de destino con los mismos privilegios que el usuario que ejecuta gdbserver.__ Por tal es reservado para practicas académicas y el servicio se suspende al no usarse.
