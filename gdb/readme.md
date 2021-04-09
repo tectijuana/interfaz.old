@@ -47,9 +47,9 @@ __Necesitamos las siguientes dos utilidades para realizar una depuración remota
 - GDB envia, recupera o borrara archivos que se transfieren entre los 2 equipos "get, put, delete" en linea de comandos.
 
 
-1. Instale gbdserver en el sistema de destino
+## Instalación gbdserver en remoto
 
-La máquina de destino es la que está ejecutando el programa que debe depurar. Necesita tener el ejecutable "gdbserver" en la máquina de destino.
+La máquina de destino (raspberrypi, Amazon Graviton CPU, etc) es la que está ejecutando el programa que debe depurar. Necesita tener el ejecutable "gdbserver" en la máquina de destino.
 
 ## SERVER
 ````
@@ -58,13 +58,14 @@ sudo apt-get install gdbserver
 $ gdbserver --multi 54.201.130.6:2000
  
 ````
+NOTA: tambien puede ser "localhost:2000" de correrlo en localmente sus practicas.
 
 # ‘continue’ o ‘detach’ 
 Ahora puede "continuar" o "desconectar" el programa de la depuración. Aún así, gdbserver no se cerrará en la máquina de destino, por lo que puede cambiar el "archivo exec remoto" en cualquier momento y depurar un conjunto de programas diferente.
 
 
 # Advertencia: 
-__gdbserver no tiene ninguna seguridad incorporada. No ejecute gdbserver conectado a ninguna red pública; una conexión GDB a gdbserver proporciona acceso al sistema de destino con los mismos privilegios que el usuario que ejecuta gdbserver.__ Por tal es reservado para practicas académicas y el servicio se suspende al no usarse 
+__gdbserver no tiene ninguna seguridad incorporada. No ejecute gdbserver conectado a ninguna red pública; una conexión GDB a gdbserver proporciona acceso al sistema de destino con los mismos privilegios que el usuario que ejecuta gdbserver.__ Por tal es reservado para practicas académicas y el servicio se suspende al no usarse.
 
 
 __Bibliografía__
