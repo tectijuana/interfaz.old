@@ -2,6 +2,12 @@
 
 # GDB Debugger
 
+GDB (Gnu Project Debugger) es una herramienta que permite entre otras cosas, correr el programa con la posibilidad de detenerlo cuando se cumple cierta condición, avanzar paso a paso, analizar que ha pasado cuando un programa se detiene o cambiar algunas cosas del programa como el valor de las variables.
+
+GDB es una herramienta muy poderosa que nos ayudará a encontrar esos errores difíciles, por ejemplo cuando los punteros no apuntan a donde estamos pensando. 
+
+
+
 ````bash
 DOCKERCLIENTE /home# gdb -q hola
 Reading symbols from hola...
@@ -62,17 +68,21 @@ sudo apt-get install gdbserver
 $ gdbserver --multi 54.201.130.6:2000
  
 ````
-NOTA: tambien puede ser "localhost:2000" de correrlo en localmente sus practicas.
 
-# ‘continue’ o ‘detach’ 
-Ahora puede "continuar" o "desconectar" el programa de la depuración. Aún así, gdbserver no se cerrará en la máquina de destino, por lo que puede cambiar el "archivo exec remoto" en cualquier momento y depurar un conjunto de programas diferente.
 
-# Screenshoot Remoto
+## 'attach', ‘continue’ o ‘detach’ 
+Ahora puede "continuar" o "desconectar" el programa de la depuración. Aún así, gdbserver no se cerrará en la máquina de destino, por lo que puede cambiar el "archivo exec remoto" en cualquier momento y depurar un conjunto de programas diferente. El 'attach' es para asociar a un numero de proceso PID para depurarlo puede consulta la bibliografía.
+
+## Screenshoot Remoto
 ![](image/gdb3.png)
 
-# Advertencia: 
+## Advertencia: 
+NOTA: tambien puede ser "localhost:2000" de correrlo en localmente sus practicas.
 __gdbserver no tiene ninguna seguridad incorporada. No ejecute gdbserver conectado a ninguna red pública; una conexión GDB a gdbserver proporciona acceso al sistema de destino con los mismos privilegios que el usuario que ejecuta gdbserver.__ Por tal es reservado para practicas académicas y el servicio se suspende al no usarse.
 
+
+# Salir de GDB
+Para terminar la ejecución de GDB simplemente invocamos el comando quit o su forma abreviada q.
 
 __Bibliografía__
 https://clouds.eos.ubc.ca/~phil/docs/gdb/onlinedocs/gdb.html#SEC175
