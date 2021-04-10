@@ -6,6 +6,7 @@ GDB (Gnu Project Debugger) es una herramienta que permite entre otras cosas, cor
 
 GDB es una herramienta muy poderosa que nos ayudará a encontrar esos errores difíciles, por ejemplo cuando los punteros no apuntan a donde estamos pensando. 
 
+Manual Oficial: http://sourceware.org/gdb/current/onlinedocs/gdb.pdf
 
 
 ````bash
@@ -89,3 +90,6 @@ https://clouds.eos.ubc.ca/~phil/docs/gdb/onlinedocs/gdb.html#SEC175
 https://www.tutorialspoint.com/unix_commands/gdbserver.htm
 https://www.thegeekstuff.com/2014/04/gdbserver-example/
 https://www.thegeekstuff.com/2010/03/debug-c-program-using-gdb/
+https://lihuen.linti.unlp.edu.ar/index.php/Cómo_usar_GDB
+https://www.gdbgui.com
+
