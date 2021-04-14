@@ -1,6 +1,12 @@
 .data
 
-/* Segmento de Datos: define el mensaje y calcula el tramaño de la cadena. */
+/* Segmento de Datos: define el mensaje y calcula el tramaño de la cadena.
+ Para ensamblarlo se requiere
+ 
+ $ as -o hola.o hola.s
+ $ ld -s -o hola hola.o
+ $ ./hola
+ */
 msg:
     .ascii        "Hello, ARM64!\n"
 len = . - msg
