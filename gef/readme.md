@@ -41,3 +41,8 @@ Video no recomendado es: https://youtu.be/cdodcaR0ebQ
 https://pwnable.tw
 
 ver el playlist https://www.youtube.com/playlist?list=PLjAuO31Rg972WeMvdR_57Qu-aVM8T6DkQ
+
+----
+Bibliografia:
+https://gef.readthedocs.io/en/master/#setup
+https://azeria-labs.com/debugging-with-gdb-introduction/
