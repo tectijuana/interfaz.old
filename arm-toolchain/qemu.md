@@ -112,8 +112,25 @@ El comando xp merece más explicación. El argumento fmt especifica cómo se mos
 
 -contar:  especifica no. de elementos de datos que se van a verter.
 especifica el tamaño de cada elemento de datos. b para 8 bits, h para 16 bits, w para 32 bits y g para 64 bits.
+
 -formato: especifica el formato de visualización. x para hexadecimal, d para decimal con signo, u para decimal sin signo, o para octal, c para char ei para instrucciones ASM.
+
 Este comando xp con el formato i, se puede utilizar para desmontar las instrucciones presentes en la memoria. Para desensamblar las instrucciones ubicadas en 0x0, se puede usar el comando xp con el fmt especificado como 4iw. El 4 especifica que se mostrarán 4 elementos, i especifica que los elementos deben imprimirse como instrucciones (sí, ¡un desensamblador integrado!), W especifica que los elementos tienen un tamaño de 32 bits.
+
+Para listar las diversas arquitecturas adicionales:
+```
+(qemu) info qdm
+
+....
+name "armsse-cpuid", bus System, no-user
+name "armsse-mhu", bus System, no-user
+name "armv7m", bus System, no-user
+name "armv7m_nvic", bus System, no-user
+name "armv7m_systick", bus System, no-user
+....
+...
+```
+
 
 
 
