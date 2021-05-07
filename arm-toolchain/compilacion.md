@@ -47,6 +47,8 @@ arm-none-eabi-ld: warning: cannot find entry symbol _start; defaulting to 000000
 8109540 -rw-r--r--  1 root  wheel    612 May  7 13:12 add.o
 8109533 -rw-r--r--  1 root  wheel    964 May  7 13:31 add.s
 
+# wc add.bin
+       0       4      16 add.bin
 ```
 
 Aquí nuevamente, la opción -o especifica el nombre del archivo de salida. **-Ttext = 0x0**, especifica que las direcciones deben asignarse a las etiquetas, de modo que las instrucciones comiencen desde la dirección 0x0. Para ver la asignación de direcciones para varias etiquetas, el comando nm se puede utilizar como se muestra a continuación.
