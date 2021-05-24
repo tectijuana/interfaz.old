@@ -31,7 +31,7 @@ int main(){
 ```
 
 ```bash
-#Convertir a assembly
+# Convertir a assembly
 pi@raspberrypi:~/arm32 $ g++ -S evodd.c
 ```
 
