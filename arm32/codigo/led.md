@@ -1,5 +1,17 @@
 # LED blinking
 
+# REQUISITOS
+
+- Instalar "wiringPi" del Raspbian
+- $ raspi-config, En la sección de INTERFACES cambiar el WiringPI  a "habilitado" 
+
+````
+sudo raspi-config
+sudo apt-get install wiringpi
+````
+
+![](led1.png)
+![](led2.png)
 
 ![](led.png)
 
