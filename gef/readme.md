@@ -11,8 +11,8 @@ Tiene soporte completo para Python2 y Python3 indistintamente (a medida que más
 
 Antes de iniciar asegurese de tener la versión GDB 7.7 or mas nueva.
 ```
-# via  install script
-$ wget -q -O- https://github.com/hugsy/gef/raw/master/scripts/gef.sh | sh
+# via  install wget (linux)
+$ bash -c "$(wget http://gef.blah.cat/sh -O -)"
 ```
 
 
