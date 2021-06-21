@@ -7,7 +7,7 @@
 @ #include <stdlib.h>
 @ 
 @ int main (void) {
-@   int pin = 7;
+@   int pin = XXX;
 @   printf("Raspberry Pi wiringPi blink test\n");
 @ 
 @   if (wiringPiSetup() == -1) {
@@ -42,7 +42,7 @@
 	 .balign 4	
 Intro: 	 .asciz  "Raspberry Pi wiringPi blink test\n"
 ErrMsg:	 .asciz	"Setup didn't work... Aborting...\n"
-pin:	 .int	7
+pin:	 .int	XXXX (CAMBIAR EL PIN DE WIRINGPI VER CLASSROOM)
 i:	 .int	0
 delayMs: .int	250
 OUTPUT	 =	1
