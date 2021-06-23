@@ -10,6 +10,16 @@ sudo raspi-config
 sudo apt-get install wiringpi
 ````
 
+## APLICAR PARCHES DE VERSION 2.5 A LA VERSION 2.52
+http://wiringpi.com/wiringpi-updated-to-2-52-for-the-raspberry-pi-4b/
+````bash
+cd /tmp
+wget https://project-downloads.drogon.net/wiringpi-latest.deb
+sudo dpkg -i wiringpi-latest.deb
+gpio -v
+````
+
+
 ![](led1.png)
 ![](led2.png)
 
