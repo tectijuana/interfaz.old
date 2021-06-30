@@ -8,11 +8,11 @@
 
 //@ Objetivo del programa :
 
-Ejemplo muy sencillo  del uso del stack de la cpu.
+//@ Ejemplo muy sencillo  del uso del stack de la cpu.
 
-// Basically Push() and Pop() as in stacks. Hmm, interesting stuff for me as a beginner.
+//@ Basically Push() and Pop() as in stacks. Hmm, interesting stuff for me as a beginner.
 
-//.section // __TEXT, __text
+//@  .section //__TEXT, __text
 .global main
 
 main:
