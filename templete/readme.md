@@ -7,6 +7,8 @@
 
 ![](templete.png)
  -----
- # Para Ensamblador
+ 
+ 
+ # Para Ensamblador ARM
   ![](templete1.png)
    ![](templete2.png)
