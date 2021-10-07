@@ -113,6 +113,6 @@ Z shell (o simplemente zsh) es un potente intérprete de comandos para sistemas 
 12. **$ nefetch**
 13. Desconéctese de su instancia y vuelva a conectarla.
 
-![](neofetch.png)
+![](images/neofetch.png)
 
 [![zsh en acción (ingles)](http://img.youtube.com/vi/4KBuPCeF9Gc/0.jpg)](http://www.youtube.com/watch?v=4KBuPCeF9Gc "zsh en acción (ingles)")
