@@ -102,5 +102,17 @@ Z shell (o simplemente zsh) es un potente intérprete de comandos para sistemas 
 
 1. Zsh se diseñó para poder usarse interactivamente. 
 2. Se le han incorporado muchas de las características principales de otras shells de Unix como bash, ksh, o tcsh y además posee características propias originales.
+3. Conéctese a su linux
+4. Instalar zsh: **sudo apt-get update && sudo apt-get install zsh**
+5. Edite su archivo de configuración de passwd para indicar qué shell usar para el usuario pi: sudo vim/etc/passwd y cambie **/bin/bash** a **/bin/zsh**
+7. Vuelva a conectarse  y verifique que **zsh** sea el shell con **echo $0**
+8. Cambiar a root: **sudo su**
+9. Instale OhMyZsh: **sh -c "$ (wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"**
+10. Una herramienta complementaria es NEOFETCH que muestra estadisticas de su OS.
+11. **$ sudo apt install neofetch**
+12. **$ nefetch**
+13. Desconéctese de su instancia y vuelva a conectarla.
+
+![](neofetch.png)
 
 [![zsh en acción (ingles)](http://img.youtube.com/vi/4KBuPCeF9Gc/0.jpg)](http://www.youtube.com/watch?v=4KBuPCeF9Gc "zsh en acción (ingles)")
