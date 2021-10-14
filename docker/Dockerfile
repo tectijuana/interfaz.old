@@ -87,11 +87,29 @@ RUN sh -c "$(wget -O- https://github.com/deluan/zsh-in-docker/releases/download/
 RUN sh -c "$(wget -O- https://raw.githubusercontent.com/tectijuana/interfaz/master/docker/dockerlogo.sh)"
 
 #
-# 📢  Para no teclear el Git Global 📢
+# 📢  Para no teclear el Git Global y configurar para su token📢
 RUN echo 'Personalizando el Git Account..💨'
-RUN git config --global user.name "PONER SU NOMBRE"
-RUN git config --global user.email PONERSUCORREO@tectijuana.edu.mx
+RUN git config --global user.name "your_github_username"
+RUN git config --global user.email "your_github_email"
+RUN git config -l
 RUN git config --global core.editor nano
+
+# Una vez configurado GIT ahora accedemos a:
+
+#  git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY
+# > Cloning into `Spoon-Knife`...
+#  Username for 'https://github.com' : username
+#  Password for 'https://github.com' : aqui poner su tocken
+#  
+#  Ahora podrá tener en caché el registro del token que lo recuerde:
+#  git config --global credential.helper cache
+#  Si requiere BORRARLO realizar: :
+#  git config --global --unset credential.helper
+#   git config --system --unset credential.helper
+
+#   Intente hacer un pull con -v para verificar
+# git pull -v
+
 
 #
 # Puerto expuesto 80 (no hay servidores en nuestras practicas, por eso se deja por TEMPLETE) 
