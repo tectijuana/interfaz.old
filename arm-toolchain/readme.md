@@ -1,4 +1,8 @@
-## Introducción ARM TOOLCHAIN para macOS
+## En Windows es directo el trabajo
+Descargar e instalar, 
+arreglar el $path$ para que cuando corra uno de los comandos se ejecute y no marque "error command not found"
+
+## Introducción ARM TOOLCHAIN para macOS y Linux
 
 ARM Embedded Toolchain es un compilador cruzado con licencia GNU para arquitecturas de CPU ARM,
 lo que le permite compilar código C/C++ en binarios que se pueden ejecutar en CPU como el
