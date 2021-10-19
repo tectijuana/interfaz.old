@@ -40,6 +40,7 @@ _Docker file revisado para estas practicas estan algunas lineas opcionales con e
 ```dockerfile
 dockerfile
 ````
+NOTA: La comunidad que mantiene Raspbian en Docker es  https://hub.docker.com/r/navikey/raspbian-buster, cuenta con su GitHub y demas referencias.
 
 ![](https://images.cooltext.com/5483267.png)
 <a href="http://cooltext.com" target="_top"><img src="https://cooltext.com/images/ct_pixel.gif" width="80" height="15" alt="Cool Text: Logo and Graphics Generator" border="0" /></a>
