@@ -53,7 +53,8 @@
 # $ docker system prune -a (un RESETEO desde CERO todo borra y deja como 1ra vez que se instalo)
 
 # Deposito original (puede cambiar por otras versiones, por ejemplo ARM64) para ensamblador 64 bits
-FROM navikey/raspbian-buster
+# FROM navikey/raspbian-buster
+FROM navikey/raspbian-buster:latest
 
 # Identificar al mantenedor de una imagen
 LABEL maintainer="rene.solis@tectijuana.edu.mx"
