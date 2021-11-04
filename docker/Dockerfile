@@ -32,10 +32,13 @@
 #                         las herramientas de $ git clone, git add, git commit y git push)
 #  
 #
-# b) Correr y residente (ideal para SERVIDORES para nosotros NO aplica)
-#     $  docker run -d -ti --name assembler arm32/lenginterfaz:compilador zsh
+# b) Lanzamos la imagen y accedemos a el contenedor..
+#        
+#     $  docker run -d -ti --name assembler arm32/lenginterfaz:compilador sh
 #                         para sair usar "exit" en terminal.
-#     $  docker attach assembler
+#     $  docker rename >>EL ID CONTENEDOR<<< practidock
+#     $  docker start practidocker
+#     $  docker attach practidocker
 #     $  docker ps -a
 #                       Muestra la lista de procesos en memoria
 #     $  docker rm assembler
