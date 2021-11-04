@@ -35,7 +35,7 @@
 # b) Correr y residente (ideal para SERVIDORES para nosotros NO aplica)
 #     $  docker run -d -ti --name assembler arm32/lenginterfaz:compilador zsh
 #                         para sair usar "exit" en terminal.
-#     $  docker attach assembler zsh
+#     $  docker attach assembler
 #     $  docker ps -a
 #                       Muestra la lista de procesos en memoria
 #     $  docker rm assembler
