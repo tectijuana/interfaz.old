@@ -14,7 +14,7 @@ $ echo source ~/.gdbinit-gef.py >> ~/.gdbinit
 ```
 
 # 2.- INSTALACION DEPENDIENCIAS
-# Python3.x se tadó como 20 minutos la compilación de estas librerias, no desespere es Python para en ARM
+# Python3.x se tardó como 20 minutos la compilación de estas librerias, no desespere es Python para en ARM
 ```
 $ pip3 install keystone-engine capstone unicorn keystone-engine ropper
 
