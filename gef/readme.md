@@ -71,5 +71,7 @@ https://pwnable.tw
 
 ----
 Bibliografia:
+
 https://gef.readthedocs.io/en/master/#setup
+
 https://azeria-labs.com/debugging-with-gdb-introduction/
