@@ -56,8 +56,12 @@
 # $ docker system prune -a (un RESETEO desde CERO todo borra y deja como 1ra vez que se instalo)
 
 # Deposito original (puede cambiar por otras versiones, por ejemplo ARM64) para ensamblador 64 bits
-# FROM navikey/raspbian-buster
-FROM navikey/raspbian-buster:latest
+# Para Raspbian (que en si es Debian Buster 2019) compatible
+# FROM navikey/raspbian-buster:latest
+# Debian BullsEye 2021
+FROM arm32v7/debian:bullseye-slim
+# PAra 64 bits 2021
+# FROM arm64v8/debian:bullseye-slim
 
 # Identificar al mantenedor de una imagen
 LABEL maintainer="rene.solis@tectijuana.edu.mx"
