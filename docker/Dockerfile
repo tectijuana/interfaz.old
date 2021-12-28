@@ -38,9 +38,9 @@
 #        
 #     $  docker run -d -ti --name assembler arm32/lenginterfaz:compilador sh
 #                         para sair usar "exit" en terminal.
-#     $  docker rename >>EL ID CONTENEDOR<<< practidock
-#     $  docker start practidocker
-#     $  docker attach practidocker
+#     $  docker rename >>EL ID CONTENEDOR<<< practicasdocker
+#     $  docker start practicasdocker
+#     $  docker attach practicasdocker
 #     $  docker ps -a
 #                       Muestra la lista de procesos en memoria
 #     $  docker rm assembler
