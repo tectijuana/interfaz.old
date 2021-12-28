@@ -6,12 +6,14 @@ _Docker a mediados del 2019 anunció una asociación con ARM Inc., para ayudar a
 
 _Docker Desktop es el estándar de facto cuando se trata de desarrollar aplicaciones en contenedores. Esta vista previa tecnológica abrirá el rico ecosistema de Arm a los millones de desarrolladores que ya utilizan y desarrollan en Docker Desktop. Esto no solo simplificará el desarrollo de imágenes de contenedores para su implementación en instancias de Amazon EC2 A1 basadas en Arm en la nube, sino que también ayudará a allanar el camino hacia el billón de dispositivos Edge e IoT basados ​​en Arm en todo el mundo. Analicemos por qué estamos haciendo esto, cómo funciona todo y cómo puede comenzar._
 
-![](https://i1.wp.com/www.docker.com/blog/wp-content/uploads/engineering/2019/04/Screen-Shot-2019-04-26-at-7.25.34-PM.png)
+![](https://i.pinimg.com/originals/f5/5e/80/f55e8059ea945abfd6804b887dd4a0af.gif)
+
 
 # ¿Por qué Docker hace esto?
 _En noviembre de 2018, Amazon anunció instancias EC2 A1 impulsadas por procesadores AWS Graviton que cuentan con núcleos ARM Neoverse de 64 bits y silicio personalizado diseñado por AWS. Las instancias A1 EC2 tienen un costo y un rendimiento optimizados para cargas de trabajo de escalamiento horizontal y ofrecen hasta un 45% de ahorro de costos en comparación con otras instancias EC2. Con esta versión preliminar de la tecnología de Docker Desktop, Docker hace que sea más fácil que nunca desarrollar contenedores en y para los servidores y dispositivos ARM. Con las herramientas y los procesos estándar de Docker con los que ya está familiarizado, puede comenzar a compilar, enviar, extraer y ejecutar imágenes sin problemas en diferentes arquitecturas de sistemas. No se necesitan cambios en Dockerfiles o en el código fuente para comenzar a compilar para ARM. Simplemente reconstruya su imagen utilizando las nuevas funciones que se lanzan hoy. Finalmente, Docker se está expandiendo rápidamente a Edge e IoT, y vemos esto como un paso importante en ese proceso. Docker siempre se ha dedicado a los desarrolladores y ha facilitado las cosas._
 
-![](https://i.pinimg.com/originals/f5/5e/80/f55e8059ea945abfd6804b887dd4a0af.gif)
+![](https://i1.wp.com/www.docker.com/blog/wp-content/uploads/engineering/2019/04/Screen-Shot-2019-04-26-at-7.25.34-PM.png)
+
 # ¿Como funciona?
 _Docker Desktop está disponible para macOS, Linux y Windows. Agrupa y configura muchas cosas para los usuarios que facilitan enormemente el desarrollo de contenedores. Docker Desktop se envía con hipervisores para el sistema operativo host. El hipervisor es responsable de ejecutar un kernel de Linux ligero (LinuxKit), que se incluye como parte de Docker Desktop. Este sistema operativo contenedor rápido y liviano viene empaquetado con el emulador QEMU y viene preconfigurado con binfmt_misc para ejecutar binarios de cualquier arquitectura compatible. ARM se compromete a respaldar la bifurcación QEMU de Docker y ayudará a mantener este proyecto. Todos los parches se transmitirán, pero Docker Desktop contendrá el soporte de emulación más reciente. En el diagrama de arriba puede ver la emulación QEMU para las imágenes de Docker arm/v6, arm/v7 y arm64 requeridas para este curso_
 
