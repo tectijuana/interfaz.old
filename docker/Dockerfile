@@ -12,21 +12,22 @@
 
 # Cada instrucción en este archivo genera una nueva capa que se envía a su caché de imágenes local
 #
-# Las líneas precedidas por # se consideran comentarios y se ignoran. Localice una propuesta en HUB.DOCKER.COM para usar ARM32, 
-# adaptandolo Ensamblador y el debugger. Para esta practica seleccionamos uno no-oficial. En futuras practicas usar "Alpine Linux"
+# Las líneas precedidas por # se consideran comentarios y documentarlo.
 #
 # Por MC. René Solis R.  
 # Twitter:  @IoTeacher
 
 #
-# Generar la imagen
-# $ docker build --tag arm32/lenginterfaz:compilador .   (si un PUNTO al final)
+# Generar la imagen 32bits assembly
+# $ docker build --tag arm32/interfaz:compilador .   (si un PUNTO al final)
+# Generar limagen 64bits assembly
+# $ docker build --tag arm32/interfaz:compilador .   (si un PUNTO al final)
 # $ docker images
 #
 # DOS FORMAS DE CORRER, la 1ra es la recomendable. 
 # 
 # a) Correr y se libera al salir de la sesión.
-#     $  docker run --rm -ti --name assembler  arm32/lenginterfaz:compilador sh
+#     $  docker run --rm -ti --name assembler  arm32/interfaz:compilador sh
 #                         para salir usar "exit" en terminal, se libera de memoria, "--rm es REMOVER".
 #                         (recordar que se destruye todo lo que esta dentro de esta, por ello debe de subir a GitHub.com con --
 #                         las herramientas de $ git clone, git add, git commit y git push)
