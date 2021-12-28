@@ -10,18 +10,19 @@
 #                                             ,88                                                    
 #                                           888P"                                                    
 
-# Cada instrucción en este archivo genera una nueva capa que se envía a su caché de imágenes local
+# Breve introducción de Docker para ARM Assembly, en el curso de Lenguajes de Interfaz del Instituto Tecnologico de Tijuana,
+# carrera de Ingeniería en Sistemas Computacionales.
 #
-# Las líneas precedidas por # se consideran comentarios y documentarlo.
+# nota: las líneas por # se consideran comentarios y es para documentar lo que sucede en este dockerfile, animando a el estudiantes modificar este templete.
 #
 # Por MC. René Solis R.  
 # Twitter:  @IoTeacher
 
 #
 # Generar la imagen 32bits assembly
-# $ docker build --tag arm32/interfaz:compilador .   (si un PUNTO al final)
+# $ docker build --tag arm32/interfaz:compilador .   (si un PUNTO al final todo queda por default a 32 bits en arm32v7)
 # Generar limagen 64bits assembly
-# $ docker build --tag arm32/interfaz:compilador .   (si un PUNTO al final)
+# $ docker build --tag arm64/interfaz:compilador .   (si un PUNTO al final y hacer modificaciones abajo seleccionando arm64v8)
 # $ docker images
 #
 # DOS FORMAS DE CORRER, la 1ra es la recomendable. 
