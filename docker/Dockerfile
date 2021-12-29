@@ -78,11 +78,11 @@ LABEL maintainer="rene.solis@tectijuana.edu.mx"
 RUN echo 'Actualizando cargando Tool Chain de asssembly, mas otros comandos  de soporte ...💨'
 RUN apt-get update && \
     apt-get upgrade -y && \
-    apt-get install -y build-essential git nano vim gdb wget curl mc tree neofetch
+    apt-get install -y build-essential git nano vim gdb curl tree
 RUN echo 'Soporte de CMAKE ...💨'
 RUN apt-get -y install cmake protobuf-compiler
-RUN echo 'SSH para conectarnos  opcionalmente ..💨'
-RUN apt-get -y  install openssh-client
+# RUN echo 'SSH para conectarnos  opcionalmente ..💨'
+# RUN apt-get -y  install openssh-client
 WORKDIR /home
 
 
@@ -90,26 +90,26 @@ WORKDIR /home
 # Instala ZSh interactive shell 
 # Uses "git", "ssh-agent" and "history-substring-search" bundled plugins
 # https://github.com/deluan/zsh-in-docker abriar un asistente para configurar las cadenas de mensajes, son 2 minutos de su atención..
-RUN sh -c "$(wget -O- https://github.com/deluan/zsh-in-docker/releases/download/v1.1.2/zsh-in-docker.sh)" -- \
-    -p git -p ssh-agent -p 'history-substring-search' \
-    -a 'bindkey "\$terminfo[kcuu1]" history-substring-search-up' \
-    -a 'bindkey "\$terminfo[kcud1]" history-substring-search-down'
+# RUN sh -c "$(wget -O- https://github.com/deluan/zsh-in-docker/releases/download/v1.1.2/zsh-in-docker.sh)" -- \
+#    -p git -p ssh-agent -p 'history-substring-search' \
+#    -a 'bindkey "\$terminfo[kcuu1]" history-substring-search-up' \
+#    -a 'bindkey "\$terminfo[kcud1]" history-substring-search-down'
 #
 # La bienvenida a docker ARM mensaje
-RUN neofetch
-RUN zsh
+# RUN neofetch
+# RUN zsh
 
 
 
 #
 # Git Developer Account
 # 📢  Para no teclear el Git Global y configurar para su token 📢
-RUN echo 'Personalizando el Git Account.. 🧠'
-RUN git config --global user.name "your_github_username"
-RUN git config --global user.email "your_github_email"
-RUN git config -l
+# RUN echo 'Personalizando el Git Account.. 🧠'
+# RUN git config --global user.name "your_github_username"
+# RUN git config --global user.email "your_github_email"
+# RUN git config -l
 # Adapte el editor a usarlo VIM o NANO...
-RUN git config --global core.editor nano
+# RUN git config --global core.editor nano
 #
 
 # Una vez configurado GIT ahora accedemos a:
