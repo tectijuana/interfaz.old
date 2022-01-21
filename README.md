@@ -37,16 +37,18 @@ Docente: MC. René Solis Reyes
 
 Activación de Student Pack de GitHub.com, principalmente http://jetbrains.com/student se hará la donación de $450 dlls software de licencia pero las condiciones son **CUENTA DE CORREO INSTITUCIONAL**. 
 
-Darse de alta en http://GitHub.com con un "nickname" (ApellidoNombre) con una foto de perfil de Ud. una contraseña sencilla, pues GH bloquea a los 3 intentos la IP de su computadora en abuso de reintentos; es una plataforma profesional seria. Cabe hacer notar que si ya tiene su cuenta y nickname con productos profesionales de código no haga cambios, pero si es material académico sin ningun impacto a 3ras personas favor de renombrar el Nickname, agregando la foto de classroom.
+Darse de alta en http://GitHub.com con un "nickname" (ApellidoNombre) con una foto de perfil de Ud. sobre las contraseñas este portal, bloquea a los 3 intentos la IP de su computadora en abuso de reintentos, es una plataforma profesional seria, se da aviso por anticipado. Cabe hacer notar que si ya tiene su cuenta y nickname con productos profesionales de código no haga cambios, pero si es material académico sin ningun impacto a 3ras personas favor de renombrar el Nickname, agregando la foto de classroom, nuevamente debe ser con su correo del @TECTIJUANA.EDU.MX (perfil puede tener mas de un correo)
 
 
 Condiciones académicas:
 
-- A su servicio en horario acordado 2-3pm lunes y miércoles, equipos de trabajo martes y jueves; se hace mención durante la sesión como será la semana de trabajo.
-- Entrega de trabajos de la semana el limite es el viernes, no habrá mas revisión o recepción al menos una justificación comprobable (trabajo, salud, etc)
-- No se aceptan validaciones de diplomas manipulados ejemplo CERTIFICADOS (alterados con photoshop, etc) será examen de 1ra oportunidad anulando el resto de las entregas del bloque.
-- No usamos Google Drive solo GitHub.com el cual se activará su cuenta PRO, para la presentación de trabajos de desarrollo de software
-- Claro será bienvenido Google Docs para entrega de trabajos colaborativos académicos de lectura excepto código de programación, este nuevamente debe estar en GitHub
+- La primera semana es muy intensa como una regularización a todos los estudiantes avanzados y principiantes, para que esten adaptados a el ritmo del docente.
+- Los equipos de trabajo son decidicos por GitHub Education Classroom, es el repositorio de la practica y no son permanentes.
+- Llegara a medio semestre que los lunes y miércoles son para dudas, equipos de trabajo martes y jueves; se hace mención durante la sesión como será la semana de trabajo por el tema 3 en adelante.
+- Entrega de trabajos de la semana el limite es el viernes en horario de clase no a las altas horas de la noche, no habrá mas revisión o recepción al menos una justificación comprobable (trabajo, salud, etc)
+- No se aceptan validaciones de diplomas manipulados ejemplo CERTIFICADOS (alterados con photoshop, etc) será examen de 1ra oportunidad anulando el resto de las entregas del tema que por lo regular en el certificado de C++ por https://www.sololearn.com/learning/1051 que tambien esta para Android,Iphone y PC activarlo con su cuenta personal (al final entregan un certificado validado por un LINK)
+- GitHub.com  se activará su cuenta PRO (valor de $90 dolare anuales), para la presentación de trabajos de desarrollo de software, con espacio ilimitado proyectos abiertos-cerrados y propagación e indexación mundial, esto con el fin de promover su perfil a las comunidades extrageras y buscar vinculación-promoción.
+- Será bienvenido Google Docs para entrega de trabajos colaborativos académicos de lectura excepto código de programación, este nuevamente debe estar en GitHub.
 
 Condiciones Steamming Meet:
 - Puede se solicite acceso a la cámara para la asistencia del dia de la sesión.
