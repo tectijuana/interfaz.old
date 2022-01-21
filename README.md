@@ -59,16 +59,16 @@ Condiciones Steamming Meet:
 - Solo el estudiante interesado  (o grupo de estudiantes) de la materia debe estar en esta clase, no familiares o invitados externos en el lente de la cámara.
 
 Evaluación:
-- Cada semana hay un trabajo a revisar máximo el dia viernes
-- Todo trabajo lleva una rúbrica de cada elemento cuanto vale para formar el 100.
-- Trabajos no entregado valen 0 y no se reciben al menos un justificante médico, trabajo, etc. y tendrán un descuento considerable.
-- Se procurará dejar retroalimentación con Audio usando la extensión de MOTE de Chrome.
-- El promedio del Bloque es la suma de todos los trabajos entre la cantidad de estos.
-- No hay examen, solo practicas un examen en lo personal es mas medible un buen conjunto de practicas de reto que garantice semana por semana su esfuerzo acumulable.
-- Hay trabajos sin evaluación, pero es parte de reforzamiento del tema a venir y deben ser contestados, se utiliza Checklist o lista de cotejo; el semestre pasado fue utilizada para dar puntos a estudiantes con riesgo de repetición, considerelos de garantía.
-- Último bloque en si es un proyecto final que será documental dividido en 2 avances de 50% cada etapa
-- Sobre la mensajeria dentro de Classroom, es muy fácil perderse con una pregunta "profe estoy bien? ...etc sea tan amable de elaborar bien la pregunta con las opciones que requiera atender pues nuestra comunicación es asincrona, no podemos perder tiempo en una respuesta de 12 horas, considere cuando y como usar la mensajería por eso el equipo de 4 para mantener el ritmo y evitar falta de comunicación.
-
+- Docente es requisito OBLIGATORIO que cuenten esten registrador en LOOM.com y Activados con la beca académica (http://loom.com/education) muchos detalles se reportan por grabación de pantalla-smartphone.
+- Los trabajos vienen acompañados con  rubrica (por tabla o video LOOM) trabajo a revisar máximo el dia viernes, previo aviso a el grupo y en horarios de clase.
+- Todo trabajo lleva una rúbrica de cada elemento cuanto vale para formar el 100, debe poner atención a que solicitar para que no desvie su atención de la max. calificación
+- Trabajos no entregado valen 0 y no se reciben al menos un justificante médico, trabajo, etc. y  se reprograma la entrega.
+- Se procurará dejar retroalimentación con Audio usando la extensión de MOTE de Chrome, pero generalmente LOOM es el preferido redactando la retroalimentación, emoji-reacciones o incluso enviando la solución esperada por este mismo medio.
+- El promedio del tema es el promedio de todos los trabajos y siempre habra un trabajo OBLIGATORIO esto es que si lo salta, es automaticamente examen de única oportunidad, esto es clave para la culminación del tema e importante para la travesia de la materia.
+- No hay examen del tema, solo practicas, un examen en lo personal la materia se presta un buen conjunto de practicas de reto, que garantice semana por semana su esfuerzo acumulable.
+- Hay trabajos sin evaluación (lista de cotejo), pero es parte de reforzamiento del tema a venir y deben ser contestados, se utiliza Checklist el semestre pasado fue utilizada para dar puntos a estudiantes con riesgo de repetición, considerelos de garantía opcional por tener en cuenta.
+- Último bloque en si es un proyecto final que será documental dividido en 2 avances de 50% cada etapa, estos se hace un KAMBAN en GitHub Projects para brindar transparencia a el grupo.
+- Sobre la mensajeria dentro de Classroom, es muy fácil perderse con una pregunta "profe estoy bien? ...etc sea tan amable de elaborar bien la pregunta con las opciones que requiera atender pues nuestra comunicación es asincrona, he visto notas extraviadas en comentarios privados en asuntos evaluados, tenga consideracion
 
 Requisitos de hardware:
 - PC-Laptop o PC, con 8 Gb de RAM recomendable.
