@@ -73,8 +73,11 @@ Evaluación:
 Requisitos de hardware:
 - PC-Laptop o PC, con 8 Gb de RAM recomendable.
 - Sistemas Operativo 64 bits, recomendable DualBoot con Linux con 20Gb o mas (ubuntu, Debian, etc) o también puede ser un USB 3.0 Bootable con persistencia de unos 6 Gb ver http://pendrivelinux.com con software de Termius instalado entre otros.
-- Opcionalmente RaspberryPi (cualquier versión) con un "board extensión" https://www.ebay.com/itm/KEYESTUDIO-T-type-GPIO-Expansion-Board-Cable-Breadboard-Kit-for-Raspberry-Pi-3-4/264350596270?hash=item3d8c85fcae:g:rdYAAOSw~G5c1VK6 debe coincidir con la versión de la RPi.
-- Smartphone con APP de SSH que se activará con TERMIUS (de su Github student pack) con un valor de $30 dlls gratis para UD.
+- Necesaria contar con MicroControlador RaspberryPi "PICO" este se proporciona a el estudiante al costo, junto con material de GitHub Education y sticker, para programar un dia una visita a el TEC o agrupar a los equipos para el representante lo recoja, etc.
+- Por la escazes de CHIPS en el mundo es opcionalmente la compra de una computadora compacta: RaspberryPi (cualquier versión) con un "board extensión"  https://www.ebay.com/itm/KEYESTUDIO-T-type-GPIO-Expansion-Board-Cable-Breadboard-Kit-for-Raspberry-Pi-3-4/264350596270?hash=item3d8c85fcae:g:rdYAAOSw~G5c1VK6 debe coincidir con la versión de la RPi el cual compró.
+- Raspberry PICO sera el centro de atención de las practicas de dia a dia en ARM Assembly 32bit, por ser hardware libre esta bien documentada y apoyada con un inmensa comunidad, considere esta opción si otro MCU competente dedide cambiarlo y entrará a trabajar en su materia.
+- Para apoyar a el grupo se conectara una RaspberryPI CM4 de 8gb RAM/32 eMMC en una IP estática para que se conecten a esta para las practicas complementarias con Kernel de Linux.
+- Smartphone con APP de SSH que se activará con TERMIUS (de su Github student pack) con un valor de $30 dlls gratis para UD durante un año que brinda la compañia.
 
 Sin otro particular estoy a sus ordenes.
 
@@ -82,5 +85,5 @@ MC. René Solis R.
 
 Redes Sociales:
 - Twitter: @IoTeacher noticias mas activo al dia.
-- FB: facebook.com/profesorsolis (noticias) solo difusión breve, mas activo en el Twitter 
+- FB: facebook.com/profesorsolis (noticias y marketplace)
 - Reddit: /u/IoTeacher bastantes fuentes de información personal a revisar.
