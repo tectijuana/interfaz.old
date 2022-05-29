@@ -127,7 +127,19 @@ A screen will promt up printing Hello, world! imediatitly.
 
 ```
 ls /dev/tty.*
-screen /dev/tty.usbmodem14101   (ADVISE CHANGE IT)
+screen /dev/tty.usbmodem14101   (to CHANGE it)
+
+```
+PRESS KEYS: Ctrl + A, Ctrl + D ... (to "minimize" or Dettach)
+
+```
+screen -r   (to RESTORE it)
+```
+PRESS KEYS: Ctrl + A, Ctrl + K ... (to KILL current process)
+
+```
+ps  (to VIEW procees, please note $screen running)
+ps kill  _#__ (any problems you can kill the process number of $screen is the left PID)
 ```
 
 ![](images/SerialAPP.png)
