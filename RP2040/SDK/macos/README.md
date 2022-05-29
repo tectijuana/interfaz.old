@@ -45,7 +45,8 @@ brew upgrade
 ```
 ### Install the toolchain by using **Homebrew**
 ```
-brew install cmake
+brew install cmake 
+brew install tmux
 brew tap ArmMbed/homebrew-formulae
 brew install arm-none-eabi-gcc 
 ```
@@ -126,9 +127,13 @@ cp usb/hello_usb.uf2 /Volumes/RPI-RP2
 A screen will promt up printing Hello, world! imediatitly. 
 
 ```
-ls /dev/tty.*
-screen /dev/tty.usbmodem14101   (to CHANGE it)
 
+tmux new -s ConsolaPICO
+ls /dev/tty.*
+screen /dev/tty.usbmodem14101   (to CHANGE number please)
+(press CTL B + % to divide verticaly)
+ls
+(press CTL B + LEFT-ARROW, to return left window)
 ```
 PRESS KEYS: Ctrl + A, Ctrl + D ... (to "minimize" or Dettach)
 
@@ -140,6 +145,8 @@ PRESS KEYS: Ctrl + A, Ctrl + K ... (to KILL current process)
 ```
 ps  (to VIEW procees, please note $screen running)
 ps kill  _#__ (any problems you can kill the process number of $screen is the left PID)
+
+(press CTL B + &, to kill tmux windows)
 ```
 
 ![](images/SerialAPP.png)
