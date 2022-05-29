@@ -1,3 +1,6 @@
+// Por ABRAHAM JHARED FLORES A.
+// Generacion 22A
+
 #include "pico/stdlib.h"
 
 int main() {
