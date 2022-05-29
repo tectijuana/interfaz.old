@@ -1,13 +1,14 @@
 ```console
-echo "Adaptación del SDK en la terminal directa"
+echo "╭――――――――――――――――――――――――――――――――――――――――――――――――――╮"
+echo "│   Adaptación del SDK en la terminal directa      │"
+echo "│ Crear directorio PICO para clonar SDK y ejemplos │"
+echo "╰――――――――――――――――――――――――――――――――――――――――――――――――――╯"
+
 cd
-echo " Crear directorio PICO para clonar SDK y ejemplos"
 mkdir pico
 cd pico
 git clone -b master https://github.com/raspberrypi/pico-sdk.git
-
 git clone -b master https://github.com/raspberrypi/pico-examples.git
-
 cd pico-sdk
 git submodule update --init
 
@@ -45,3 +46,7 @@ ls
 
 echo "blink.elf, es para el debugger"
 echo "blink.uf2, es para el RPI 2040 Pico Hardware copiarlo por favor."
+echo " $ df, para ver donde esta la pico, previamente presionado el boton BOOTLOADER-conectada USB"
+
+df
+echo "cp blink.uf2 /media/__________/RP-PICO "
