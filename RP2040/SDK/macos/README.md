@@ -131,4 +131,5 @@ screen /dev/tty.usbmodem14101   (ADVISE CHANGE IT)
 ```
 
 ![](images/SerialApp.PNG)
+
 ![](images/hello_world.png)
