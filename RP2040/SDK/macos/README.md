@@ -130,4 +130,5 @@ ls /dev/tty.*
 screen /dev/tty.usbmodem14101   (ADVISE CHANGE IT)
 ```
 
+![](images/SerialApp.png)
 ![](images/hello_world.png)
