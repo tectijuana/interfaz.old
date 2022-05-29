@@ -45,7 +45,7 @@ echo "Listar el directorio ahivera el *.uf2"
 ls
 
 echo "blink.elf, es para el debugger"
-echo "blink.uf2, es para el RPI 2040 Pico Hardware copiarlo por favor."
+echo "blink.uf2, es para el RPI 2040 Pico  que se copiará"
 echo " $ df, para ver donde esta la pico, previamente presionado el boton BOOTLOADER-conectada USB"
 
 df
