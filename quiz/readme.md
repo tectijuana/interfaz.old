@@ -1,4 +1,4 @@
-
+![](quiz.png)
 
 
 A continuación, se presenta un cuestionario en formato Markdown basado en el cuadernillo de prácticas de Ensamblador ARM para Raspberry Pi proporcionado:
