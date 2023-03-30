@@ -1,7 +1,7 @@
 ![](quiz.png)
 
 
-A continuación, se presenta un cuestionario en formato Markdown basado en el cuadernillo de prácticas de Ensamblador ARM para Raspberry Pi proporcionado:
+A continuación, se presenta un cuestionario basado en el cuadernillo de prácticas de Ensamblador ARM aplicando en Raspberry Pi CM4:
 
 1. ¿Cuál es el objetivo principal del lenguaje ensamblador ARM en relación con la Raspberry Pi?
 
