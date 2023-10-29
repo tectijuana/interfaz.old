@@ -1,36 +1,29 @@
 # 22apicoprobe-flores-deseusa
 
-## Abraham Jhared Flores Azcona, 19211640
-## Victor Manuel Sanchez Deseusa, 19211732
+## Integrantes:
+- Abraham Jhared Flores Azcona, 19211640
+- Victor Manuel Sanchez Deseusa, 19211732
 
-## Listado de ejercicios
-- Debugging de programa por medio de una Picoprobe a otra.
-
----
-
-### Debugging de programa por medio de una Picoprobe a otra.
-
-#### Evidencia
-![](evidencias/evidencia1.jpg)
-![](evidencias/evidencia2.jpg)
-![](evidencias/evidencia3.jpg)
-![](evidencias/evidencia4.jpg)
-![](evidencias/evidencia5.jpg)
-
-https://user-images.githubusercontent.com/99265478/169218303-9bec5522-f33a-4c3c-bf2d-a69b682d492e.mp4
-
-#### Comentarios
-Hasta el momento a sido una de las tareas mas laboriosas debido a que los entornos SDK en linux requieren algo más de cuidado en las isntalaciones.
-Aunque se tuvo la ayudad del PDF adjunto, hemos de admitir que se necesita algo de planeación para resolver el problema; lo decimos porque se
-intentaron los tres métodos propuestos, pero el más efectivo resultó el método por OpenOCD y GDB en la terminal. Debido a que ya se contaba
-con una experiencia similiar (Instalar Gentoo con un Distro LiveUSB), no se batalló con el diagnóstico de errores, de hecho, un serio problema fue el cableado
-que simplemente se resolvió acomodando los cables jumpers de cierta manera que los programas se comunicasen. Algo curioso es que es necesario abrir dos terminales
-para la comunicación por puerto serial para el debugging.
+## Ejercicios realizados:
+- Debugging de un programa mediante el uso de una Picoprobe para conectar a otra.
 
 ---
 
-## Conclusión
-La realización de las actiidades retadoras en entornos distintos a Windows nos permite refinar nuestras habiliades generales de dominio de la terminal,
-diagnostico de problemas y sobre todo, paciencia. Al ver el fruto de nuestro trabajo, nos damos cuenta que siempre habrá una razón para no rendirse
-en estos procedimientos, porque hay veces que lo más simple es lo que genera mayor problema, por lo que recomendamos realizar esta práctica con la mentalidad
-de que su éxito no necesariamente resulte en el primer intento.
+### Debugging de un programa mediante el uso de una Picoprobe para conectar a otra.
+
+#### Evidencias:
+![Evidencia 1](evidencias/evidencia1.jpg)
+![Evidencia 2](evidencias/evidencia2.jpg)
+![Evidencia 3](evidencias/evidencia3.jpg)
+![Evidencia 4](evidencias/evidencia4.jpg)
+![Evidencia 5](evidencias/evidencia5.jpg)
+
+[Video demostrativo](https://user-images.githubusercontent.com/99265478/169218303-9bec5522-f33a-4c3c-bf2d-a69b682d492e.mp4)
+
+#### Comentarios:
+Esta tarea ha sido una de las más laboriosas, ya que los entornos SDK en Linux requieren un cuidado extra durante las instalaciones. A pesar de contar con la ayuda del PDF adjunto, debemos admitir que se necesita una buena planeación para resolver el problema. Probamos los tres métodos propuestos, siendo el más efectivo el uso de OpenOCD y GDB en la terminal. Gracias a nuestra experiencia previa instalando Gentoo con un Distro LiveUSB, no tuvimos problemas para diagnosticar errores. Un desafío significativo fue el cableado, que resolvimos acomodando los cables jumpers de una manera que permitiera la comunicación entre los programas. Es curioso notar que es necesario abrir dos terminales para la comunicación por puerto serial durante el debugging.
+
+---
+
+## Conclusión:
+Realizar actividades retadoras en entornos distintos a Windows nos ha permitido refinar nuestras habilidades generales en el manejo de la terminal, diagnóstico de problemas, y sobre todo, paciencia. Al ver el resultado de nuestro trabajo, nos damos cuenta que siempre hay una razón para no rendirse en estos procedimientos. A veces, lo más simple es lo que genera mayores problemas. Por eso, recomendamos realizar esta práctica con la mentalidad de que el éxito no necesariamente llegará en el primer intento.
