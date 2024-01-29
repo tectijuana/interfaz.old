@@ -29,48 +29,73 @@
 
 La presente asignatura aporta los conocimientos para el diseño e implementación de interfaces hombre-máquina y máquina-máquina para la automatización de sistemas. El desarrollo, implementación y administración de software de sistemas o de aplicación que cumpla con los estándares de calidad con el fin de apoyar la productividad y competitividad de las organizaciones. Para que desempeñe sus actividades profesionales considerando los aspectos legales, éticos, sociales y de desarrollo sustentable y a la vez le permita poseer las habilidades metodológicas de investigación que fortalezcan el desarrollo cultural, científico y tecnológico en el ámbito de sistemas computacionales y disciplinas afines.
 
-Docente: MC. René Solis Reyes
-
 
 ![](https://images.cooltext.com/5375550.png)
 <a href="http://cooltext.com" target="_top"><img src="https://cooltext.com/images/ct_pixel.gif" width="80" height="15" alt="Cool Text: Logo and Graphics Generator" border="0" /></a>
 
-Activación de Student Pack de GitHub.com, principalmente http://jetbrains.com/student se hará la donación de $450 dlls software de licencia pero las condiciones son **CUENTA DE CORREO INSTITUCIONAL**. 
+Activación de Student Pack de GitHub.com, se hará la donación de miles de doalres de software de licencia pero las condiciones son **CUENTA DE CORREO INSTITUCIONAL**. 
 
-Darse de alta en http://GitHub.com con un "nickname" (ApellidoNombre) con una foto de perfil de Ud. sobre las contraseñas este portal, bloquea a los 3 intentos la IP de su computadora en abuso de reintentos, es una plataforma profesional seria, se da aviso por anticipado. Cabe hacer notar que si ya tiene su cuenta y nickname con productos profesionales de código no haga cambios, pero si es material académico sin ningun impacto a 3ras personas favor de renombrar el Nickname, agregando la foto de classroom, nuevamente debe ser con su correo del @TECTIJUANA.EDU.MX (perfil puede tener mas de un correo)
+Es requisito indispensable registrarse en GitHub utilizando un nombre de usuario que combine su apellido y nombre (ApellidoNombre). Además, se debe añadir una fotografía de perfil actual. Es importante destacar que GitHub implementa políticas de seguridad estrictas, incluyendo el bloqueo de la IP de su equipo después de tres intentos fallidos de acceso, para prevenir el abuso en la reiteración de intentos de inicio de sesión. Como plataforma profesional, se advierte de antemano sobre estas medidas para garantizar un uso adecuado.
+
+Si ya posee una cuenta en GitHub con proyectos profesionales bajo su nombre de usuario actual, no es necesario realizar cambios. Sin embargo, si su cuenta contiene principalmente material académico que no afecta a terceros, le solicitamos amablemente que modifique su nombre de usuario para incluir la fotografía utilizada en el aula virtual. Asegúrese de que la cuenta esté asociada con su dirección de correo electrónico institucional (@tectijuana.edu.mx), aunque es posible vincular más de una dirección de correo electrónico a su perfil de GitHub.
 
 
-Condiciones académicas:
+Condiciones Académicas 
 
-- La primera semana es muy intensa como una regularización a todos los estudiantes, para que esten adaptados a el ritmo del docente; detectar mejoras de sus habilidades técnicas.
-- Los equipos de trabajo son aleatorios por GitHub Education Classroom, es el repositorio de la práctica, no son permanentes.
-- Llegará a medio semestre que los lunes y miércoles son para dudas, equipos de trabajo martes y jueves; se hace mención durante la sesión como será la semana de trabajo en el TEMA 3.
-- No se aceptan validaciones de diplomas manipulados CERTIFICADOS (alterados con photoshop, etc) será examen de 1ra oportunidad, aparte de perder la confianza queda anulando el resto de las entregas del tema en cuestion, que por lo regular en el certificado de C++ 
-- Certificados de C++ es por https://www.sololearn.com/learning/1051 que tambien esta para Android, Iphone y PC activarlo con su cuenta personal (al final entregan un certificado validado por un LINK)
-- GitHub.com  se activará su cuenta PRO (valor de $90 dolare anuales), para la presentación de trabajos de desarrollo de software, con espacio ilimitado proyectos abiertos-cerrados y propagación e indexación mundial, esto con el fin de promover su perfil a las comunidades extrageras y buscar vinculación-promoción.
-- Será bienvenido http://figma.com/education (beca Educativa $80 dlls) para entrega de trabajos colaborativos académicos sin còdigo fuente.
-- Código de programación, este nuevamente debe estar en GitHub y lleva un formato especifico para ser acceptado, el estudiante debe comparecer antes el formato es igual de importante la presentación como solución.
+    Introducción Intensiva: La primera semana del curso será particularmente intensiva, funcionando como un periodo de regularización para asegurar que todos los estudiantes se adapten al ritmo de trabajo propuesto. Este tiempo también nos permitirá identificar y potenciar las habilidades técnicas de cada participante.
 
-EVALUACION:
-- Docente es requisito OBLIGATORIO que cuenten esten registrador en LOOM.com y Activados con la beca académica (http://loom.com/education) muchos detalles se reportan por grabación de pantalla-smartphone.
-- Los trabajos vienen acompañados con  rubrica (por tabla o video LOOM) trabajo a revisar máximo el dia viernes, previo aviso a el grupo y en horarios de clase.
-- Todo trabajo lleva una rúbrica de cada elemento cuanto vale para formar el 100, debe poner atención a que solicitar para que no desvie su atención de la max. calificación
-- Trabajos no entregado valen 0 (CERO), y se pondera en el promedio como tal, afectando el calificador; debe entregar siempre.
-- Entrega de trabajos de la semana el limite son los viernes en horario de clase no a altas horas de la noche, no habrá mas revisión o recepción al menos una justificación comprobable (trabajo, salud, etc) que deberá estar redactada en mensaje privado dentro de "tareas de classroom".
-- Se procurará dejar retroalimentación con Audio usando la extensión de MOTE de Chrome, pero generalmente LOOM es el preferido redactando la retroalimentación, emoji-reacciones o incluso enviando la solución esperada por este mismo medio.
-- El promedio del tema es el promedio de todos los trabajos y siempre habra un trabajo OBLIGATORIO esto es que si lo salta, es automaticamente examen de única oportunidad, esto es clave para la culminación del tema e importante para la travesia de la materia.
-- No hay examen del tema, solo practicas, un examen en lo personal la materia se presta un buen conjunto de practicas de reto, que garantice semana por semana su esfuerzo acumulable.
-- Hay trabajos sin evaluación (lista de cotejo), pero es parte de reforzamiento del tema a venir y deben ser contestados, se utiliza Checklist el semestre pasado fue utilizada para dar puntos a estudiantes con riesgo de repetición, considerelos de garantía opcional por tener en cuenta.
-- Último bloque en si es un proyecto final que será documental dividido en 2 avances de 50% cada etapa, estos se hace un KAMBAN en GitHub Projects para brindar transparencia a el grupo.
-- Sobre la mensajeria dentro de Classroom, es muy fácil perderse con una pregunta "profe estoy ...? ...etc sea tan amable de elaborar bien la pregunta con las opciones que requiera atender pues nuestra comunicación es asincrona, he visto notas extraviadas en comentarios privados en asuntos evaluados, tenga consideración.
+    Formación de Equipos: Los equipos de trabajo se formarán de manera aleatoria a través de GitHub Education Classroom, que además servirá como el repositorio principal para las prácticas. Es importante notar que la composición de los equipos no será permanente, permitiendo así diversas dinámicas de colaboración a lo largo del curso.
+
+    Dinámica Semestral: A partir de medio semestre, los lunes y miércoles se dedicarán exclusivamente a resolver dudas, mientras que los martes y jueves estarán enfocados al trabajo en equipo. Durante las sesiones, se proporcionará información detallada sobre la organización de cada semana.
+
+    Certificación en C++: Para la certificación en C++, se utilizará la plataforma SoloLearn, disponible para Android, iPhone y PC. Es necesario activarla con una cuenta personal para obtener al final un certificado validado mediante un enlace. Es crucial entender que no se tolerará la manipulación de certificados académicos.
+
+    GitHub PRO: Se activará una cuenta PRO en GitHub.com para cada estudiante, con un valor anual de $90 USD. Esta cuenta permitirá la presentación ilimitada de proyectos de desarrollo de software, tanto abiertos como cerrados, y facilitará la visibilidad y la indexación a nivel mundial. El objetivo es promover el perfil de cada estudiante en comunidades internacionales y fomentar oportunidades de vinculación y promoción.
+
+    Figma para Educación: Se invita a los estudiantes a utilizar Figma con una beca educativa valorada en $80 USD. Esta herramienta es ideal para la entrega de proyectos colaborativos académicos que no requieran código fuente.
+
+    Código de Programación en GitHub GIST y Github Classroom: Todo código de programación debe ser alojado en GitHub y seguir un formato específico para ser aceptado. Es fundamental que el estudiante se familiarice con este formato, ya que la presentación del código es tan importante como la solución propuesta en sí.
+
+Para mejorar la redacción y claridad del texto sobre la evaluación, se pueden organizar y simplificar los puntos para que sean más directos y fáciles de entender. Aquí te presento una versión revisada:
+
+---
+
+**EVALUACIÓN:**
+
+1. **Uso de LOOM:** Es mandatorio que todos los estudiantes estén registrados en [LOOM.com](http://loom.com/education) y tengan activada la beca académica. Muchas comunicaciones y detalles se realizarán a través de grabaciones de pantalla o smartphone. Igualmente el uso de [Asciinema](https://asciinema.org/login/new) se requiere revisar detalladamente su procedimiento antes el nodo ARM cuando este compilando, etc.
+
+2. **Presentación de Trabajos:** 
+   - Todos los trabajos llevauna rúbrica (en forma de tabla, animacion o video de LOOM.com de ejemplos) y ser entregados a más tardar el viernes de cada semana, con previo aviso al grupo durante los horarios de clase.
+   - Cada trabajo incluirá una rúbrica detallada que explicará cómo se compone la nota final sobre 100 puntos. Es importante prestar atención a los requisitos para maximizar la calificación.
+   - Docencia he visto que los estudiantes no leen las instrucciones solo ven ejemplos y sobre estos elaboran sus bases pero estan desorientados causan fallos.
+
+3. **Política de Entrega:**
+   - Los trabajos no entregados recibirán una calificación de cero (0) y afectarán el promedio general.
+   - Ceros notorios pasara el estudiante a exposiciones, y trabajo especifico asignado para recuperar el ritmo.
+   - La fecha límite para la entrega semanal es el viernes durante el horario de clase. No se aceptarán trabajos tarde a menos que haya una justificación válida (como problemas de trabajo o salud), la cual debe ser comunicada de manera privada e idependientemente debe de hacerlos y entregarlos en fechas indicadas. 
+
+4. **Retroalimentación:**
+   - Se ofrecerá retroalimentación principalmente a través de GitHub Classroom donde fue depositada la actividad, ejercicio, etc. 
+
+5. **Evaluación del Curso:**
+   - Hay exámenes temáticos, prácticas, tareas. La calificación final de cada tema será el promedio de todas las tareas entregadas con una ponderacion que se atendera en su momento por el grupo.
+   - Es obligatorio completar al menos una tarea por tema, de lo contrario, se deberá presentar un examen de recuperación.
+   - Algunas practicas no contarán para la evaluación directa pero servirán como refuerzo del tema y deben ser completadas, como CHECKLIST o Lista de Cotejo.
+
+6. **Proyecto Final (por checarlo):**
+   - El curso culmina con un proyecto documental, dividido en dos etapas, cada una valorada en un 50% del total. Se utilizará GitHub Projects para organizar y dar transparencia al proceso.
+
+---
+
+Esta versión busca ser más directa y organizar la información de manera que sea más accesible y fácil de seguir para los estudiantes y docentes.
+
 
 REQUISITOS DE HARDWARE:
-- SmartPhone,PC o Laptop, tableta con AppStore-Google Play con TERMIUS.App
+- SmartPhone,PC o Laptop, tableta con AppStore-Google Play con TERMIUS.App igualmente VSCode para Windows, Mac o Linux
 - Sistemas Operativo 64 bits, recomendable DualBoot con Linux con 20Gb o mas (ubuntu, Debian, etc) o también puede ser un USB 3.0 Bootable con persistencia de unos 6 Gb ver http://pendrivelinux.com con software de Termius instalado entre otros.
-- Necesaria contar con MicroControlador RaspberryPi "PICO" este se organizan los estudiantes al costo, junto con material de GitHub Education y sticker del PIN-OUT, Acordeon de C++ a colores.
-- Por la escazes de CHIPS en el mundo es opcionalmente la compra de una computadora compacta: RaspberryPi (cualquier versión) con un "board extensión"  https://www.ebay.com/itm/KEYESTUDIO-T-type-GPIO-Expansion-Board-Cable-Breadboard-Kit-for-Raspberry-Pi-3-4/264350596270?hash=item3d8c85fcae:g:rdYAAOSw~G5c1VK6 debe coincidir con la versión de la RPi el cual compró.
-- Raspberry PICO sera el centro de atención de las practicas de dia a dia en ARM Assembly 32bit, por ser hardware libre esta bien documentada y apoyada con un inmensa comunidad, considere esta opción si otro MCU competente dedide cambiarlo y entrará a trabajar en su materia.
-- Para apoyar a el grupo se conectara una RaspberryPI CM4 de 8gb RAM/32 eMMC en una IP estática para que se conecten a esta para las practicas complementarias con Kernel de Linux, igualmente en 32 bits
+- Necesaria contar con MicroControlador RaspberryPi "PICO W" este se organizan los estudiantes y se hara una "propuesta" a el grupo para adquirirlo por volumen de fabrica al costo, junto con material de GitHub Education y sticker del PIN-OUT.
+- Raspberry PICO W sera el centro de atención de las practicas de dia a dia en ARM Assembly 32bit, por ser hardware libre esta bien documentada y apoyada con un inmensa comunidad, considere esta opción si otro MCU competente dedide cambiarlo y entrará a trabajar en su materia.
+- Para apoyar a el grupo se conectara una RaspberryPI5 8gb RAM 128Gb ssd en una IP estática para que se conecten a esta para las practicas complementarias con Kernel de Linux, igualmente en 32 bits
 - Trabajaremos con ARM32 en microcontrolador Raspberry PicoW en Assembly un poco y cerramos el semestre con C.
 - Smartphone con APP de SSH que se activará con TERMIUS (de su Github student pack) con un valor de $30 dlls gratis para UD durante un año que brinda la compañia.
 
