@@ -42,21 +42,20 @@ Si ya posee una cuenta en GitHub con proyectos profesionales bajo su nombre de u
 
 Condiciones Académicas 
 
-    Introducción Intensiva: La primera semana del curso será particularmente intensiva, funcionando como un periodo de regularización para asegurar que todos los estudiantes se adapten al ritmo de trabajo propuesto. Este tiempo también nos permitirá identificar y potenciar las habilidades técnicas de cada participante.
+1. **Introducción Intensiva:** La primera semana del curso será particularmente intensiva, funcionando como un periodo de regularización para asegurar que todos los estudiantes se adapten al ritmo de trabajo propuesto. Este tiempo también nos permitirá identificar y potenciar las habilidades técnicas de cada participante.
 
-    Formación de Equipos: Los equipos de trabajo se formarán de manera aleatoria a través de GitHub Education Classroom, que además servirá como el repositorio principal para las prácticas. Es importante notar que la composición de los equipos no será permanente, permitiendo así diversas dinámicas de colaboración a lo largo del curso.
+2. **Formación de Equipos:** Los equipos de trabajo se formarán de manera aleatoria a través de GitHub Education Classroom, que además servirá como el repositorio principal para las prácticas. Es importante notar que la composición de los equipos no será permanente, permitiendo así diversas dinámicas de colaboración a lo largo del curso.
 
-    Dinámica Semestral: A partir de medio semestre, los lunes y miércoles se dedicarán exclusivamente a resolver dudas, mientras que los martes y jueves estarán enfocados al trabajo en equipo. Durante las sesiones, se proporcionará información detallada sobre la organización de cada semana.
+3. **Dinámica Semestral:** A partir de medio semestre, los lunes y miércoles se dedicarán exclusivamente a resolver dudas, mientras que los martes y jueves estarán enfocados al trabajo en equipo. Durante las sesiones, se proporcionará información detallada sobre la organización de cada semana.
 
-    Certificación en C++: Para la certificación en C++, se utilizará la plataforma SoloLearn, disponible para Android, iPhone y PC. Es necesario activarla con una cuenta personal para obtener al final un certificado validado mediante un enlace. Es crucial entender que no se tolerará la manipulación de certificados académicos.
+4. **Certificación en C++:** Para la certificación en C++, se utilizará la plataforma SoloLearn, disponible para Android, iPhone y PC. Es necesario activarla con una cuenta personal para obtener al final un certificado validado mediante un enlace. Es crucial entender que no se tolerará la manipulación de certificados académicos.
 
-    GitHub PRO: Se activará una cuenta PRO en GitHub.com para cada estudiante, con un valor anual de $90 USD. Esta cuenta permitirá la presentación ilimitada de proyectos de desarrollo de software, tanto abiertos como cerrados, y facilitará la visibilidad y la indexación a nivel mundial. El objetivo es promover el perfil de cada estudiante en comunidades internacionales y fomentar oportunidades de vinculación y promoción.
+5. **GitHub PRO:** Se activará una cuenta PRO en GitHub.com para cada estudiante, con un valor anual de $90 USD. Esta cuenta permitirá la presentación ilimitada de proyectos de desarrollo de software, tanto abiertos como cerrados, y facilitará la visibilidad y la indexación a nivel mundial. El objetivo es promover el perfil de cada estudiante en comunidades internacionales y fomentar oportunidades de vinculación y promoción.
 
-    Figma para Educación: Se invita a los estudiantes a utilizar Figma con una beca educativa valorada en $80 USD. Esta herramienta es ideal para la entrega de proyectos colaborativos académicos que no requieran código fuente.
+6. **Figma para Educación:** Se invita a los estudiantes a utilizar Figma con una beca educativa valorada en $80 USD. Esta herramienta es ideal para la entrega de proyectos colaborativos académicos que no requieran código fuente.
 
-    Código de Programación en GitHub GIST y Github Classroom: Todo código de programación debe ser alojado en GitHub y seguir un formato específico para ser aceptado. Es fundamental que el estudiante se familiarice con este formato, ya que la presentación del código es tan importante como la solución propuesta en sí.
+7. **Código de Programación en GitHub GIST y Github Classroom:** Todo código de programación debe ser alojado en GitHub y seguir un formato específico para ser aceptado. Es fundamental que el estudiante se familiarice con este formato, ya que la presentación del código es tan importante como la solución propuesta en sí.
 
-Para mejorar la redacción y claridad del texto sobre la evaluación, se pueden organizar y simplificar los puntos para que sean más directos y fáciles de entender. Aquí te presento una versión revisada:
 
 ---
 
