@@ -100,6 +100,9 @@ REQUISITOS DE HARDWARE:
 
 Sin otro particular estoy a sus ordenes.
 
+<!-- Escalar una imagen 200x200 -->
+<img src="https://avatars.githubusercontent.com/u/2523851?v=4" width="200" height="200" />
+
 MC. René Solis R.
 
 Redes Sociales:
