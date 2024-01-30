@@ -114,7 +114,5 @@ Redes Sociales:
 
 Formulario de estudiantes 2024a
 
-https://forms.gle/KByddsRPajnwEALa7
-
-![image](https://github.com/tectijuana/interfaz/assets/2523851/b119742b-94d4-413f-ad39-cbd3b9b53ac8)
+https://forms.gle/ViCfFPmKLUvCp5ch6
 
