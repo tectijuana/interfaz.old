@@ -108,4 +108,13 @@ MC. René Solis R.
 Redes Sociales:
 - Twitter: @IoTeacher noticias mas activo al dia.
 - FB: facebook.com/profesorsolis (noticias y marketplace)
-- Reddit: /u/IoTeacher bastantes fuentes de información personal a revisar.
+
+----
+# REGISTRO 2024a
+
+Formulario de estudiantes 2024a
+
+https://forms.gle/KByddsRPajnwEALa7
+
+![image](https://github.com/tectijuana/interfaz/assets/2523851/b119742b-94d4-413f-ad39-cbd3b9b53ac8)
+
