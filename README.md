@@ -116,3 +116,5 @@ Formulario de estudiantes 2024a
 
 https://forms.gle/ViCfFPmKLUvCp5ch6
 
+-----
+![Calendario de Examenes LDI24a](https://github.com/tectijuana/interfaz/assets/2523851/e4bc3a3e-32ff-49a8-8f09-cadad5bf6718)
