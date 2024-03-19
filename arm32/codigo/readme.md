@@ -48,12 +48,14 @@ clean:
 __En el contexto de compilar código en ensamblador para sistemas operativos basados en Raspbian (un sistema operativo para Raspberry Pi basado en Debian), un Makefile puede facilitar el proceso al automatizar las siguientes tareas:__
 
 **Especificación de archivos fuente:** Se pueden definir variables o reglas para especificar los archivos de ensamblador que deben compilarse.
-**Compilación condicional:** Basado en las dependencias, sólo se recompilan los archivos que han cambiado, ahorrando tiempo en el proceso de desarrollo.
-**Enlazado:** Después de compilar los archivos de ensamblador a código objeto, make puede invocar al enlazador para generar el ejecutable final.
-**Limpieza:** Se pueden definir reglas para eliminar los archivos objeto y ejecutables generados, permitiendo una reconstrucción limpia del proyecto.
-**Automatización de pruebas:**  Ejecución de pruebas automatizadas después de la construcción para asegurar que los cambios no rompan la funcionalidad existente.
-Para compilar código en ensamblador en Raspbian, el Makefile tendría que configurarse para utilizar las herramientas específicas de ensamblaje y enlace que sean compatibles con la arquitectura ARM de Raspberry Pi, como as para ensamblar y ld para enlazar, o usar un compilador cruzado si se compila desde otro sistema.
 
+**Compilación condicional:** Basado en las dependencias, sólo se recompilan los archivos que han cambiado, ahorrando tiempo en el proceso de desarrollo.
+
+**Enlazado:** Después de compilar los archivos de ensamblador a código objeto, make puede invocar al enlazador para generar el ejecutable final.
+
+**Limpieza:** Se pueden definir reglas para eliminar los archivos objeto y ejecutables generados, permitiendo una reconstrucción limpia del proyecto.
+
+**Automatización de pruebas:**  Ejecución de pruebas automatizadas después de la construcción para asegurar que los cambios no rompan la funcionalidad existente.
 
 ---
 > Versión extensa (se ven mas detalles)
