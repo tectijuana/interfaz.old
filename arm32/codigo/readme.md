@@ -27,11 +27,14 @@ _start: mov     R0, #17     @ Utilice 17 (decimal) como ejemplo de prueba
 ```
 
 
-# MAKE file
+![](readme-makefile.jpg)
 
-Archivo MAKE agilizar la compilación (https://www.gnu.org/software/make/), los estudiantes lo adoptarán para automatizar la invocación a la compilador, enlazador y borrar la basura que deja este último.
+# makefile Para automatizar la compilación
 
-```make
+__Un Makefile es un archivo utilizado por la herramienta de automatización de la construcción make para definir un conjunto de tareas a realizar. Estas tareas pueden incluir la compilación de código fuente, la ejecución de scripts, y otras actividades relacionadas con la construcción y mantenimiento de proyectos de software. Un Makefile contiene reglas que especifican cómo generar los archivos objetivo (targets) a partir de los archivos fuente. Cada regla puede tener dependencias, que son archivos que necesitan existir o estar actualizados antes de que la regla pueda ejecutarse.__
+
+> Versión básica
+```makefile
 prueba: prueba.o
      ld -o prueba prueba.o
 
@@ -42,7 +45,61 @@ clean:
      rm prueba prueba.o
 ```
 
+__En el contexto de compilar código en ensamblador para sistemas operativos basados en Raspbian (un sistema operativo para Raspberry Pi basado en Debian), un Makefile puede facilitar el proceso al automatizar las siguientes tareas:__
+
+**Especificación de archivos fuente:** Se pueden definir variables o reglas para especificar los archivos de ensamblador que deben compilarse.
+**Compilación condicional:** Basado en las dependencias, sólo se recompilan los archivos que han cambiado, ahorrando tiempo en el proceso de desarrollo.
+**Enlazado:** Después de compilar los archivos de ensamblador a código objeto, make puede invocar al enlazador para generar el ejecutable final.
+**Limpieza:** Se pueden definir reglas para eliminar los archivos objeto y ejecutables generados, permitiendo una reconstrucción limpia del proyecto.
+**Automatización de pruebas:**  Ejecución de pruebas automatizadas después de la construcción para asegurar que los cambios no rompan la funcionalidad existente.
+Para compilar código en ensamblador en Raspbian, el Makefile tendría que configurarse para utilizar las herramientas específicas de ensamblaje y enlace que sean compatibles con la arquitectura ARM de Raspberry Pi, como as para ensamblar y ld para enlazar, o usar un compilador cruzado si se compila desde otro sistema.
+
+
+---
+> Versión extensa (se ven mas detalles)
+
+```makefile
+# MAKEFILE para automatizar la compilación
+
+# Define el archivo fuente en ensamblador
+SRC = prueba.s
+
+# Define el nombre del archivo de salida
+OUT = prueba
+
+# Define el ensamblador y las banderas
+AS = as
+ASFLAGS = -g
+
+# Define el enlazador y las banderas
+LD = ld
+LDFLAGS =
+
+# Define el GCC o G++ segun corresponda
+GCC = gcc
+GCCFLAGS =  -g
+
+# Corrida de make
+all: $(OUT)
+
+$(OUT): $(SRC)
+	$(AS) $(ASFLAGS) $(SRC) -o $(OUT).o
+	$(GCC) $(LDFLAGS) $(OUT).o -o $(OUT)
+# Borra temporales y ejecutable
+clean:
+	rm -f $(OUT) $(OUT).o
+# Corrida
+run: $(OUT)
+	./$(OUT)
+# Entrar al Debugger
+gef: $(OUT)
+	gdb  $(OUT)
+```
+----
+
+
 # DESENSAMBLAR DESDE C++ a ASM
+
 El código a desensamblar será el siguiente:
 ```c
 #include <iostream>
