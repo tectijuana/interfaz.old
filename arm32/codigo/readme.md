@@ -27,7 +27,7 @@ _start: mov     R0, #17     @ Utilice 17 (decimal) como ejemplo de prueba
 ```
 
 
-![](readme-makefile.jpg)
+![](readme-makefile.png)
 
 # makefile Para automatizar la compilación
 
