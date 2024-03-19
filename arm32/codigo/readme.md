@@ -13,12 +13,23 @@ ARM es un procesador RISC, lo que significa que la idea es que ejecute instrucci
 
 ![](posterARM.png)
 
-La extensión de archivo '.s' se usa comúnmente para todas las formas de código ensamblador, depende de nosotros recordar que esto es ARMv6.
+La extensión de archivo '.s' se usa comúnmente para todas las formas de código ensamblador, depende de nosotros recordar que esto es ARMv7.
 
-Se presenta un breve ejemplo:
+Analizamos la función de cada línea del código ensamblador y luego traducimos esa lógica a C. El programa original en ensamblador realiza las siguientes operaciones:
+
+1. Inicializa el registro R0 con el valor 17 (decimal).
+2. Realiza un desplazamiento lógico a la izquierda (LSL) del valor en R0 por 2 bits, lo cual equivale a multiplicar el valor en R0 por 4. Dado que el valor inicial es 17, después de este paso, R0 contendrá 68.
+3. Establece R7 con el valor 1, que prepara la llamada al sistema para terminar el programa.
+4. Realiza una llamada al sistema (syscall) con svc 0 para terminar el programa y regresar al sistema operativo.
+6. La equivalencia en C sería un programa que inicializa una variable con el valor 17, la multiplica por 4 y luego termina. La llamada al sistema para terminar el programa se maneja automáticamente en C cuando la ejecución llega al final de la función main, por lo tanto, no es necesario traducir explícitamente las instrucciones relacionadas con R7 y svc 0.
+
+Se presenta la demostración, recordando que el curso debe de documentar con calidad:
 
 Programa **prueba.s**
 ```asm
+@ Aqui van las generales del programador
+@ Código C complemenario 
+@
 .global _start              @ Proporcionar la dirección de inicio del programa al enlazador (linker)
 _start: mov     R0, #17     @ Utilice 17 (decimal) como ejemplo de prueba
         lsl     R0, #2      @ Desplazar R0 a la izquierda en 2 bits (es decir, multiplicar por 4)
@@ -102,8 +113,11 @@ gef: $(OUT)
 
 # DESENSAMBLAR DESDE C++ a ASM
 
-El código a desensamblar será el siguiente:
+1. FUENTE 
+    El código funte desde C a desensamblar será el siguiente:
 ```c
+# Encabezado dle programador
+# Archivo listado.cpp
 #include <iostream>
 
 using namespace std;
@@ -115,22 +129,45 @@ int main() {
 }
 ```
 
-# TÉCNICA PARA DESENSAMBLAR
-_Una vez que tenemos el código vamos a compilarlo y desensamblarlo con el siguiente comando:_
 ```bash
-$ objdump -d comparar > comparar.s
+$ make listado
 ```
-Forma parte de las herramientas de ARM-ToolChain
 
-----
+__Donde el Makefile es:__
+```bash
+# Definir el compilador
+CXX=g++
 
-# OTRA TÉCNICA PARA DESENSAMBLAR
-Corremos object dump con la opcion **-d** que significa dissasemblee en el ejecutable deseado, y usamos una redireccion de salida de linux '>' para escribir el código ensamblador resultante en el archivo comparar.s
-_NOTA: Previamente compilado con AS,GCC_
+# Definir las flags de compilación
+CXXFLAGS=-Wall
 
+# Nombre del programa (output)
+PROGRAM=listado
+
+# Regla all es la regla por defecto
+all: $(PROGRAM)
+
+# Compilar el programa
+$(PROGRAM): listado.o
+    $(CXX) $(CXXFLAGS) -o $(PROGRAM) listado.o
+
+# Compilar el archivo fuente
+listado.o: listado.cpp
+    $(CXX) $(CXXFLAGS) -c listado.cpp
+
+# Regla para limpiar archivos compilados
+clean:
+    rm -f *.o $(PROGRAM)
+```
+
+---
+
+
+1. TECNICA B: Desensamblar el ejecutable
+Corremos object dump con la opcion **-d** que significa dissasemblee en el ejecutable deseado, y usamos una redireccion de salida simbolo '>' para escribir el código ensamblador resultante en el archivo comparar.s
 
 ```bash
-g++ -S -o Problema1.s Problema.cpp -fno-asynchronous-unwind-tables
+$ g++ -S -o listado.s listado.cpp -fno-asynchronous-unwind-tables
 ```
 
 __El parámetro **-S**** nos convierte el código **cpp** a ensamblador y los parámetros **-fno-asynchronous-unwind-tables** nos quita directivas que se crean para los lenguajes que utilizan excepciones__
@@ -141,6 +178,16 @@ nano Problema1.s
 ```
 
 __Se muestra que ahora existe el archivo comparar.s luego de ejecutar el comando.__
+
+
+
+2. TECNICA A: Desensamblar el ejecutable
+
+_Una vez que tenemos el código vamos a compilarlo y desensamblarlo con el siguiente comando: OBJDUMP, forma parte de las herramientas de ARM-ToolChain_ 
+```bash
+$ objdump -d listado > listado.s
+```
+
 
 Bibliografía: 
 https://www.cl.cam.ac.uk/projects/raspberrypi/tutorials/os/ok01.html
