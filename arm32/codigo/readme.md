@@ -170,7 +170,7 @@ Corremos object dump con la opcion **-d** que significa dissasemblee en el ejecu
 $ g++ -S -o listado.s listado.cpp -fno-asynchronous-unwind-tables
 ```
 
-__El parámetro **-S**** nos convierte el código **cpp** a ensamblador y los parámetros **-fno-asynchronous-unwind-tables** nos quita directivas que se crean para los lenguajes que utilizan excepciones__
+__El parámetro **-S*** nos convierte el código **cpp** a ensamblador y los parámetros **-fno-asynchronous-unwind-tables** nos quita directivas que se crean para los lenguajes que utilizan excepciones__
 
 Para comprobar que fue desensamblado correctamente vamos a abrir el archivo Problema1.s con nano, aquí el comando:
 ```bash
