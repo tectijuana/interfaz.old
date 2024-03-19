@@ -164,14 +164,14 @@ clean:
 ---
 
 
-1. TECNICA B: Desensamblar el ejecutable
+1. TECNICA A: Desensamblar el ejecutable
 Corremos object dump con la opcion **-d** que significa dissasemblee en el ejecutable deseado, y usamos una redireccion de salida simbolo '>' para escribir el código ensamblador resultante en el archivo comparar.s
 
 ```bash
 $ g++ -S -o listado.s listado.cpp -fno-asynchronous-unwind-tables
 ```
 
-__El parámetro **-S*** nos convierte el código **cpp** a ensamblador y los parámetros **-fno-asynchronous-unwind-tables** nos quita directivas que se crean para los lenguajes que utilizan excepciones__
+__El parámetro **-S** nos convierte el código **cpp** a ensamblador y los parámetros **-fno-asynchronous-unwind-tables** nos quita directivas que se crean para los lenguajes que utilizan excepciones__
 
 Para comprobar que fue desensamblado correctamente vamos a abrir el archivo Problema1.s con nano, aquí el comando:
 ```bash
@@ -182,13 +182,15 @@ __Se muestra que ahora existe el archivo comparar.s luego de ejecutar el comando
 
 
 
-2. TECNICA A: Desensamblar el ejecutable
+2. TECNICA B: Desensamblar el ejecutable
 
 _Una vez que tenemos el código vamos a compilarlo y desensamblarlo con el siguiente comando: OBJDUMP, forma parte de las herramientas de ARM-ToolChain_ 
 ```bash
 $ objdump -d listado > listado.s
 ```
 
+
+Conclusiones, no hay una descompilación optima para el programador, existe sin embargo "panoramica amplia" de el algoritmo a detalle, y con el apoyo del Ai pueden lograr a comprender el comportamiento del compilador.
 
 Bibliografía: 
 https://www.cl.cam.ac.uk/projects/raspberrypi/tutorials/os/ok01.html
