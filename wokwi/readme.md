@@ -20,6 +20,7 @@
 
 Para empezar a usar Wokwi especificamente usaremos la version C/C++, visita [https://wokwi.com/projects/new/pi-pico-w](https://wokwi.com/projects/new/pi-pico-w) 
 
+
 # Templete universal para programas de RPI PicoW
 
 ~~~cpp
@@ -59,3 +60,16 @@ void loop() {
 }
 
 ~~~
+
+# Programar placa PicoW hardware
+
+Para trabajar con la Raspberry Pi Pico W sin utilizar el entorno de Arduino, puedes programarla utilizando el SDK oficial en C/C++, en la terminal de comandos, trae su compilador y enlazador manualente,
+
+En los equipos de Laboratorio acceder a Linux para cargar el SDK y no sea borrado por el bloqueador del laboratorista.
+
+# Instalación
+
+La comunidad Arduino apoyando hizo una modificación y agrego una extension del SDK (Software Development Kit) de Raspberry Pi; similar a VSCode con sus extensiones.
+
+https://arduino-pico.readthedocs.io/en/latest/install.html
+
