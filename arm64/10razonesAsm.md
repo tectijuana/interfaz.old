@@ -1,5 +1,5 @@
 ![](https://aiyprojects.withgoogle.com/static/images/vision-v2/guide/vision-025.jpg)
-# Aquí hay diez razones por las que la gente aprende y usar lenguaje Ensamblador (RaspberryPi SBC)
+# Diez razones por las que la gente aprende y usar lenguaje Ensamblador (RaspberryPi SBC)
 
 | 1  	|  Incluso si no escribe código en lenguaje ensamblador, saber cómo funciona la computadora internamente permite que escriba un código más eficiente. Puedes hacer las estructuras de datos más fáciles de acceder y escribir código en un estilo que permite al compilador generar más código eficiente. Puedes hacer un mejor uso de la computadora recursos como coprocesadores y utilizar computadora a su máximo potencial. 	|
 |----	|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------	|
